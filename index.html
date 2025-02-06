@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>@@title</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/vendor.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <header class="header" data-lp>
+    <div class="container">
+      <nav class="navbar p-0 navbar-expand-lg">
+        <div class="container-fluid p-0 header-container justify-content-between">
+          <a href="#"><svg class="logo">
+              <use href="./img/svg/sprite.svg#logo"></use>
+            </svg></a>
+          <div class="mobile-elems align-items-center">
+            <svg class="mobile-icon phone">
+              <use href="./img/svg/sprite.svg#menu_white_phone"></use>
+            </svg>
+            <div class="svg-wrapper">
+              <svg class="mobile-icon account">
+                <use href="./img/svg/sprite.svg#menu_account"></use>
+              </svg>
+            </div>
+            <button class="btn-burger">
+              <svg class="mobile-icon burger">
+                <use href="./img/svg/sprite.svg#menu_burger"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="header__menu h-100 collapse_header navbar-collapse d-flex" id="navbarNav">
+            <div class="mobile-header-menu">
+              <div class="d-flex menu-social align-items-center">
+                <svg class="mobile-icon telegram">
+                  <use href="./img/svg/sprite.svg#telegram"></use>
+                </svg>
+                <svg class="mobile-icon vk">
+                  <use href="./img/svg/sprite.svg#vk"></use>
+                </svg>
+              </div>
+              <div class="cross">
+                <svg class="mobile-icon p-2">
+                  <use href="./img/svg/sprite.svg#menu_cross"></use>
+                </svg>
+              </div>
+            </div>
+            <ul class="navbar-nav">
+              <li class="nav-item fs-4 py-5">
+                <a class="nav-link d-flex align-items-center" href="#" id="menu1" role="button" aria-expanded="false">
+                  <svg class="menu-icon">
+                    <use href="./img/svg/sprite.svg#menu_main"></use>
+                  </svg>
+                  <span>Главная</span>
+                </a>
+              </li>
+
+              <li class="nav-item fs-4 py-5 menu__dropdown position-static tab fullscreen">
+                <a class="nav-link d-flex align-items-center tab-title" href="https://telezon.ru" role="button">
+                  <svg class="menu-icon usluga">
+                    <use href="./img/svg/sprite.svg#menu_uslugi"></use>
+                  </svg>
+                  <p class="tab-header d-flex justify-content-between align-items-center w-100 m-0">
+                    <span class="fs-4 c-white">Услуги</span>
+                    <svg class="menu__arrow-dropdown">
+                      <use href="./img/svg/sprite.svg#menu_arrow"></use>
+                    </svg>
+                  </p>
+                </a>
+                <ul
+                  class="dropdown-menu header__dropdown pb-xxl-6 uslugi position-absolute tab-list justify-content-between">
+                  <li class="uslugi__item item-uslugi">
+                    <p class="item-uslugi__title d-flex align-items-center">
+                      <svg class="dropdown-menu__icon connection">
+                        <use href="./img/svg/sprite.svg#menu_connection"></use>
+                      </svg>
+                      <span>Стабильное и безопасное соединение</span>
+                      <svg class="menu-mobile__dropdown-arrow position-absolute">
+                        <use href="./img/svg/sprite.svg#menu_arrow"></use>
+                      </svg>
+                    </p>
+                    <a class="item-uslugi__default d-block mt-3">Интернет и офис</a>
+                    <ul class="list sub-list mb-4">
+                      <li class="mt-3"><a href="#">Защита от DDoS-атак</a></li>
+                      <li class="mt-3"><a href="#">Тарифы</a></li>
+                    </ul>
+                  </li>
+                  <li class="uslugi__item item-uslugi">
+                    <p class="item-uslugi__title d-flex align-items-center">
+                      <svg class="dropdown-menu__icon development">
+                        <use href="./img/svg/sprite.svg#menu_development"></use>
+                      </svg>
+                      <span>Строительство IT-инфраструктуры</span>
+                      <svg class="menu-mobile__dropdown-arrow position-absolute">
+                        <use href="./img/svg/sprite.svg#menu_arrow"></use>
+                      </svg>
+                    </p>
+                    <a class="item-uslugi__default d-block mt-3">Слаботочные сети и сети связи</a>
+                    <a class="item-uslugi__default d-block mt-3">Аудит ВОЛС</a>
+                  </li>
+                  <li class="uslugi__item item-uslugi">
+                    <p class="item-uslugi__title d-flex align-items-center">
+                      <svg class="dropdown-menu__icon safety">
+                        <use href="./img/svg/sprite.svg#menu_safety"></use>
+                      </svg>
+                      <span>Безопасность имущества и данных</span>
+                      <svg class="menu-mobile__dropdown-arrow position-absolute">
+                        <use href="./img/svg/sprite.svg#menu_arrow"></use>
+                      </svg>
+                    </p>
+                    <a class="item-uslugi__default d-block mt-3">Облачное видеонаблюдение</a>
+                    <a class="item-uslugi__default d-block mt-3">Охранно-пожарная сигнализация</a>
+                    <a class="item-uslugi__default d-block mt-3">Колокейшн</a>
+                    <a class="item-uslugi__default d-block mt-3">Облачная аренда виртуального выделенного сервера</a>
+                    <a class="item-uslugi__default d-block mt-3">Дата-центр</a>
+
+                    <ul class="list sub-list mb-4">
+                      <li class="mt-3"><a href="#">Классификация уровней надёжности дата-центров</a></li>
+                      <li class="mt-3"><a href="#">Форм-фактор сервера</a></li>
+                    </ul>
+                    <a class="item-uslugi__default d-block mt-3">Облачное хранение данных</a>
+                  </li>
+                  <li class="uslugi__item item-uslugi">
+                    <p class="item-uslugi__title d-flex align-items-center">
+                      <svg class="dropdown-menu__icon telephone">
+                        <use href="./img/svg/sprite.svg#menu_telephone"></use>
+                      </svg>
+                      <span>Телефонная связь</span>
+                      <svg class="menu-mobile__dropdown-arrow position-absolute">
+                        <use href="./img/svg/sprite.svg#menu_arrow"></use>
+                      </svg>
+                    </p>
+                    <a class="item-uslugi__default d-block mt-3">IP-телефония</a>
+                    <ul class="list sub-list mb-4">
+                      <li class="mt-3">
+                        <a href="#">Безграничная телефония</a>
+                        <ul class="list">
+                          <li class="mt-3"><a href="#">Тарифы</a></li>
+                        </ul>
+                      </li>
+                      <li class="mt-3"><a href="#">Telezon Security</a></li>
+                    </ul>
+                    <a class="item-uslugi__default d-block mt-3">Городской номер для бизнеса</a>
+                    <a class="item-uslugi__default d-block mt-3">Виртуальная АТС</a>
+                    <ul class="list sub-list mb-4">
+                      <li class="mt-3"><a href="#">Вам звонили</a></li>
+                      <li class="mt-3"><a href="#">Автообзвон</a></li>
+                      <li class="mt-3"><a href="#">Запись телефонных разговоров</a></li>
+                      <li class="mt-3"><a href="#">Голосовое меню (IVR)</a></li>
+                      <li class="mt-3"><a href="#">Обработка входящих звонков</a></li>
+                    </ul>
+                    <a class="item-uslugi__default d-block mt-3">Номер 8-800-355-55-55</a>
+                  </li>
+                  <li class="uslugi__item item-uslugi">
+                    <p class="item-uslugi__title d-flex align-items-center">
+                      <svg class="dropdown-menu__icon solution">
+                        <use href="./img/svg/sprite.svg#menu_solution"></use>
+                      </svg>
+                      <span>Отраслевые решения</span>
+                      <svg class="menu-mobile__dropdown-arrow position-absolute">
+                        <use href="./img/svg/sprite.svg#menu_arrow"></use>
+                      </svg>
+                    </p>
+                    <a class="item-uslugi__default d-block mt-3">Отраслевые решения</a>
+                    <ul class="list sub-list mb-4">
+                      <li class="mt-3"><a href="#">Реализация CIPM-3</a></li>
+                      <li class="mt-3"><a href="#">ИС «Антифрод»</a></li>
+                    </ul>
+                    <a class="item-uslugi__default d-block mt-3">Решения для УК и ТСЖ</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item fs-4 py-5">
+                <a class="nav-link d-flex align-items-center" href="#" id="menu2" role="button" aria-expanded="false">
+                  <svg class="menu-icon">
+                    <use href="./img/svg/sprite.svg#menu_news"></use>
+                  </svg>
+                  <span>Новости</span>
+                </a>
+              </li>
+              <li class="nav-item fs-4 py-5">
+                <a class="nav-link d-flex align-items-center" href="#" id="menu2" role="button" aria-expanded="false">
+                  <svg class="menu-icon">
+                    <use href="./img/svg/sprite.svg#menu_academy"></use>
+                  </svg>
+                  <span>Академия</span>
+                </a>
+              </li>
+
+              <li class="nav-item fs-4 py-5">
+                <a class="nav-link d-flex align-items-center" href="#" id="menu2" role="button" aria-expanded="false">
+                  <svg class="menu-icon">
+                    <use href="./img/svg/sprite.svg#menu_sale"></use>
+                  </svg>
+                  <span>Акции</span>
+                </a>
+              </li>
+              <li class="nav-item fs-4 py-5">
+                <a class="nav-link d-flex align-items-center" href="#" id="menu2" role="button" aria-expanded="false">
+                  <svg class="menu-icon">
+                    <use href="./img/svg/sprite.svg#menu_case"></use>
+                  </svg>
+                  <span>Кейсы</span>
+                </a>
+              </li>
+
+              <li class="nav-item fs-4 py-5 dropdown menu__dropdown tab position-static">
+                <a class="nav-link d-flex align-items-center tab-title" href="#" id="menu3" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <svg class="menu-icon">
+                    <use href="./img/svg/sprite.svg#menu_clients"></use>
+                  </svg>
+
+                  <p class="tab-header d-flex justify-content-between align-items-center w-100 m-0">
+                    <span class="fs-4 c-white">Клиентам</span>
+                    <svg class="menu__arrow-dropdown">
+                      <use href="./img/svg/sprite.svg#menu_arrow"></use>
+                    </svg>
+                  </p>
+                </a>
+                <ul class="dropdown-menu header__dropdown default-dropdown flex-column tab-list"
+                  aria-labelledby="menu3">
+                  <li class="mt-0"><a class="dropdown-item py-3 px-4" href="#">Документы</a></li>
+                  <li class="mt-0"><a class="dropdown-item py-3 px-4" href="#">Оплата услуг</a></li>
+                  <li class="mt-0"><a class="dropdown-item py-3 px-4" href="#">Программное обеспечение</a></li>
+                  <li class="mt-0"><a class="dropdown-item py-3 px-4" href="#">Техническая поддержка</a></li>
+                  <li class="mt-0"><a class="dropdown-item py-3 px-4" href="#">Оборудование связи</a></li>
+                  <li class="mt-0"><a class="dropdown-item py-3 px-4" href="#">Инструкции</a></li>
+                  <li class="mt-0"><a class="dropdown-item py-3 px-4" href="#">Уведомления</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item fs-4 py-5 dropdown menu__dropdown tab position-static">
+                <a class="nav-link d-flex align-items-center tab-title" href="#" id="menu3" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <svg class="menu-icon">
+                    <use href="./img/svg/sprite.svg#menu_about"></use>
+                  </svg>
+                  <p class="tab-header d-flex justify-content-between align-items-center w-100 m-0">
+                    <span class="fs-4 c-white">О нас</span>
+                    <svg class="menu__arrow-dropdown">
+                      <use href="./img/svg/sprite.svg#menu_arrow"></use>
+                    </svg>
+                  </p>
+                </a>
+                <ul class="dropdown-menu header__dropdown default-dropdown right tab-list list flex-column"
+                  aria-labelledby="menu3">
+                  <li><a class="dropdown-item py-3 px-4" href="#">Маркетинг-кит</a></li>
+                  <li><a class="dropdown-item py-3 px-4" href="#">Адрес и реквизиты</a></li>
+                  <li><a class="dropdown-item py-3 px-4" href="#">Лицензии</a></li>
+                  <li><a class="dropdown-item py-3 px-4" href="#">Благотворительность</a></li>
+                  <li><a class="dropdown-item py-3 px-4" href="#">Благодарности</a></li>
+                </ul>
+              </li>
+              <li class="mobile-telephone text-center mt-4">Горячая линия: 8-800-355-55-55</li>
+            </ul>
+
+            <a href="#" class="menu-mobile d-block d-lg-none private-cabinet text-center p-4">Личный кабинет</a>
+
+            <div class="mobile__sub-menu sub-menu">
+              <div class="mobile-header-menu">
+                <div class="d-flex menu-social align-items-center">
+                  <svg class="sub-menu__arrow-dropdown">
+                    <use href="./img/svg/sprite.svg#menu_arrow"></use>
+                  </svg>
+                  <p class="m-0 mobile-title">Тестовая категория</p>
+                </div>
+                <div class="cross">
+                  <svg class="mobile-icon">
+                    <use href="./img/svg/sprite.svg#menu_cross"></use>
+                  </svg>
+                </div>
+              </div>
+              <ul class="sub-list mb-4 uslugi-mobile" aria-labelledby="menu3"></ul>
+            </div>
+          </div>
+          <div class="background-mobile"></div>
+        </div>
+      </nav>
+    </div>
+
+  </header>
+  <section class="post-header">
+    <div
+      class="container post-header__wrapper gap-6 text-nowrap d-flex align-items-center justify-content-between py-xxl-6 py-4 px-4 mb-4 mb-md-0">
+      <div class="post-header__item item-post">
+        <ul
+          class="item-post__list flex-lg-wrap flex-nowrap ps-0 mb-0 gap-xxl-6 gap-4 list-post d-flex align-items-center">
+          <li><a href="#" class="px-4 py-2">Все</a></li>
+          <li><a href="#" class="px-4 py-2">Инструкции</a></li>
+          <li><a href="#" class="px-4 py-2">Документы</a></li>
+          <li><a href="#" class="px-4 py-2">Оплата услуг</a></li>
+          <li><a href="#" class="px-4 py-2">Благодарности</a></li>
+          <li><a href="#" class="px-4 py-2">Благотворительность</a></li>
+          <li><a href="#" class="px-4 py-2">Реквизиты</a></li>
+        </ul>
+      </div>
+      <div class="post-header__item item-post gap-6 d-flex align-items-center">
+        <a href="#" class="item-post__link px-4 py-2">Техническая поддержка</a>
+        <svg class="item-post__search">
+          <use href="../img/svg/sprite.svg#menu_search"></use>
+        </svg>
+        <button class="item-post__btn btn btn-primary shadow-none">Личный кабинет</button>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <main>
+      <section class="default-margin">
+        <div class="row g-2 g-lg-3 add-scroll xs-x-scroll">
+          <div class="col-md-4 main-block__wrapper">
+            <div class="main-block__item item-main position-relative blue overflow-hidden p-5 c-white">
+              <button class="item-main__button btn pink fs-4 d-block">Интернет</button>
+              <p class="item-main__title fs-2 fw-bold mt-5">Бизнес интернет</p>
+              <p class="item-main__description c-white fs-3">Быстрый и надежный интернет для комфорта сотрудников и
+                клиентов
+                вашей
+                компании.</p>
+
+              <div class="item-main__icon rounded-circle position-absolute">
+                <svg>
+                  <use xlink:href="../img/svg/sprite.svg#block1_touch"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="main-block__item item-main position-relative pink overflow-hidden p-5 c-white">
+              <button class="item-main__button btn blue fs-4 d-block">Телефония</button>
+              <p class="item-main__title fs-2 fw-bold mt-5">SIP-телефония</p>
+              <p class="item-main__description c-white fs-3">
+                Подключение займет считанные минуты, а для связи с клиентами нужен только телефон или компьютер
+              </p>
+
+              <div class="item-main__icon rounded-circle position-absolute">
+                <svg>
+                  <use href="../img/svg/sprite.svg#block1_sip"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="main-block__item item-main position-relative blue overflow-hidden p-5 c-white">
+              <button class="item-main__button btn pink fs-4 d-block">Интернет</button>
+              <p class="item-main__title fs-2 fw-bold mt-5">Бизнес интернет</p>
+              <p class="item-main__description c-white fs-3">Быстрый и надежный интернет для комфорта сотрудников и
+                клиентов
+                вашей
+                компании.</p>
+
+              <div class="item-main__icon rounded-circle position-absolute">
+                <svg>
+                  <use href="../img/svg/sprite.svg#block1_touch"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="px-7">
+        <input id="check1" type="checkbox" class="checkbox-slide extra small" />
+        <label for="check1"></label>
+      </div>
+      <h1>H1</h1>
+      <h2>H2</h2>
+      <h3>H3</h3>
+      <h4>H4</h4>
+      <p>base</p>
+
+      <div class="table-responsive table-wrap">
+        <table class="table table-bordered">
+          <thead class="table-light">
+            <tr>
+              <th scope="col p-4">Провайдер</th>
+              <th scope="col p-4">Скорость (Мбит/c)</th>
+              <th scope="col p-4">Цена (₽/мес)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Р…</td>
+              <td>до 1000</td>
+              <td>по запросу</td>
+            </tr>
+            <tr>
+              <td>Р…</td>
+              <td>до 1000</td>
+              <td>по запросу</td>
+            </tr>
+            <tr>
+              <td>Р…</td>
+              <td>до 1000</td>
+              <td>по запросу</td>
+            </tr>
+            <tr>
+              <td>Р…</td>
+              <td>до 1000</td>
+              <td>по запросу</td>
+            </tr>
+            <tr>
+              <td>Р…</td>
+              <td>до 1000</td>
+              <td>по запросу</td>
+            </tr>
+            <tr>
+              <td>Р…</td>
+              <td>до 1000</td>
+              <td>по запросу</td>
+            </tr>
+            <tr>
+              <td>Р…</td>
+              <td>до 1000</td>
+              <td>по запросу</td>
+            </tr>
+            <tr>
+              <td>Р…</td>
+              <td>до 1000</td>
+              <td>по запросу</td>
+            </tr>
+            <tr>
+              <td>Р…</td>
+              <td>до 1000</td>
+              <td>по запросу</td>
+            </tr>
+            <tr>
+              <td>Р…</td>
+              <td>до 1000</td>
+              <td>по запросу</td>
+            </tr>
+            <tr>
+              <td>Р…</td>
+              <td>до 1000</td>
+              <td>по запросу</td>
+            </tr>
+            <tr>
+              <td>Р…</td>
+              <td>до 1000</td>
+              <td>по запросу</td>
+            </tr>
+            <tr>
+              <td>Р…</td>
+              <td>до 1000</td>
+              <td>по запросу</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </main>
+    <footer class="footer">
+      <div class="container"></div>
+    </footer>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+@media (max-width: 992px) {
+  .xs-x-scroll {
+    overflow-x: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -ms-scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0px;
+  }
+  .xs-x-scroll > * {
+    margin-bottom: 0 !important;
+  }
+  .xs-x-scroll > div:last-of-type {
+    min-width: 95%;
+    scroll-snap-align: start;
+    overflow-y: scroll;
+    padding: 0;
+  }
+  .xs-x-scroll > div:not(:last-of-type) {
+    min-width: 95%;
+    scroll-snap-align: start;
+    overflow-y: scroll;
+    -ms-flex-negative: inherit;
+    flex-shrink: inherit;
+    margin-right: 0.5rem;
+    padding: 0;
+  }
+}
+@media (max-width: 768px) {
+  .xs-x-scroll div {
+    margin-top: 0rem !important;
+  }
+}
+.blue {
+  background: var(--bs-primary);
+}
+
+.pink {
+  background: var(--bs-pink);
+}
+
+.c-white {
+  color: var(--bs-white);
+}
+
+.item-main {
+  border-radius: 8px;
+  min-height: 580px;
+}
+@media (max-width: 992px) {
+  .item-main {
+    min-height: 50vh;
+  }
+}
+@media (max-width: 768px) {
+  .item-main {
+    min-height: 100%;
+  }
+}
+.item-main__button {
+  margin-left: auto;
+  text-transform: uppercase;
+  pointer-events: none;
+  color: inherit;
+}
+.item-main__title {
+  font-family: Raleway;
+  font-size: 44px;
+  color: inherit;
+}
+@media (max-width: 1400px) {
+  .item-main__title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 768px) {
+  .item-main__title {
+    font-size: 21px;
+  }
+}
+.item-main__icon {
+  bottom: -3.5rem;
+  right: -3.5rem;
+  padding: 72px;
+  background: var(--transparent-icon);
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.item-main__icon svg {
+  width: 128px;
+  height: 128px;
+}
+.item-main__icon svg > use {
+  fill: var(--bs-white);
+}
+@media (max-width: 768px) {
+  .item-main__icon {
+    padding: 36px;
+    bottom: -1.5rem;
+    right: -1.5rem;
+  }
+  .item-main__icon svg {
+    width: 74px;
+    height: 74px;
+  }
+}/*# sourceMappingURL=section1.css.map */
