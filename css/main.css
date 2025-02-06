@@ -12501,7 +12501,6 @@ svg > use {
 .list {
   list-style-type: none;
   color: var(--bs-black);
-  padding-left: 1rem;
 }
 
 .default-dropdown.right {
@@ -12521,9 +12520,6 @@ svg > use {
     -webkit-box-shadow: none;
     box-shadow: none;
     border: none;
-    padding: 0;
-    gap: 8px;
-    margin-top: 8px;
     border-radius: 0;
   }
   .default-dropdown a {
@@ -12539,11 +12535,6 @@ svg > use {
 .default-dropdown a {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-}
-@media (max-width: 1500px) {
-  .default-dropdown a {
-    padding: 0.7rem 0.5rem;
-  }
 }
 @media (min-width: 992px) {
   .default-dropdown a:hover {
@@ -12580,9 +12571,7 @@ svg > use {
     transition: all 0.5s ease;
     -webkit-box-shadow: none;
     box-shadow: none;
-    padding: 0;
     border: none;
-    margin: 0;
   }
   .tab > .tab-list.active {
     max-height: 500px;
