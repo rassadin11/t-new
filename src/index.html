@@ -1,19 +1,157 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
-  @include('partials/head.html')
+@include('partials/head.html')
 
-  <body>
-    <div class="container">
-      @include('partials/header.html')
-      <main>
-        <div>
-          <input id="check1" type="checkbox" />
-          <label for="check1"></label>
+<body>
+  @include('partials/header.html')
+  @include('partials/post-header.html')
+  <div class="container">
+    <main>
+      <section class="default-margin">
+        <div class="row g-2 g-lg-3 add-scroll xs-x-scroll">
+          <div class="col-md-4 main-block__wrapper">
+            <div class="main-block__item item-main position-relative blue overflow-hidden p-5 c-white">
+              <button class="item-main__button btn pink fs-4 d-block">Интернет</button>
+              <p class="item-main__title fs-2 fw-bold mt-5">Бизнес интернет</p>
+              <p class="item-main__description c-white fs-3">Быстрый и надежный интернет для комфорта сотрудников и
+                клиентов
+                вашей
+                компании.</p>
+
+              <div class="item-main__icon rounded-circle position-absolute">
+                <svg>
+                  <use xlink:href="../img/svg/sprite.svg#block1_touch"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="main-block__item item-main position-relative pink overflow-hidden p-5 c-white">
+              <button class="item-main__button btn blue fs-4 d-block">Телефония</button>
+              <p class="item-main__title fs-2 fw-bold mt-5">SIP-телефония</p>
+              <p class="item-main__description c-white fs-3">
+                Подключение займет считанные минуты, а для связи с клиентами нужен только телефон или компьютер
+              </p>
+
+              <div class="item-main__icon rounded-circle position-absolute">
+                <svg>
+                  <use href="../img/svg/sprite.svg#block1_sip"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="main-block__item item-main position-relative blue overflow-hidden p-5 c-white">
+              <button class="item-main__button btn pink fs-4 d-block">Интернет</button>
+              <p class="item-main__title fs-2 fw-bold mt-5">Бизнес интернет</p>
+              <p class="item-main__description c-white fs-3">Быстрый и надежный интернет для комфорта сотрудников и
+                клиентов
+                вашей
+                компании.</p>
+
+              <div class="item-main__icon rounded-circle position-absolute">
+                <svg>
+                  <use href="../img/svg/sprite.svg#block1_touch"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
         </div>
-        <h2>Title</h2>
-      </main>
-      @include('partials/footer.html')
-      <!-- @include('html/h1.html') пример include -->
-    </div>
-  </body>
+      </section>
+
+      <div class="px-7">
+        <input id="check1" type="checkbox" class="checkbox-slide extra small" />
+        <label for="check1"></label>
+      </div>
+      <h1>H1</h1>
+      <h2>H2</h2>
+      <h3>H3</h3>
+      <h4>H4</h4>
+      <p>base</p>
+
+      <div class="table-responsive table-wrap">
+        <table class="table table-bordered">
+          <thead class="table-light">
+            <tr>
+              <th scope="col p-4">Провайдер</th>
+              <th scope="col p-4">Скорость (Мбит/c)</th>
+              <th scope="col p-4">Цена (₽/мес)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Р...</td>
+              <td>до 1000</td>
+              <td>по запросу</td>
+            </tr>
+            <tr>
+              <td>Р...</td>
+              <td>до 1000</td>
+              <td>по запросу</td>
+            </tr>
+            <tr>
+              <td>Р...</td>
+              <td>до 1000</td>
+              <td>по запросу</td>
+            </tr>
+            <tr>
+              <td>Р...</td>
+              <td>до 1000</td>
+              <td>по запросу</td>
+            </tr>
+            <tr>
+              <td>Р...</td>
+              <td>до 1000</td>
+              <td>по запросу</td>
+            </tr>
+            <tr>
+              <td>Р...</td>
+              <td>до 1000</td>
+              <td>по запросу</td>
+            </tr>
+            <tr>
+              <td>Р...</td>
+              <td>до 1000</td>
+              <td>по запросу</td>
+            </tr>
+            <tr>
+              <td>Р...</td>
+              <td>до 1000</td>
+              <td>по запросу</td>
+            </tr>
+            <tr>
+              <td>Р...</td>
+              <td>до 1000</td>
+              <td>по запросу</td>
+            </tr>
+            <tr>
+              <td>Р...</td>
+              <td>до 1000</td>
+              <td>по запросу</td>
+            </tr>
+            <tr>
+              <td>Р...</td>
+              <td>до 1000</td>
+              <td>по запросу</td>
+            </tr>
+            <tr>
+              <td>Р...</td>
+              <td>до 1000</td>
+              <td>по запросу</td>
+            </tr>
+            <tr>
+              <td>Р...</td>
+              <td>до 1000</td>
+              <td>по запросу</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </main>
+    @include('partials/footer.html')
+    <!-- @include('html/h1.html') пример include -->
+  </div>
+</body>
+
 </html>

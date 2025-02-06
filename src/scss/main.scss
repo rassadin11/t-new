@@ -1,3 +1,5 @@
+@import "./boostrap/bootstrap";
+
 // базовые подключения
 @import "vars";
 @import "mixins";
@@ -7,3 +9,5 @@
 // подключения компонентов страницы
 @import "./components/theme.scss";
 @import "./components/header";
+@import "./components/post-header.scss";
+@import "./components/section1.scss";

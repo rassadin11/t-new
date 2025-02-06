@@ -1,0 +1,114 @@
+// scroll snap
+@media (max-width: 992px) {
+  .xs-x-scroll {
+    overflow-x: auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0px;
+  }
+
+  .xs-x-scroll > * {
+    margin-bottom: 0 !important;
+  }
+
+  .xs-x-scroll > div:last-of-type {
+    min-width: 95%;
+    scroll-snap-align: start;
+    overflow-y: scroll;
+    padding: 0;
+  }
+
+  .xs-x-scroll > div:not(:last-of-type) {
+    min-width: 95%;
+    scroll-snap-align: start;
+    overflow-y: scroll;
+    flex-shrink: inherit;
+    margin-right: 0.5rem;
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .xs-x-scroll div {
+    margin-top: 0rem !important;
+  }
+}
+
+// base backgrounds and colors
+
+.blue {
+  background: var(--bs-primary);
+}
+
+.pink {
+  background: var(--bs-pink);
+}
+
+.c-white {
+  color: var(--bs-white);
+}
+
+// section styles
+
+.item-main {
+  border-radius: 8px;
+  min-height: 580px;
+
+  @media (max-width: 992px) {
+    min-height: 50vh;
+  }
+
+  @media (max-width: 768px) {
+    min-height: 100%;
+  }
+
+  &__button {
+    margin-left: auto;
+    text-transform: uppercase;
+    pointer-events: none;
+    color: inherit;
+  }
+
+  &__title {
+    font-family: Raleway;
+    font-size: 44px;
+    color: inherit;
+
+    @media (max-width: 1400px) {
+      font-size: 32px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 21px;
+    }
+  }
+
+  &__icon {
+    bottom: -3.5rem;
+    right: -3.5rem;
+    padding: 72px;
+    background: var(--transparent-icon);
+    box-sizing: content-box;
+
+    & svg {
+      width: 128px;
+      height: 128px;
+
+      & > use {
+        fill: var(--bs-white);
+      }
+    }
+
+    @media (max-width: 768px) {
+      padding: 36px;
+      bottom: -1.5rem;
+      right: -1.5rem;
+
+      & svg {
+        width: 74px;
+        height: 74px;
+      }
+    }
+  }
+}
