@@ -11895,7 +11895,7 @@ a {
 }
 
 body {
-  font-family: Open Sans;
+  font-family: "Open Sans", "Raleway", "Helvetica";
   line-height: 1.2;
   color: var(--bs-black);
 }
@@ -11928,6 +11928,7 @@ body {
 }
 .table-wrap::-webkit-scrollbar {
   width: 6px;
+  height: 6px;
 }
 .table-wrap::-webkit-scrollbar-track {
   background: rgba(77, 94, 255, 0.2);
@@ -11936,6 +11937,7 @@ body {
 .table-wrap::-webkit-scrollbar-thumb {
   background: #8d93cf;
   width: 6px;
+  height: 6px;
   border-radius: 100px;
 }
 
@@ -12451,7 +12453,7 @@ svg > use {
     gap: 0.5rem;
   }
   .uslugi .uslugi__item > *:not(.item-uslugi__title) {
-    display: none;
+    display: none !important;
   }
   .uslugi .item-uslugi__title {
     min-height: auto;
