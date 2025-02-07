@@ -105,24 +105,24 @@ function configScreen(item) {
 
             children[count + 1].querySelectorAll(':scope > li').forEach(item => {
                 if (!item.querySelector('ul')) {
-                    lis += `<li class="sub-list__item"><a class="dropdown-item" href="#">${item.querySelector('a').innerHTML}</a></li>`
+                    lis += `<li class="sub-list__item"><a class="dropdown-item py-3 px-4" href="#">${item.querySelector('a').innerHTML}</a></li>`
                 } else {
                     let temp;
                     const deep_li = item.querySelectorAll('li')
 
                     deep_li.forEach(elem => {
-                        temp = `<li class="sub-list__item deep-list w-100"><a class="dropdown-item" href="#">${elem.querySelector('a').innerHTML}</a></li>`
+                        temp = `<li class="sub-list__item deep-list w-100"><a class="dropdown-item py-3 px-4" href="#">${elem.querySelector('a').innerHTML}</a></li>`
                     })
 
                     lis += `
-                        <a class="nested-dropdown align-items-center d-flex tab-title nav-link sub-list__link justify-content-between" href="#" role="button">
+                        <a class="nested-dropdown align-items-center d-flex tab-title nav-link c-white gap-3 py-2 px-3 sub-list__link justify-content-between" href="#" role="button">
                             <span>${item.querySelector('a').innerHTML}</span>
                             <svg class="menu__arrow-dropdown">
                                 <use href="./img/svg/sprite.svg#menu_arrow"></use>
                             </svg>
                         </a>
 
-                        <ul class="dropdown-menu header__dropdown default-dropdown right list tab-list deep-ul d-block overflow-hidden" aria-labelledby="menu3">
+                        <ul class="dropdown-menu header__dropdown default-dropdown right list tab-list p-0 gap-2 deep-ul d-block overflow-hidden mb-0" aria-labelledby="menu3">
                            ${temp}
                         </ul>
                     `
@@ -130,14 +130,14 @@ function configScreen(item) {
             })
 
             li.insertAdjacentHTML('beforeend', `
-                <a class="align-items-center d-flex tab-title nav-link sub-list__link justify-content-between" href="#" role="button">
+                <a class="align-items-center d-flex tab-title nav-link c-white gap-3 py-2 px-3 sub-list__link justify-content-between" href="#" role="button">
 					<span>${children[count].innerHTML}</span>
 					<svg class="menu__arrow-dropdown">
 						<use href="./img/svg/sprite.svg#menu_arrow"></use>
 					</svg>
 				</a>
 
-				<ul class="dropdown-menu header__dropdown default-dropdown right list tab-list" aria-labelledby="menu3">
+				<ul class="dropdown-menu header__dropdown default-dropdown right gap-2 list tab-list p-0 mb-0" aria-labelledby="menu3">
                     ${lis}
 				</ul>
             `)
@@ -145,7 +145,7 @@ function configScreen(item) {
             count += 2;
         } else {
             li.insertAdjacentHTML('beforeend', `
-                <a class="align-items-center d-flex nav-link" href="${children[count].href}" role="button">
+                <a class="align-items-center d-flex nav-link c-white" href="${children[count].href}" role="button">
 					${children[count].innerHTML}
 				</a>`)
             count++;
@@ -302,13 +302,13 @@ tabsServices.forEach((tab, index) => {
             if (index !== idx) {
                 item.classList.remove('active')
                 item.querySelector('.tab-title').classList.remove('active')
-                item.querySelector('.tab-list').classList.remove('active');
+                item.querySelector('.tab-list p-0').classList.remove('active');
             }
         })
 
         tab.classList.toggle('active')
         tab.querySelector('.tab-title').classList.toggle('active')
-        tab.querySelector('.tab-list').classList.toggle('active');
+        tab.querySelector('.tab-list p-0').classList.toggle('active');
     })
 })
 

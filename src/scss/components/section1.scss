@@ -52,7 +52,7 @@
 // section styles
 
 .item-main {
-  border-radius: 8px;
+  border-radius: 0.5rem;
   min-height: 580px;
 
   @media (max-width: 992px) {
@@ -68,19 +68,29 @@
     text-transform: uppercase;
     pointer-events: none;
     color: inherit;
+    border-radius: 0.5rem;
+
+    @media (max-width: 992px) {
+      font-size: 16px !important;
+    }
   }
 
   &__title {
     font-family: Raleway;
-    font-size: 44px;
     color: inherit;
 
     @media (max-width: 1400px) {
-      font-size: 32px;
+      font-size: 32px !important;
     }
 
     @media (max-width: 768px) {
-      font-size: 21px;
+      font-size: 21px !important;
+    }
+  }
+
+  &__description {
+    @media (max-width: 768px) {
+      font-size: 16px !important;
     }
   }
 

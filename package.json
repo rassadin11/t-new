@@ -12,9 +12,10 @@
     "build": "npm run stylelint && npm run code && gulp build --build",
     "cache": "gulp cache",
     "backend": "gulp backend",
-    "zip": "gulp zip --build"
+    "zip": "gulp zip --build",
+    "deploy": "gh-pages -d app"
   },
-  "author": "MaxGraph",
+  "author": "Artyom",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.24.4",
@@ -58,6 +59,7 @@
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "aos": "^2.3.4",
+    "gh-pages": "^6.3.0",
     "graph-modal": "^1.0.7",
     "graph-tabs": "^1.0.2",
     "imask": "^7.6.1",
