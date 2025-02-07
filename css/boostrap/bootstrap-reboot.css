@@ -59,38 +59,43 @@ h1 {
 }
 
 h2 {
-  font-size: calc(1.345rem + 1.14vw);
+  font-size: calc(1.4rem + 1.8vw);
 }
 @media (min-width: 1200px) {
   h2 {
-    font-size: 2.2rem;
+    font-size: 2.75rem;
   }
 }
 
 h3 {
-  font-size: calc(1.3rem + 0.6vw);
+  font-size: calc(1.345rem + 1.14vw);
 }
 @media (min-width: 1200px) {
   h3 {
-    font-size: 1.75rem;
+    font-size: 2.2rem;
   }
 }
 
 h4 {
-  font-size: calc(1.256rem + 0.072vw);
+  font-size: calc(1.3rem + 0.6vw);
 }
 @media (min-width: 1200px) {
   h4 {
-    font-size: 1.31rem;
+    font-size: 1.75rem;
   }
 }
 
 h5 {
-  font-size: 1.25rem;
+  font-size: calc(1.256rem + 0.072vw);
+}
+@media (min-width: 1200px) {
+  h5 {
+    font-size: 1.31rem;
+  }
 }
 
 h6 {
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 p {

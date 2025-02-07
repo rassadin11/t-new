@@ -1346,22 +1346,26 @@
 }
 
 .fs-2 {
-  font-size: calc(1.345rem + 1.14vw) !important;
+  font-size: calc(1.4rem + 1.8vw) !important;
 }
 
 .fs-3 {
-  font-size: calc(1.3rem + 0.6vw) !important;
+  font-size: calc(1.345rem + 1.14vw) !important;
 }
 
 .fs-4 {
-  font-size: calc(1.256rem + 0.072vw) !important;
+  font-size: calc(1.3rem + 0.6vw) !important;
 }
 
 .fs-5 {
-  font-size: 1.25rem !important;
+  font-size: calc(1.256rem + 0.072vw) !important;
 }
 
 .fs-6 {
+  font-size: 1.25rem !important;
+}
+
+.fs-7 {
   font-size: 1rem !important;
 }
 
@@ -5023,12 +5027,15 @@
     font-size: 4.18rem !important;
   }
   .fs-2 {
-    font-size: 2.2rem !important;
+    font-size: 2.75rem !important;
   }
   .fs-3 {
-    font-size: 1.75rem !important;
+    font-size: 2.2rem !important;
   }
   .fs-4 {
+    font-size: 1.75rem !important;
+  }
+  .fs-5 {
     font-size: 1.31rem !important;
   }
 }

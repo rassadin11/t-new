@@ -4551,22 +4551,22 @@ function configScreen(item) {
       let lis = '';
       children[count + 1].querySelectorAll(':scope > li').forEach(item => {
         if (!item.querySelector('ul')) {
-          lis += `<li class="sub-list__item"><a class="dropdown-item mb-2 py-3 px-4" href="#">${item.querySelector('a').innerHTML}</a></li>`;
+          lis += `<li class="sub-list__item"><a class="dropdown-item py-3 px-4" href="#">${item.querySelector('a').innerHTML}</a></li>`;
         } else {
           let temp;
           const deep_li = item.querySelectorAll('li');
           deep_li.forEach(elem => {
-            temp = `<li class="sub-list__item deep-list w-100"><a class="dropdown-item mb-2 py-3 px-4" href="#">${elem.querySelector('a').innerHTML}</a></li>`;
+            temp = `<li class="sub-list__item deep-list w-100"><a class="dropdown-item py-3 px-4" href="#">${elem.querySelector('a').innerHTML}</a></li>`;
           });
           lis += `
-                        <a class="nested-dropdown align-items-center d-flex tab-title nav-link sub-list__link justify-content-between mb-2 py-3 px-4" href="#" role="button">
+                        <a class="nested-dropdown align-items-center d-flex tab-title nav-link sub-list__link justify-content-between py-3 px-4" href="#" role="button">
                             <span>${item.querySelector('a').innerHTML}</span>
                             <svg class="menu__arrow-dropdown">
                                 <use href="./img/svg/sprite.svg#menu_arrow"></use>
                             </svg>
                         </a>
 
-                        <ul class="dropdown-menu header__dropdown default-dropdown right list tab-list p-0 gap-2 deep-ul d-block overflow-hidden" aria-labelledby="menu3">
+                        <ul class="dropdown-menu header__dropdown default-dropdown right list tab-list p-0 gap-2 deep-ul d-block overflow-hidden mb-0" aria-labelledby="menu3">
                            ${temp}
                         </ul>
                     `;
@@ -4580,7 +4580,7 @@ function configScreen(item) {
 					</svg>
 				</a>
 
-				<ul class="dropdown-menu header__dropdown default-dropdown right list tab-list p-0" aria-labelledby="menu3">
+				<ul class="dropdown-menu header__dropdown default-dropdown right gap-2 list tab-list p-0 mb-0" aria-labelledby="menu3">
                     ${lis}
 				</ul>
             `);
