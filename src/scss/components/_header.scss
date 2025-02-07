@@ -235,7 +235,7 @@ svg > use {
 .nav-link {
   @media (min-width: 992px) {
     &:hover {
-      color: inherit;
+      color: var(--bs-white);
       background: var(--transparent-white-link);
     }
   }
@@ -633,6 +633,13 @@ svg > use {
 }
 
 .sub-list__link {
+  @media (min-width: 992px) {
+    &:hover {
+      background: var(--bs-primary);
+      color: var(--bs-white);
+    }
+  }
+
   &.active {
     background: var(--bs-primary);
     color: var(--bs-white);
