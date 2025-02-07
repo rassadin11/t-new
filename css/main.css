@@ -12082,9 +12082,6 @@ svg > use {
   background: var(--bs-primary);
   z-index: 10;
 }
-.header .nav-item > a {
-  color: var(--bs-white);
-}
 
 .dropdown-submenu .dropdown-menu {
   top: 0;
@@ -12154,14 +12151,10 @@ svg > use {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 1rem;
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     position: relative;
-  }
-  .header__menu .navbar-nav .nav-item {
-    padding: 0 !important;
   }
   .header__menu .navbar-nav .nav-item a:not(.dropdown-item) {
     color: var(--bs-dark);
@@ -12255,24 +12248,10 @@ svg > use {
   backdrop-filter: blur(0px);
 }
 
-.mobile-header-menu {
-  display: none;
-}
 @media (max-width: 1500px) {
   .mobile-header-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
     background: var(--bs-white);
-    padding: 1rem;
     border-bottom: 1px solid var(--border-light);
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
   }
 }
 
@@ -12316,19 +12295,6 @@ svg > use {
   -ms-flex-positive: inherit;
   flex-grow: inherit;
 }
-.header-container .navbar-collapse .navbar-nav {
-  gap: 1.1rem;
-}
-@media (max-width: 1500px) {
-  .header-container .navbar-collapse .navbar-nav {
-    gap: 4px;
-  }
-}
-@media (max-width: 1500px) {
-  .header-container {
-    padding: 1rem 0;
-  }
-}
 
 .logo {
   height: 57px;
@@ -12338,7 +12304,6 @@ svg > use {
   .logo {
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
-    padding: 10px 0;
   }
 }
 @media (max-width: 768px) {
@@ -12377,9 +12342,6 @@ svg > use {
   box-shadow: 0px 4px 10px var(--transparent-box-shadow);
 }
 
-.nav-link {
-  gap: 12px;
-}
 @media (min-width: 992px) {
   .nav-link:hover {
     color: inherit;
@@ -12394,11 +12356,6 @@ svg > use {
 @media (min-width: 1500px) {
   .nav-link {
     border-radius: 6px;
-  }
-}
-@media (max-width: 1500px) {
-  .nav-link {
-    padding: 0.5rem 1rem;
   }
 }
 
@@ -12427,9 +12384,6 @@ svg > use {
   display: block;
 }
 
-.uslugi {
-  padding: 2rem;
-}
 .uslugi > * {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 calc(20% - 8px);
@@ -12448,9 +12402,6 @@ svg > use {
     border: none;
     -webkit-box-shadow: none;
     box-shadow: none;
-    padding: 0;
-    margin: 8px 0;
-    gap: 0.5rem;
   }
   .uslugi .uslugi__item > *:not(.item-uslugi__title) {
     display: none !important;
@@ -12481,12 +12432,11 @@ svg > use {
   background: var(--bs-gray);
   border-radius: 0.5rem;
   min-height: 70px;
-  padding: 0 14px;
-  gap: 7px;
 }
 @media (max-width: 1500px) {
   .item-uslugi__title {
     font-size: 16px;
+    padding-right: 30px !important;
   }
 }
 
@@ -12505,11 +12455,6 @@ svg > use {
 
 .item-uslugi__default {
   font-weight: 600;
-}
-@media (max-width: 1500px) {
-  .item-uslugi__default {
-    display: none !important;
-  }
 }
 
 .list {
@@ -12616,9 +12561,6 @@ svg > use {
   }
 }
 
-.dropdown-menu {
-  padding: 1rem;
-}
 @media (max-width: 1500px) {
   .dropdown-menu {
     position: static;
@@ -12653,18 +12595,7 @@ svg > use {
 }
 
 .mobile-elems {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   gap: 20px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-@media (min-width: 1500px) {
-  .mobile-elems {
-    display: none;
-  }
 }
 
 .mobile-icon {
@@ -12705,9 +12636,6 @@ svg > use {
   }
 }
 
-.mobile-title {
-  font-size: 16px;
-}
 @media (max-width: 992px) {
   .mobile-title {
     font-size: 12px;
@@ -12737,17 +12665,11 @@ svg > use {
   background: var(--bs-primary);
   font-weight: 600;
   line-height: 18px;
-  color: var(--bs-white);
   text-decoration: none;
   position: sticky;
   bottom: 0;
   width: 100%;
   z-index: 100;
-}
-@media (min-width: 992px) {
-  .private-cabinet:hover {
-    color: var(--bs-white);
-  }
 }
 
 .menu-mobile__dropdown-arrow {
@@ -12759,11 +12681,6 @@ svg > use {
   width: 10px;
   height: 8px;
 }
-@media (min-width: 1500px) {
-  .menu-mobile__dropdown-arrow {
-    display: none;
-  }
-}
 .menu-mobile__dropdown-arrow use {
   stroke: var(--bs-black);
   stroke-width: 2px;
@@ -12774,19 +12691,11 @@ svg > use {
   color: var(--bs-primary);
   font-weight: 600;
 }
-@media (min-width: 1500px) {
-  .mobile-telephone {
-    display: none;
-  }
-}
 
-.mobile__sub-menu {
-  display: none;
-}
 .mobile__sub-menu.active {
   position: absolute;
   top: 0;
-  display: block;
+  display: block !important;
   width: 100%;
   height: 100%;
   background: var(--bs-light);
@@ -12817,7 +12726,6 @@ svg > use {
     border: none;
     list-style-type: none;
     background: var(--bs-light);
-    padding: 1rem;
   }
   .sub-list a {
     line-height: 22px;
