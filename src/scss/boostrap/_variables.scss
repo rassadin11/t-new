@@ -1148,13 +1148,13 @@ $card-group-margin: $grid-gutter-width / 2 !default;
 // Accordion
 
 // scss-docs-start accordion-variables
-$accordion-padding-y: 1rem !default;
-$accordion-padding-x: 1.25rem !default;
+$accordion-padding-y: 0.75rem !default;
+$accordion-padding-x: 1rem !default;
 $accordion-color: $body-color !default;
 $accordion-bg: $body-bg !default;
 $accordion-border-width: $border-width !default;
-$accordion-border-color: rgba($black, 0.125) !default;
-$accordion-border-radius: $border-radius !default;
+$accordion-border-color: transparent !default;
+$accordion-border-radius: 0.5rem !default;
 $accordion-inner-border-radius: subtract(
   $accordion-border-radius,
   $accordion-border-width
@@ -1165,23 +1165,28 @@ $accordion-body-padding-x: $accordion-padding-x !default;
 
 $accordion-button-padding-y: $accordion-padding-y !default;
 $accordion-button-padding-x: $accordion-padding-x !default;
-$accordion-button-color: $accordion-color !default;
-$accordion-button-bg: $accordion-bg !default;
+$accordion-button-color: $white !default;
+$accordion-button-bg: $primary !default;
 $accordion-transition: $btn-transition, border-radius 0.15s ease !default;
-$accordion-button-active-bg: tint-color($component-active-bg, 90%) !default;
-$accordion-button-active-color: shade-color($primary, 10%) !default;
+$accordion-button-active-bg: $primary !default;
+$accordion-button-active-color: $white !default;
 
 $accordion-button-focus-border-color: $input-focus-border-color !default;
 $accordion-button-focus-box-shadow: $btn-focus-box-shadow !default;
 
-$accordion-icon-width: 1.25rem !default;
-$accordion-icon-color: $accordion-color !default;
-$accordion-icon-active-color: $accordion-button-active-color !default;
+// small accordion
+$accordion-icon-width: 10px !default;
+$accordion-icon-height: 7px !default;
+$accordion-icon-color: $white !default;
+$accordion-icon-active-color: $white !default;
 $accordion-icon-transition: transform 0.2s ease-in-out !default;
 $accordion-icon-transform: rotate(-180deg) !default;
 
-$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default;
-$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default;
+// $accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M10.5L54.5L90.5'/></svg>") !default;
+// $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M10.5L54.5L90.5'/></svg>") !default;
+
+$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6' fill='transparent' stroke-width='2px' stroke='#{$accordion-icon-color}'><path d='M1 0.5L5 4.5L9 0.5'/></svg>");
+$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6' fill='transparent' stroke-width='2px' stroke='#{$accordion-icon-active-color}'><path d='M1 0.5L5 4.5L9 0.5'/></svg>");
 // scss-docs-end accordion-variables
 
 // Tooltips

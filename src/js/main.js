@@ -1,4 +1,4 @@
-import './_components.js';
+
 import IMask from 'imask';
 
 // input
