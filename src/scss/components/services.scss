@@ -42,3 +42,11 @@
 .item-services__description {
   font-size: 19px;
 }
+
+.item-accordion {
+  background: var(--bs-gray);
+  border-top-left-radius: calc(0.5rem - 1px);
+  border-top-right-radius: calc(0.5rem - 1px);
+  border-bottom-right-radius: calc(0.5rem - 1px);
+  border-bottom-left-radius: calc(0.5rem - 1px);
+}

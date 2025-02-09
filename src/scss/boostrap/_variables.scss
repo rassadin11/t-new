@@ -391,6 +391,7 @@ $border-color: $gray-300 !default;
 $border-radius: 0.25rem !default;
 $border-radius-sm: 0.2rem !default;
 $border-radius-lg: 0.3rem !default;
+$border-radius-xl: 0.5rem !default;
 $border-radius-pill: 50rem !default;
 // scss-docs-end border-radius-variables
 
@@ -463,7 +464,7 @@ $line-height-lg: 2 !default;
 
 $h1-font-size: $font-size-base * 4.18 !default;
 $h2-font-size: $font-size-base * 2.75 !default;
-$h3-font-size: $font-size-base * 2.2 !default;
+$h3-font-size: $font-size-base * 2.375 !default;
 $h4-font-size: $font-size-base * 1.75 !default;
 $h5-font-size: $font-size-base * 1.31 !default;
 $h6-font-size: $font-size-base * 1.25 !default;
@@ -666,6 +667,7 @@ $btn-link-disabled-color: $gray-600 !default;
 $btn-border-radius: $border-radius !default;
 $btn-border-radius-sm: $border-radius-sm !default;
 $btn-border-radius-lg: $border-radius-lg !default;
+$btn-border-radius-xl: $border-radius-xl !default;
 
 $btn-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
   border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !default;
@@ -945,6 +947,7 @@ $form-validation-states: (
 // of components dependent on the z-axis and are designed to all work together.
 
 // scss-docs-start zindex-stack
+$zindex-background: -1 !default;
 $zindex-dropdown: 1000 !default;
 $zindex-sticky: 1020 !default;
 $zindex-fixed: 1030 !default;

@@ -1,4 +1,3 @@
-
 import IMask from 'imask';
 
 // input
