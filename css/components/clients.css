@@ -1,0 +1,6 @@
+@media (max-width: 768px) {
+  .clients {
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}/*# sourceMappingURL=clients.css.map */

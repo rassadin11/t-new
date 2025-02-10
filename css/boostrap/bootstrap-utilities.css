@@ -1350,7 +1350,7 @@
 }
 
 .fs-3 {
-  font-size: calc(1.345rem + 1.14vw) !important;
+  font-size: calc(1.3625rem + 1.35vw) !important;
 }
 
 .fs-4 {
@@ -1613,7 +1613,11 @@
 }
 
 .rounded-3 {
-  border-radius: 0.3rem !important;
+  border-radius: 0.375rem !important;
+}
+
+.rounded-4 {
+  border-radius: 0.5rem !important;
 }
 
 .rounded-circle {
@@ -5030,7 +5034,7 @@
     font-size: 2.75rem !important;
   }
   .fs-3 {
-    font-size: 2.2rem !important;
+    font-size: 2.375rem !important;
   }
   .fs-4 {
     font-size: 1.75rem !important;

@@ -1,0 +1,55 @@
+.numbers {
+  background: var(--bs-gray);
+  padding: 2.5rem;
+  margin-top: 6rem;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (auto)[1];
+  grid-template-rows: repeat(1, auto);
+}
+@media (max-width: 992px) {
+  .numbers {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (auto)[2];
+    grid-template-rows: repeat(2, auto);
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .numbers {
+    margin-top: 1rem;
+    padding: 1rem 0.5rem;
+    gap: 1.25rem !important;
+  }
+}
+
+.item-numbers__number {
+  font-size: 6.25rem;
+  line-height: 1.36;
+}
+@media (max-width: 1200px) {
+  .item-numbers__number {
+    font-size: 4.6875rem;
+  }
+}
+@media (max-width: 768px) {
+  .item-numbers__number {
+    font-size: 2.875rem;
+  }
+}
+.item-numbers__text {
+  font-size: 1.75rem;
+  line-height: 1.3;
+  color: var(--bs-black);
+}
+@media (max-width: 1200px) {
+  .item-numbers__text {
+    font-size: 1.375rem;
+  }
+}
+@media (max-width: 768px) {
+  .item-numbers__text {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=numbers.css.map */

@@ -1,0 +1,24 @@
+.banner {
+  padding: 6rem;
+  padding-bottom: 8rem;
+}
+.banner__background {
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.banner__title {
+  font-family: Raleway;
+  font-size: 90px;
+}
+.banner__description {
+  width: 70%;
+}
+.banner__btn {
+  border: 1px solid var(--bs-white);
+  background: transparent;
+}
+.banner__btn.fill {
+  color: var(--bs-black);
+  background: var(--bs-white);
+}/*# sourceMappingURL=banner.css.map */

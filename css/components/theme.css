@@ -6,6 +6,7 @@
   --dark-color: #212529;
   --dark-blue-color: #3f4cca;
   --bright-pink-color: #c22e91;
+  --transparent-background-dark: rgba(0, 0, 0, 0.4);
   --transparent-background: rgba(0, 0, 0, 0.3);
   --transparent-l-background: rgba(0, 0, 0, 0.1);
   --transparent-box-shadow: rgba(0, 0, 0, 0.12);
@@ -17,17 +18,25 @@
   --transparent-checkbox-pink: rgba(255, 77, 237, 0.2);
   --transparent-checkbox-bright-pink: rgba(255, 77, 237, 0.4);
   --transparent-icon: rgba(204, 210, 255, 0.3);
+  --transparent-icon-background: rgba(0, 0, 0, 0.06);
   --border-light: #8e94cf;
   --arrow-border: #ccd2ff;
   --footer-color: #8d93cf;
   --light-pink: #e097c7;
   --gray-link: #333;
+  --dark-gray: #303030;
 }
 
 body {
   font-family: "Open Sans", "Raleway", "Helvetica";
   line-height: 1.2;
   color: var(--bs-black);
+  background-color: var(--bs-light);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .default-margin {
@@ -46,6 +55,17 @@ body {
 
 .title {
   font-family: "Raleway";
+}
+
+@media (max-width: 768px) {
+  .fs-1 {
+    font-size: 44px !important;
+  }
+}
+@media (max-width: 500px) {
+  .fs-1 {
+    font-size: 21px !important;
+  }
 }
 
 .table-light th {
@@ -84,6 +104,11 @@ p {
   p {
     font-size: 12px;
   }
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 .checkbox-slide:checked,
@@ -205,5 +230,14 @@ p {
 @media (max-width: 768px) {
   .checkbox-slide.extra:checked + label:before {
     background: var(--bs-primary);
+  }
+}
+
+@media (max-width: 1500px) {
+  .dropdown-item:hover {
+    background-color: inherit !important;
+  }
+  .nav-link:focus {
+    color: inherit !important;
   }
 }/*# sourceMappingURL=theme.css.map */
