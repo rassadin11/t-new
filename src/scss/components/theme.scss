@@ -21,6 +21,7 @@
   --transparent-checkbox-pink: rgba(255, 77, 237, 0.2);
   --transparent-checkbox-bright-pink: rgba(255, 77, 237, 0.4);
   --transparent-icon: rgba(204, 210, 255, 0.3);
+  --transparent-icon-background: rgba(0, 0, 0, 0.06);
   --border-light: #8e94cf;
   --arrow-border: #ccd2ff;
   --footer-color: #8d93cf;
@@ -34,6 +35,10 @@ body {
   line-height: 1.2;
   color: var(--bs-black);
   background-color: var(--bs-light);
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .default-margin {

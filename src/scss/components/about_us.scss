@@ -1,15 +1,12 @@
 .about_us {
-  grid-template-rows: fit-content(40%) auto;
+  grid-template-rows: fit-content(0%) auto;
+  grid-template-columns: repeat(12, 1fr);
 
   &__item:first-child {
     grid-column: 1 / 7;
     background: var(--transparent-pink-light);
     font-family: Raleway;
     color: var(--bs-black);
-
-    @media (min-width: 992px) {
-      padding: 2.5rem !important;
-    }
 
     @media (max-width: 1600px) {
       grid-column: 1 / 13;
