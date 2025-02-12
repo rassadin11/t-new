@@ -4546,7 +4546,7 @@ function configScreen(item) {
             temp = `<li class="sub-list__item deep-list me-3 w-100"><a class="dropdown-item py-3 px-4" href="#">${elem.querySelector('a').innerHTML}</a></li>`;
           });
           lis += `
-                        <a class="nested-dropdown align-items-center d-flex tab-title nav-link gap-3 py-2 px-3 sub-list__link justify-content-between" href="#" role="button">
+                        <a class="nested-dropdown align-items-center d-flex tab-title nav-link gap-3 py-3 px-4 sub-list__link justify-content-between" href="#" role="button">
                             <span>${item.querySelector('a').innerHTML}</span>
                             <svg class="menu__arrow-dropdown">
                                 <use href="./img/svg/sprite.svg#menu_arrow"></use>
@@ -4560,7 +4560,7 @@ function configScreen(item) {
         }
       });
       li.insertAdjacentHTML('beforeend', `
-                <a class="align-items-center d-flex tab-title nav-link gap-3 py-2 px-3 sub-list__link justify-content-between" href="#" role="button">
+                <a class="align-items-center d-flex tab-title nav-link gap-3 py-3 px-4 sub-list__link justify-content-between" href="#" role="button">
 					<span>${children[count].innerHTML}</span>
 					<svg class="menu__arrow-dropdown">
 						<use href="./img/svg/sprite.svg#menu_arrow"></use>
