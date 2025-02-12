@@ -4503,7 +4503,7 @@ function dropdownMenu() {
     uslugi.forEach(item => {
       item.addEventListener('click', e => {
         document.querySelector('.mobile__sub-menu').classList.toggle('active');
-        document.querySelector('.header__menu .navbar-nav').classList.add('overflow-hidden');
+        document.querySelector('.navbar-collapse').classList.add('overflow-hidden');
         configScreen(item);
         e.stopPropagation();
         e.preventDefault();
@@ -4616,7 +4616,7 @@ function configScreen(item) {
 }
 document.querySelector('.sub-menu__arrow-dropdown').addEventListener('click', () => {
   document.querySelector('.mobile__sub-menu').classList.remove('active');
-  document.querySelector('.header__menu .navbar-nav').classList.remove('overflow-hidden');
+  document.querySelector('.navbar-collapse').classList.remove('overflow-hidden');
 });
 
 // burger large screens
@@ -4645,6 +4645,7 @@ function changeMenu() {
     item.querySelector('.dropdown-menu').classList.remove('active');
     setTimeout(() => {
       document.querySelector('.mobile__sub-menu').classList.remove('active');
+      document.querySelector('.navbar-collapse').classList.remove('overflow-hidden');
     }, 300);
   });
 }
