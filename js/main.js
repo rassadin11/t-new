@@ -4718,11 +4718,11 @@ if (matchMedia('only screen and (min-width: 991px)').matches) {
   let mapIcon = document.querySelector('.map1 > img');
   let mapDots = document.querySelector('.map-dots');
   let coords = [{
-    position: [52, 7],
+    position: [53, 8],
     text: 'г. Ростов-на-Дону',
     size: 12
   }, {
-    position: [22, 15],
+    position: [23, 15.5],
     text: 'г. Санкт-Петербург',
     size: 15
   }, {
@@ -4734,19 +4734,19 @@ if (matchMedia('only screen and (min-width: 991px)').matches) {
     text: 'г. Москва',
     size: 20
   }, {
-    position: [77, 41.5],
+    position: [80, 41.5],
     text: 'г. Барнаул',
     size: 12
   }, {
-    position: [72, 41],
+    position: [75, 41],
     text: 'г. Новосибирск',
     size: 12
   }, {
-    position: [42.5, 17],
+    position: [35.5, 22],
     text: 'г. Нижний Новгород',
     size: 12
   }, {
-    position: [65, 34.5],
+    position: [71, 34.5],
     text: 'г. Омск',
     size: 12
   }, {
@@ -4758,11 +4758,11 @@ if (matchMedia('only screen and (min-width: 991px)').matches) {
     text: 'г. Самара',
     size: 12
   }, {
-    position: [74, 43.5],
+    position: [75, 43.5],
     text: 'г. Кемерово',
     size: 12
   }, {
-    position: [53, 4],
+    position: [61, 5],
     text: 'г. Краснодар',
     size: 12
   }, {
@@ -4997,6 +4997,10 @@ if (matchMedia('only screen and (min-width: 991px)').matches) {
     });
   });
 }
+const yandexMap = document.querySelector('.map-disable');
+yandexMap.addEventListener('click', () => {
+  yandexMap.classList.add('active');
+});
 
 // // arrow
 

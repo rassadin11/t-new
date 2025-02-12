@@ -96,9 +96,17 @@
 
 .sale__link {
   font-family: var(--bs-inter);
+  border: 1px solid var(--bs-white);
+  background: transparent;
   font-weight: 600;
-  background: var(--bs-white);
   z-index: 2;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.sale__link:hover {
+  color: var(--bs-primary) !important;
+  background: var(--bs-white);
+  border: 1px solid transparent;
 }
 @media (max-width: 768px) {
   .sale__link {

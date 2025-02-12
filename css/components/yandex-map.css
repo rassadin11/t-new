@@ -1,0 +1,12 @@
+.map-disable {
+  background: var(--bs-blue);
+  top: 0;
+  left: 0;
+  z-index: 100000;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.map-disable.active {
+  opacity: 0;
+  visibility: hidden;
+}/*# sourceMappingURL=yandex-map.css.map */

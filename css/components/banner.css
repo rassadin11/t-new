@@ -17,8 +17,10 @@
 .banner__btn {
   border: 1px solid var(--bs-white);
   background: transparent;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
-.banner__btn.fill {
-  color: var(--bs-black);
+.banner__btn:hover {
+  color: var(--bs-black) !important;
   background: var(--bs-white);
 }/*# sourceMappingURL=banner.css.map */

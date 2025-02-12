@@ -98,6 +98,7 @@ p {
   font-size: 1rem;
   line-height: 1.3;
   color: var(--bs-black);
+  font-variant-numeric: lining-nums;
 }
 @media (max-width: 768px) {
   p {
