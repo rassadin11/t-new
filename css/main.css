@@ -12409,7 +12409,7 @@ svg > use {
 }
 
 .collapse_header:not(.show) {
-  display: block;
+  display: block !important;
 }
 
 .uslugi > * {
@@ -13261,11 +13261,6 @@ svg > use {
   color: var(--bs-primary) !important;
   background: var(--bs-white);
   border: 1px solid transparent;
-}
-@media (max-width: 768px) {
-  .sale__link {
-    border: 1px solid var(--dark-blue-color);
-  }
 }
 
 .sale__image {

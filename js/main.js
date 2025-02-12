@@ -4490,6 +4490,7 @@ function dropdownMenu() {
               elem.classList.remove('active');
               elem.querySelector('.nav-link').classList.remove('active');
               elem.querySelector('.dropdown-menu').classList.remove('active');
+              elem.querySelector(".menu__arrow-dropdown").classList.remove('active');
             }
           });
         }
@@ -4505,6 +4506,7 @@ function dropdownMenu() {
         document.querySelector('.header__menu .navbar-nav').classList.add('overflow-hidden');
         configScreen(item);
         e.stopPropagation();
+        e.preventDefault();
       });
     });
     const links = document.querySelectorAll(".nav-link");
@@ -4649,12 +4651,17 @@ function changeMenu() {
 burger.addEventListener('click', () => {
   if (!isBurgerOpen) {
     document.body.classList.remove('overflow-hidden');
-    changeMenu();
   } else {
     burger.classList.add('active');
     menu.classList.add('active');
     background.classList.add('active');
     document.body.classList.add('overflow-hidden');
+    dropdowns.forEach(item => {
+      item.classList.remove('active');
+      item.querySelector('.nav-link').classList.remove('active');
+      item.querySelector('.dropdown-menu').classList.remove('active');
+      item.querySelector(".menu__arrow-dropdown").classList.remove('active');
+    });
   }
 });
 cross.forEach(item => {
