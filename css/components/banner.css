@@ -8,8 +8,8 @@
   z-index: -1;
 }
 .banner__title {
-  font-family: Raleway;
-  font-size: 90px;
+  font-family: var(--bs-raleway);
+  font-size: 5.625rem;
 }
 .banner__description {
   width: 70%;

@@ -381,11 +381,11 @@
 }
 @media (max-width: 768px) {
   .footer-grid__pre-title {
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 .footer-grid__title a {
-  font-family: Raleway;
+  font-family: var(--bs-raleway);
   font-weight: 500;
   color: var(--bs-dark);
   font-variant-numeric: lining-nums;

@@ -20,7 +20,7 @@
   background: transparent;
 }
 .search-input__wrapper:hover {
-  background: rgba(77, 94, 255, 0.2);
+  background: var(--bs-blue);
 }
 .search-input__wrapper:hover input {
   background: transparent;

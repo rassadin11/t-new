@@ -91,7 +91,7 @@
   }
 }
 .item-news__title {
-  font-family: Raleway;
+  font-family: var(--bs-raleway);
 }
 .item-news__title > a {
   color: inherit;
@@ -120,7 +120,6 @@
   padding: 1rem 1.5rem !important;
 }
 .item-news__description {
-  font-size: 28px;
   color: var(--bs-black);
 }
 @media (max-width: 992px) {
@@ -132,7 +131,7 @@
 }
 @media (max-width: 768px) {
   .item-news__description {
-    font-size: 1rem;
+    font-size: 1rem !important;
     color: var(--dark-gray);
   }
 }
