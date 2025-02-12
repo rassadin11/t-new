@@ -12184,6 +12184,7 @@ svg > use {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    min-height: calc(100vh - 64.8px - 51.2px);
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
@@ -12408,8 +12409,10 @@ svg > use {
   }
 }
 
-.collapse_header:not(.show) {
-  display: block !important;
+@media (max-width: 1500px) {
+  .collapse_header:not(.show) {
+    display: block !important;
+  }
 }
 
 .uslugi > * {
