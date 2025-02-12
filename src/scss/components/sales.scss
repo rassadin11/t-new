@@ -1,14 +1,14 @@
 .sale__title {
   max-width: 320px;
-  font-family: Raleway;
+  font-family: var(--bs-raleway);
   z-index: 2;
 
   @media (max-width: 992px) {
-    font-size: 24px !important;
+    font-size: 1.5rem !important;
   }
 
   @media (max-width: 550px) {
-    font-size: 16px !important;
+    font-size: 1rem !important;
   }
 }
 
@@ -85,7 +85,7 @@
 }
 
 .sale__link {
-  font-family: Inter;
+  font-family: var(--bs-inter);
   font-weight: 600;
   background: var(--bs-white);
   z-index: 2;

@@ -20,7 +20,7 @@
   }
 
   &:hover {
-    background: rgba(77, 94, 255, 0.2);
+    background: var(--bs-blue);
 
     input {
       background: transparent;

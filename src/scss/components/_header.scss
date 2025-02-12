@@ -20,7 +20,7 @@ svg > use {
     }
 
     & .fs-5 {
-      font-size: 16px !important;
+      font-size: 1rem !important;
       color: var(--bs-black) !important;
     }
 
@@ -66,11 +66,11 @@ svg > use {
 
       & .nav-item {
         & a:not(.dropdown-item) {
-          color: var(--bs-dark);
+          color: var(--bs-dark) !important;
 
           @media (max-width: 1500px) and (min-width: 992px) {
             &:not(.active) span:hover {
-              color: var(--bs-primary);
+              color: var(--bs-primary) !important;
             }
           }
         }
@@ -115,10 +115,6 @@ svg > use {
   }
 }
 
-.deep-list {
-  margin-left: 10px;
-}
-
 .background-mobile {
   background-color: transparent;
   backdrop-filter: blur(0px);
@@ -134,7 +130,7 @@ svg > use {
   &.active {
     transform: translate(0, 0);
     background-color: var(--transparent-background);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(0.125rem);
   }
 
   &.hide {
@@ -163,7 +159,6 @@ svg > use {
 
 .cross {
   background: var(--bs-gray);
-  border-radius: 4px;
 
   & > svg {
     width: 16px;
@@ -212,23 +207,23 @@ svg > use {
   min-height: 56px;
 
   @media (max-width: 1500px) {
-    border-radius: 8px;
-    font-size: 16px;
+    border-radius: 0.5rem;
+    font-size: 1rem;
     min-height: 44px;
 
     & > a {
       background: var(--bs-white);
-      border-radius: 8px;
+      border-radius: 0.5rem;
     }
   }
 }
 
 .dropdown-menu {
-  border-radius: 0px 0px 8px 8px;
+  border-radius: 0px 0px 0.5rem 0.5rem;
 
   &.active {
     display: flex;
-    box-shadow: 0px 4px 10px var(--transparent-box-shadow);
+    box-shadow: 0px 0.125rem 10px var(--transparent-box-shadow);
   }
 }
 
@@ -247,7 +242,7 @@ svg > use {
   }
 
   @media (min-width: 1500px) {
-    border-radius: 6px;
+    border-radius: 0.375rem;
   }
 }
 
@@ -278,7 +273,7 @@ svg > use {
 
 .uslugi {
   & > * {
-    flex: 0 0 calc(20% - 8px);
+    flex: 0 0 calc(20% - 0.5rem);
   }
 
   @media (max-width: 1500px) {
@@ -310,17 +305,17 @@ svg > use {
 }
 
 .item-uslugi__title {
-  font-family: Raleway;
+  font-family: var(--bs-raleway);
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: var(--bs-dark);
   background: var(--bs-gray);
   border-radius: 0.5rem;
   min-height: 70px;
 
   @media (max-width: 1500px) {
-    font-size: 16px;
-    padding-right: 30px !important;
+    font-size: 1rem;
+    padding-right: 1.875rem !important;
   }
 }
 
@@ -353,7 +348,7 @@ svg > use {
 .default-dropdown {
   top: 100%;
   background: var(--bs-light);
-  border-radius: 0px 0px 16px 16px;
+  border-radius: 0px 0px 1rem 1rem;
   box-shadow: 0px 4px 10px var(--transparent-box-shadow);
 
   @media (max-width: 1500px) {
@@ -364,7 +359,7 @@ svg > use {
 
     & a {
       background: var(--bs-white);
-      border-radius: 8px;
+      border-radius: 0.5rem;
 
       @media (min-width: 992px) {
         &:hover {
@@ -480,7 +475,7 @@ svg > use {
 // mobile
 
 .mobile-elems {
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .mobile-icon {
@@ -522,7 +517,7 @@ svg > use {
 
 .mobile-title {
   @media (max-width: 992px) {
-    font-size: 12px;
+    font-size: 1rem;
   }
 }
 
@@ -532,16 +527,15 @@ svg > use {
 }
 
 .svg-wrapper {
-  border-radius: 50%;
   background: var(--bs-white);
 }
 
 .menu-social {
-  gap: 20px;
+  gap: 1.25rem;
 
   @media (max-width: 1500px) {
     & p {
-      padding-right: 20px;
+      padding-right: 1.25rem;
     }
   }
 }
@@ -549,7 +543,6 @@ svg > use {
 .private-cabinet {
   background: var(--bs-primary);
   font-weight: 600;
-  line-height: 18px;
   text-decoration: none;
   position: sticky;
   bottom: 0;
@@ -562,11 +555,11 @@ svg > use {
   right: 12px;
   transform: translate(0, -50%) rotate(-90deg);
   width: 10px;
-  height: 8px;
+  height: 0.5rem;
 
   & use {
     stroke: var(--bs-black);
-    stroke-width: 2px;
+    stroke-width: 0.125rem;
     fill: transparent;
   }
 }
@@ -593,7 +586,7 @@ svg > use {
     height: 9px;
     transform: rotate(90deg);
     stroke: var(--bs-black);
-    stroke-width: 2px;
+    stroke-width: 0.125rem;
     cursor: pointer;
   }
 }
@@ -608,10 +601,9 @@ svg > use {
     background: var(--bs-light);
 
     a {
-      line-height: 22px;
       color: var(--sub-list-link);
       background: var(--bs-white);
-      border-radius: 8px;
+      border-radius: 0.5rem;
     }
   }
 }
@@ -620,7 +612,7 @@ svg > use {
   .nav-link {
     background: var(--bs-white);
     word-wrap: normal;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     transition: all 0.3s ease;
 
     @media (min-width: 992px) {
@@ -642,7 +634,7 @@ svg > use {
 
   &.active {
     background: var(--bs-primary);
-    color: var(--bs-white);
+    color: var(--bs-white) !important;
 
     @media (min-width: 992px) {
       &:hover {

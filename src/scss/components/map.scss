@@ -1,0 +1,71 @@
+.dot-wrapper {
+  top: 0;
+  left: 0;
+}
+
+.map1 {
+  img {
+    background: var(--map-color);
+  }
+}
+
+.dot {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--bs-primary);
+  box-shadow: 0 0 0 0var (--bs-primary);
+  border: 1px solid transparent;
+  transform: scale(1);
+  filter: blur(0.2px);
+  cursor: pointer;
+  z-index: 2;
+  transform-origin: center;
+  will-change: auto;
+}
+
+.dot-border {
+  content: "";
+  border: 1px solid transparent;
+  top: 1px;
+  left: 1px;
+  z-index: 1;
+}
+
+.dot-text {
+  width: max-content;
+  background: var(--bs-primary);
+  font-size: 1.3125rem;
+  bottom: 0;
+  min-width: 100px;
+  transform: translateX(-30%);
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9999;
+}
+
+.dot-text.active {
+  opacity: 1;
+  visibility: visible;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  box-shadow: rgb(50 50 93/25%) 0 2rem 2rem -0.5rem,
+    rgb(0 0 0/30%) 0 3rem 6rem -3rem !important;
+}
+
+@keyframes pulse-red {
+  0% {
+    transform: scale(0.5);
+    transform-origin: center;
+    background: 0 0;
+    border: 1px solid var(--bs-primary);
+  }
+
+  to {
+    transform: scale(7);
+    transform-origin: center;
+    background: 0 0;
+    border: 1px solid var(--bs-primary);
+    opacity: 0;
+  }
+}

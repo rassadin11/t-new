@@ -1,5 +1,5 @@
 .main-services {
-  font-family: "Raleway";
+  font-family: var(--bs-raleway);
   grid-template-columns: repeat(6, 1fr);
   margin-top: 6rem;
 
@@ -18,7 +18,7 @@
 
 .item-services__wrapper {
   background: var(--bs-gray);
-  border-radius: 8px;
+  border-radius: 0.5rem;
   text-decoration: none;
   color: inherit;
 
@@ -40,7 +40,7 @@
 }
 
 .item-services__description {
-  font-size: 19px;
+  font-size: 1.1875rem;
 }
 
 .item-accordion {
