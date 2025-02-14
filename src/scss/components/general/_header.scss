@@ -61,6 +61,7 @@ svg > use {
     & .navbar-nav {
       width: 100%;
       flex-direction: column;
+      min-height: calc(100vh - 64.8px - 51.2px);
       flex: 1 1 auto;
       position: relative;
 
@@ -267,7 +268,9 @@ svg > use {
 
 .collapse_header {
   &:not(.show) {
-    display: block;
+    @media (max-width: 1500px) {
+      display: block !important;
+    }
   }
 }
 

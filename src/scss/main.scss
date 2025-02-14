@@ -7,18 +7,26 @@
 @import "settings";
 
 // подключения компонентов страницы
-@import "./components/theme.scss";
-@import "./components/header";
-@import "./components/post-header.scss";
-@import "./components/section1.scss";
-@import "./components/tabs.scss";
-@import "./components/services.scss";
-@import "./components/search.scss";
-@import "./components/banner.scss";
-@import "./components/sales.scss";
-@import "./components/news.scss";
-@import "./components/numbers.scss";
-@import "./components/clients.scss";
-@import "./components/about_us.scss";
-@import "./components/map.scss";
-@import "./components/footer.scss";
+@import "./components/main/theme.scss";
+@import "./components/general/header";
+@import "./components/general/post-header.scss";
+@import "./components/main/section1.scss";
+@import "./components/general/tabs.scss";
+@import "./components/main/services.scss";
+@import "./components/general/search.scss";
+@import "./components/main/banner.scss";
+@import "./components/main/sales.scss";
+@import "./components/main/news.scss";
+@import "./components/main/numbers.scss";
+@import "./components/general/clients.scss";
+@import "./components/general/about_us.scss";
+@import "./components/main/map.scss";
+@import "./components/general/arrow.scss";
+@import "./components/main/yandex-map.scss";
+@import "./components/general/footer.scss";
+
+// service
+@import "./components/service/banner.scss";
+@import "./components/service/info.scss";
+@import "./components/service/calculator.scss";
+@import "./components/service/address.scss";

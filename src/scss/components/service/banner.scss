@@ -1,0 +1,70 @@
+.service-banner {
+  font-family: var(--bs-raleway);
+
+  @media (min-width: 992px) {
+    padding: 6rem !important;
+  }
+
+  @media (max-width: 768px) {
+    margin: 1rem 0 2rem !important;
+  }
+
+  &__type {
+    font-size: 1.3125rem !important;
+    font-family: var(--bs-open-sans);
+
+    & span {
+      background: var(--bs-pink);
+    }
+  }
+
+  &__title {
+    @media (max-width: 992px) {
+      font-size: 2rem !important;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 1.3125rem !important;
+    }
+  }
+
+  &__description {
+    font-family: var(--bs-open-sans);
+
+    @media (max-width: 992px) {
+      font-size: 1.375rem !important;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 1rem !important;
+    }
+  }
+
+  &__btn {
+    font-family: var(--bs-raleway);
+    color: var(--bs-dark);
+    background: var(--bs-white);
+    font-variant-numeric: lining-nums;
+    border: none;
+    margin-bottom: 6.5rem;
+    border-radius: 6.25rem;
+
+    @media (max-width: 992px) {
+      font-size: 1.8125rem !important;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 768px) {
+      margin-bottom: 0;
+      font-size: 1.3125rem !important;
+    }
+  }
+
+  &__background {
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}

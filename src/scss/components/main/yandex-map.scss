@@ -1,0 +1,12 @@
+.map-disable {
+  background: var(--bs-blue);
+  top: 0;
+  left: 0;
+  z-index: 100000;
+  transition: all 0.3s ease;
+
+  &.active {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

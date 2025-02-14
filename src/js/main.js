@@ -44,6 +44,7 @@ function dropdownMenu() {
                             elem.classList.remove('active')
                             elem.querySelector('.nav-link').classList.remove('active');
                             elem.querySelector('.dropdown-menu').classList.remove('active');
+                            elem.querySelector(".menu__arrow-dropdown").classList.remove('active')
                         }
                     });
                 }
@@ -58,10 +59,11 @@ function dropdownMenu() {
         uslugi.forEach((item) => {
             item.addEventListener('click', (e) => {
                 document.querySelector('.mobile__sub-menu').classList.toggle('active')
-                document.querySelector('.header__menu .navbar-nav').classList.add('overflow-hidden')
+                document.querySelector('.navbar-collapse').classList.add('overflow-hidden')
 
                 configScreen(item);
                 e.stopPropagation();
+                e.preventDefault();
             })
         })
 
@@ -191,7 +193,7 @@ function configScreen(item) {
 
 document.querySelector('.sub-menu__arrow-dropdown').addEventListener('click', () => {
     document.querySelector('.mobile__sub-menu').classList.remove('active')
-    document.querySelector('.header__menu .navbar-nav').classList.remove('overflow-hidden')
+    document.querySelector('.navbar-collapse').classList.remove('overflow-hidden')
 })
 
 // burger large screens
@@ -219,7 +221,6 @@ function changeMenu() {
         background.classList.remove('hide');
     }, 300)
 
-
     dropdowns.forEach(item => {
         item.classList.remove('active');
         item.querySelector('.nav-link').classList.remove('active');
@@ -227,6 +228,7 @@ function changeMenu() {
 
         setTimeout(() => {
             document.querySelector('.mobile__sub-menu').classList.remove('active')
+            document.querySelector('.navbar-collapse').classList.remove('overflow-hidden')
         }, 300)
     })
 }
@@ -234,12 +236,18 @@ function changeMenu() {
 burger.addEventListener('click', () => {
     if (!isBurgerOpen) {
         document.body.classList.remove('overflow-hidden')
-        changeMenu();
     } else {
         burger.classList.add('active');
         menu.classList.add('active');
         background.classList.add('active');
         document.body.classList.add('overflow-hidden')
+
+        dropdowns.forEach((item) => {
+            item.classList.remove('active')
+            item.querySelector('.nav-link').classList.remove('active');
+            item.querySelector('.dropdown-menu').classList.remove('active');
+            item.querySelector(".menu__arrow-dropdown").classList.remove('active')
+        })
     }
 })
 
@@ -321,12 +329,12 @@ if (matchMedia('only screen and (min-width: 991px)').matches) {
     let coords = [
 
         {
-            position: [52, 7],
+            position: [53, 8],
             text: 'г. Ростов-на-Дону',
             size: 12,
         },
         {
-            position: [22, 15],
+            position: [23, 15.5],
             text: 'г. Санкт-Петербург',
             size: 15,
         },
@@ -341,22 +349,22 @@ if (matchMedia('only screen and (min-width: 991px)').matches) {
             size: 20,
         },
         {
-            position: [77, 41.5],
+            position: [80, 41.5],
             text: 'г. Барнаул',
             size: 12,
         },
         {
-            position: [72, 41],
+            position: [75, 41],
             text: 'г. Новосибирск',
             size: 12,
         },
         {
-            position: [42.5, 17],
+            position: [35.5, 22],
             text: 'г. Нижний Новгород',
             size: 12,
         },
         {
-            position: [65, 34.5],
+            position: [71, 34.5],
             text: 'г. Омск',
             size: 12,
         },
@@ -371,12 +379,12 @@ if (matchMedia('only screen and (min-width: 991px)').matches) {
             size: 12,
         },
         {
-            position: [74, 43.5],
+            position: [75, 43.5],
             text: 'г. Кемерово',
             size: 12,
         },
         {
-            position: [53, 4],
+            position: [61, 5],
             text: 'г. Краснодар',
             size: 12,
         },
@@ -693,6 +701,12 @@ if (matchMedia('only screen and (min-width: 991px)').matches) {
         })
     })
 }
+
+const yandexMap = document.querySelector('.map-disable')
+
+yandexMap.addEventListener('click', () => {
+    yandexMap.classList.add('active')
+})
 
 // // arrow
 

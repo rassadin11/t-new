@@ -1,0 +1,82 @@
+.search-input__wrapper {
+  background: var(--bs-gray);
+  border: 1px solid var(--bs-primary);
+  transition: all 0.3s ease;
+  width: 39%;
+
+  &.white {
+    background: var(--bs-white);
+    color: var(--bs-primary);
+  }
+
+  & svg {
+    width: 21px;
+    height: 21px;
+    transition: all 0.3s ease;
+
+    & > use {
+      stroke: var(--bs-primary);
+      fill: transparent;
+    }
+  }
+
+  input {
+    transition: all 0.3s ease;
+    background: transparent;
+    color: var(--bs-primary);
+
+    &::placeholder {
+      color: var(--bs-primary);
+    }
+  }
+
+  &:not(.white) {
+    &:hover {
+      background: var(--bs-blue);
+
+      input {
+        background: transparent;
+      }
+    }
+  }
+
+  &.focus {
+    svg {
+      width: 0;
+      opacity: 0;
+      visibility: hidden;
+      margin-right: 0 !important;
+    }
+  }
+}
+
+.search-input {
+  border: none;
+  background: var(--bs-gray);
+  outline: none;
+  flex: 1 1 auto;
+
+  &::placeholder {
+    color: var(--transparent-accordion-color);
+  }
+
+  &.white {
+    color: var(--bs-primary);
+
+    &::placeholder {
+      color: var(--bs-primary);
+    }
+  }
+}
+
+.map-address {
+  &__btn {
+    color: var(--dark-blue-color);
+    border: 1px solid var(--dark-blue-color);
+
+    &:hover {
+      text-decoration: underline;
+      color: var(--dark-blue-color);
+    }
+  }
+}

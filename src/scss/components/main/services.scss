@@ -49,4 +49,9 @@
   border-top-right-radius: calc(0.5rem - 1px);
   border-bottom-right-radius: calc(0.5rem - 1px);
   border-bottom-left-radius: calc(0.5rem - 1px);
+
+  @media (max-width: 992px) {
+    word-break: break-word;
+    white-space: inherit;
+  }
 }
