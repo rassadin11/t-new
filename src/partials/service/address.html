@@ -8,26 +8,29 @@
                 интернету</p>
             <input type="text" class="block-address__input default-input rounded-4 mt-lg-0 mt-3"
                 placeholder="Ваш адрес" />
+
+            <div class="line d-block d-md-none my-3"></div>
+
             <div
-                class="block-address__notification mt-6 notify success d-flex justify-content-between align-items-center">
-                <p>По вашему адресу возможно подключение интернета!</p>
+                class="block-address__notification mt-md-6 mt-0 notify success d-flex justify-content-between align-items-center">
+                <p class="pe-2">По вашему адресу возможно подключение интернета!</p>
                 <svg>
                     <use xlink:href="./img/svg/sprite.svg#info"></use>
                 </svg>
             </div>
-            <div class="block-address__info info-address mt-6">
+            <div class="block-address__info info-address mt-md-6 mt-0">
                 <div
-                    class="info-address__item mt-4 item-info-address d-flex align-items-center justify-content-between">
+                    class="info-address__item mt-md-4 mt-2 item-info-address d-flex gap-md-0 gap-3 align-items-center justify-content-between">
                     <p>Стоимость подключения:</p>
                     <p>Бесплатно</p>
                 </div>
                 <div
-                    class="info-address__item mt-4 item-info-address d-flex align-items-center justify-content-between">
+                    class="info-address__item mt-md-4 mt-2 item-info-address d-flex gap-md-0 gap-3 align-items-center justify-content-between">
                     <p>Текущая скорость подключения:</p>
                     <p>1000 Мбит/с</p>
                 </div>
                 <div
-                    class="info-address__item mt-4 item-info-address d-flex align-items-center justify-content-between">
+                    class="info-address__item mt-md-4 mt-2 item-info-address d-flex gap-md-0 gap-3 align-items-center justify-content-between">
                     <p>
                         Возможность подключения <br />
                         на скорости до 10 Гбит/с:
@@ -40,13 +43,13 @@
             <img src="./img/usluga/map.jpg" alt="Map"
                 class="map-address__map position-absolute w-100 h-100 rounded-4" />
 
-            <div class="map-address__wrapper p-4 d-inline-flex gap-3">
+            <div class="map-address__wrapper p-4 d-flex gap-3">
                 <label for="mainSearch"
                     class="search-input__wrapper d-flex align-items-center white map-address__input position-relative ms-3 p-4 rounded-4">
                     <svg class="d-block me-4">
                         <use xlink:href="./img/svg/sprite.svg#search_icon"></use>
                     </svg>
-                    <input type="text" id="mainSearch" class="search-input" placeholder="Поиск по сайту">
+                    <input type="text" id="mainSearch" class="search-input flex-fill" placeholder="Поиск по сайту">
                 </label>
                 <button class="map-address__btn position-relative btn shadow-none btn-white none rounded-4">Найти
                     на&nbsp;карте</button>

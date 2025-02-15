@@ -1,0 +1,36 @@
+.block-reviews__review {
+  border: 1px solid var(--gray-background);
+}
+
+.block-reviews {
+  grid-template-columns: 1fr;
+}
+
+.reviews-wrapper {
+  & > * {
+    flex: 0 0 calc(25% - 1rem);
+  }
+
+  @media (max-width: 1200px) {
+    flex-direction: column !important;
+    align-items: start !important;
+
+    & > * {
+      flex: 0 0 100%;
+      width: 100%;
+    }
+  }
+}
+
+.review-block {
+  &__name {
+    font-weight: 600;
+  }
+
+  &__date {
+    font-weight: 600;
+    font-size: 0.75rem;
+    color: var(--sub-list-link);
+    opacity: 0.5;
+  }
+}

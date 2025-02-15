@@ -28,7 +28,7 @@
 
   &__mobile {
     font-family: var(--bs-raleway);
-    font-size: 21px;
+    font-size: 1.3125rem;
     color: var(--bs-dark);
   }
 }
@@ -39,6 +39,16 @@
 
   & > p:last-child {
     font-weight: 400;
+  }
+
+  p {
+    @media (max-width: 768px) {
+      min-width: 100px;
+    }
+  }
+
+  p:last-child {
+    text-align: right;
   }
 }
 

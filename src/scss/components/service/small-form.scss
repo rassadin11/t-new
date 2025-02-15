@@ -1,0 +1,134 @@
+.form-wrapper {
+  grid-template-columns: 1fr;
+
+  @media (min-width: 992px) {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 6rem !important;
+  }
+}
+
+.form {
+  &__block.image {
+    background: var(--bs-primary);
+  }
+
+  &__block:not(.image) {
+    background: var(--bs-white);
+    border: 1px solid var(--bs-blue);
+    padding: 3rem 6rem;
+
+    @media (max-width: 992px) {
+      padding: 1.5rem 3rem;
+    }
+
+    @media (max-width: 768px) {
+      padding: 1rem;
+    }
+  }
+
+  &__block.no-border {
+    @media (max-width: 768px) {
+      border: none;
+      padding: 0;
+    }
+  }
+
+  &__input {
+    font-size: 1.3125rem;
+
+    &::placeholder {
+      font-size: 1.3125rem;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 1rem;
+
+      &::placeholder {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &__textarea {
+    resize: none;
+    font-size: 1.3125rem;
+    background: var(--white-gray-background);
+    color: var(--bs-primary);
+    border: 1px solid var(--bs-primary);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    outline: none;
+
+    &::placeholder {
+      font-size: 1rem;
+      color: var(--transparent-accordion-color);
+    }
+
+    @media (max-width: 768px) {
+      font-size: 1rem;
+    }
+  }
+}
+
+.form__checkbox {
+  color: var(--bs-dark);
+  grid-template-columns: 32px auto;
+}
+
+.form__checkbox input[type="checkbox"] {
+  appearance: none;
+  background-color: var(--bs-white);
+  margin: 0;
+  font: inherit;
+  width: 32px;
+  height: 32px;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  border: 2.29px solid var(--bs-primary);
+  border-radius: 6px;
+  position: relative;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.form__checkbox input[type="checkbox"]:checked {
+  background: var(--bs-primary);
+}
+
+.checkbox-icon {
+  position: absolute;
+  top: 48%;
+  left: 6px;
+  cursor: pointer;
+  transform: translateY(-50%);
+
+  & use {
+    fill: none;
+  }
+}
+
+.form__checkbox input[type="checkbox"]:not(:checked) + .checkbox-icon {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.form__checkbox input[type="checkbox"]:checked + .checkbox-icon {
+  opacity: 1;
+  visibility: visible;
+}
+
+.form__description {
+  @media (max-width: 992px) {
+    margin: auto 0;
+
+    & br {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    font-size: 0.75rem;
+  }
+}
