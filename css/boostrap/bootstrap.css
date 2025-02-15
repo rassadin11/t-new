@@ -4940,6 +4940,133 @@ textarea.form-control-lg {
   border-radius: 0;
 }
 
+.accordion-service-button {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: calc(1.25625rem + 0.075vw);
+  color: #00031a;
+  text-align: left;
+  background-color: #fff;
+  border: 0;
+  border-radius: 0;
+  overflow-anchor: none;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, border-radius 0.15s ease, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, border-radius 0.15s ease, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease, -webkit-box-shadow 0.15s ease-in-out;
+}
+@media (min-width: 1200px) {
+  .accordion-service-button {
+    font-size: 1.3125rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .accordion-service-button {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+.accordion-service-button:not(.collapsed) {
+  color: #00031a;
+  background-color: #fff;
+  -webkit-box-shadow: inset 0 -1px 0 transparent;
+  box-shadow: inset 0 -1px 0 transparent;
+}
+.accordion-service-button:not(.collapsed) span {
+  padding: 1.875rem 0.75rem;
+  background-color: rgba(77, 94, 255, 0.4);
+  border-radius: 0.375rem;
+}
+.accordion-service-button:not(.collapsed) span::after {
+  width: 38px;
+  height: 2px;
+  background-image: url("data:image/svg+xml, %3csvg width='38' height='2' viewBox='0 0 38 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3e %3cpath d='M37 1L1 1' stroke='%234D5EFF' stroke-width='2' stroke-linecap='round'/%3e %3c/svg%3e");
+  -webkit-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+.accordion-service-button span {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  padding: 0.75rem;
+  background-color: var(--bs-gray);
+  border-radius: 0.5rem;
+}
+.accordion-service-button span:after {
+  content: "";
+  width: 38px;
+  height: 38px;
+  display: block;
+  margin-left: auto;
+  background-image: url("data:image/svg+xml, %3csvg width='38' height='38' viewBox='0 0 38 38' fill='none' xmlns='http://www.w3.org/2000/svg'%3e %3cpath d='M19 1V37M37 19L1 19' stroke='%234D5EFF' stroke-width='2' stroke-linecap='round'/%3e %3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 38px;
+  -webkit-transition: background 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, background 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, background 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .accordion-service-button span:after {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+.accordion-service-button:hover {
+  z-index: 2;
+}
+.accordion-service-button:focus {
+  z-index: 3;
+  border-color: transparent;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.accordion-service-header {
+  margin-bottom: 0;
+}
+
+.accordion-service-item {
+  background-color: #fff;
+  border: 1px solid rgba(77, 94, 255, 0.2);
+  border-radius: 0.5rem;
+}
+.accordion-service-item .accordion-service-button {
+  border-top-left-radius: calc(0.5rem - 1px);
+  border-top-right-radius: calc(0.5rem - 1px);
+  border-bottom-right-radius: calc(0.5rem - 1px);
+  border-bottom-left-radius: calc(0.5rem - 1px);
+}
+.accordion-service-item:last-of-type {
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.accordion-service-item:last-of-type .accordion-service-button.collapsed {
+  border-bottom-right-radius: calc(0.5rem - 1px);
+  border-bottom-left-radius: calc(0.5rem - 1px);
+}
+.accordion-service-item:last-of-type .accordion-service-collapse {
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.accordion-service-body {
+  padding: 0.75rem 1rem;
+  background-color: var(--bs-gray);
+}
+.accordion-service-body p {
+  font-size: 1.375rem;
+}
+
 .breadcrumb {
   display: -webkit-box;
   display: -ms-flexbox;

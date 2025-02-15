@@ -1,0 +1,30 @@
+.video__background {
+  background: var(--bs-blue);
+  height: min(100vh, 860px);
+}
+@media (max-width: 992px) {
+  .video__background {
+    height: 80vh;
+  }
+}
+@media (max-width: 768px) {
+  .video__background {
+    height: auto;
+    min-height: 250px;
+  }
+}
+@media (max-width: 500px) {
+  .video__background {
+    min-height: 178px;
+  }
+}
+.video__background svg {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 58px;
+  height: 52px;
+  margin: auto;
+}/*# sourceMappingURL=video.css.map */

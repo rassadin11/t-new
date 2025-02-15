@@ -57,9 +57,6 @@
   border: none;
   background: var(--bs-gray);
   outline: none;
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
 }
 .search-input::-webkit-input-placeholder {
   color: var(--transparent-accordion-color);

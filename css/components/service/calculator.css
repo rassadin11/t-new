@@ -102,7 +102,7 @@
   }
 }
 .internet-card__desc {
-  font-size: 21px;
+  font-size: 1.3125rem;
   word-wrap: break-word;
 }
 .internet-card__desc:not(:first-child) {
@@ -110,7 +110,7 @@
 }
 @media (max-width: 768px) {
   .internet-card__desc {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
   .internet-card__desc:not(:first-child) {
     margin-top: 0.5rem;
@@ -122,15 +122,15 @@
 }
 @media (max-width: 768px) {
   .internet-card__price {
-    font-size: 21px !important;
+    font-size: 1.3125rem !important;
   }
 }
 .internet-card__post-price {
-  font-size: 21px;
+  font-size: 1.3125rem;
 }
 @media (max-width: 768px) {
   .internet-card__post-price {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 }
 
@@ -214,7 +214,7 @@
 }
 
 .hidden-title {
-  font-size: 21px !important;
+  font-size: 1.3125rem !important;
 }
 
 .item-results__desc {
@@ -263,59 +263,68 @@
 }
 
 .success {
-  background: rgba(32, 209, 147, 0.1);
-  border: 1px solid rgba(13, 191, 129, 0.4);
-  border-radius: 8px;
+  background: var(--light-green);
+  border: 1px solid var(--dark-green);
+  border-radius: 0.5rem;
 }
 .success p {
-  color: #21bf88;
+  color: var(--green);
   font-weight: 600;
 }
 .success svg {
   width: 27px;
   height: 27px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 27px;
+  flex: 0 0 27px;
 }
 .success use {
-  fill: #21bf88;
+  fill: var(--green);
 }
 
 .warning {
-  background: rgba(227, 163, 25, 0.1000000015);
-  border: 1px solid rgba(227, 163, 26, 0.4);
-  border-radius: 8px;
+  background: var(--light-yellow);
+  border: 1px solid var(--dark-yellow);
+  border-radius: 0.5rem;
 }
 .warning p {
-  color: #eaa718;
+  color: var(--yellow);
   font-weight: 600;
 }
 .warning svg {
   width: 27px;
   height: 27px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 27px;
+  flex: 0 0 27px;
 }
 .warning use {
-  fill: #eaa718;
+  fill: var(--yellow);
 }
 
 .error {
-  background: rgba(209, 32, 103, 0.1000000015);
-  border: 1px solid rgba(209, 32, 103, 0.4);
+  background: var(--light-red);
+  border: 1px solid var(--dark-red);
   border-radius: 6px;
 }
 .error p {
-  color: #d12067;
+  color: var(--red);
   font-weight: 600;
 }
 .error svg {
   width: 27px;
   height: 27px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 27px;
+  flex: 0 0 27px;
 }
 .error use {
-  fill: #d12067;
+  fill: var(--red);
 }
 
 .notification-info {
-  background: rgba(77, 94, 255, 0.1000000015);
-  border: 1px solid rgba(77, 94, 255, 0.4);
+  background: var(--light-info);
+  border: 1px solid var(--dark-info);
   border-radius: 6px;
 }
 .notification-info p {
@@ -325,6 +334,9 @@
 .notification-info svg {
   width: 27px;
   height: 27px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 27px;
+  flex: 0 0 27px;
 }
 .notification-info use {
   fill: var(--bs-primary);

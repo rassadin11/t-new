@@ -26,6 +26,17 @@
   --gray-link: #333;
   --dark-gray: #303030;
   --map-color: #f2f4ff;
+  --light-green: rgba(32, 209, 147, 0.1);
+  --dark-green: rgba(13, 191, 129, 0.4);
+  --green: #21bf88;
+  --light-yellow: rgba(227, 163, 25, 0.1);
+  --dark-yellow: rgba(227, 163, 26, 0.4);
+  --yellow: #eaa718;
+  --light-red: rgba(209, 32, 103, 0.1);
+  --dark-red: rgba(209, 32, 103, 0.4);
+  --red: #d12067;
+  --light-info: rgba(77, 94, 255, 0.1);
+  --dark-info: rgba(77, 94, 255, 0.4);
   --bs-raleway: "Raleway";
   --bs-inter: "Inter";
   --bs-open-sans: "Open Sans";
@@ -87,7 +98,6 @@ body {
 @media (max-width: 768px) {
   .btn-white {
     font-weight: 600;
-    font-size: 16px;
   }
 }
 
@@ -130,8 +140,7 @@ ul {
 
 .default-input {
   color: var(--bs-primary);
-  margin-top: 1.9rem;
-  font-size: 1rem;
+  margin-top: 2rem;
   padding: 0.9rem;
   width: 100%;
   outline: none;
@@ -156,6 +165,16 @@ ul {
 .default-input::placeholder {
   color: var(--transparent-accordion-color);
   font-size: 1rem;
+}
+@media (max-width: 768px) {
+  .default-input {
+    padding: 1rem;
+  }
+}
+
+.line {
+  background: var(--gray-background);
+  height: 1px;
 }
 
 .form-title {

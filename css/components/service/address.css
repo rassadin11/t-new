@@ -28,7 +28,7 @@
 }
 .block-address__mobile {
   font-family: var(--bs-raleway);
-  font-size: 21px;
+  font-size: 1.3125rem;
   color: var(--bs-dark);
 }
 
@@ -38,6 +38,14 @@
 }
 .info-address__item > p:last-child {
   font-weight: 400;
+}
+@media (max-width: 768px) {
+  .info-address__item p {
+    min-width: 100px;
+  }
+}
+.info-address__item p:last-child {
+  text-align: right;
 }
 
 @media (max-width: 1200px) {

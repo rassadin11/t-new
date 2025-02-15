@@ -754,10 +754,9 @@
         <button class="results__btn p-4 c-white mx-2 btn shadow-none btn-primary">Оставить заявку</button>
     </div>
 </section>
-
       <section class="default-margin address">
     <h2 class="fw-bold fs-1 title d-none d-md-block">Проверить адрес для подключения</h2>
-    <div class="address-wrapper d-grid gap-6 mt-lg-7 pt-lg-7 mt-md-6 pt-0 mt-4">
+    <div class="address-wrapper d-grid gap-5 mt-lg-7 pt-lg-7 mt-md-6 pt-0 mt-4">
         <div class="address__block block-address fs-4 rounded-4 p-lg-7 p-md-6 p-4">
             <p class="d-sm-block d-md-none block-address__mobile mb-4 fw-bold">Проверить адрес</p>
             <p class="block-address__title form-title fs-4 mb-lg-6 mb-0">Введите свой адрес, чтобы узнать возможность
@@ -765,26 +764,29 @@
                 интернету</p>
             <input type="text" class="block-address__input default-input rounded-4 mt-lg-0 mt-3"
                 placeholder="Ваш адрес" />
+
+            <div class="line d-block d-md-none my-3"></div>
+
             <div
-                class="block-address__notification mt-6 notify success d-flex justify-content-between align-items-center">
-                <p>По вашему адресу возможно подключение интернета!</p>
+                class="block-address__notification mt-md-6 mt-0 notify success d-flex justify-content-between align-items-center">
+                <p class="pe-2">По вашему адресу возможно подключение интернета!</p>
                 <svg>
                     <use xlink:href="./img/svg/sprite.svg#info"></use>
                 </svg>
             </div>
-            <div class="block-address__info info-address mt-6">
+            <div class="block-address__info info-address mt-md-6 mt-0">
                 <div
-                    class="info-address__item mt-4 item-info-address d-flex align-items-center justify-content-between">
+                    class="info-address__item mt-md-4 mt-2 item-info-address d-flex gap-md-0 gap-3 align-items-center justify-content-between">
                     <p>Стоимость подключения:</p>
                     <p>Бесплатно</p>
                 </div>
                 <div
-                    class="info-address__item mt-4 item-info-address d-flex align-items-center justify-content-between">
+                    class="info-address__item mt-md-4 mt-2 item-info-address d-flex gap-md-0 gap-3 align-items-center justify-content-between">
                     <p>Текущая скорость подключения:</p>
                     <p>1000 Мбит/с</p>
                 </div>
                 <div
-                    class="info-address__item mt-4 item-info-address d-flex align-items-center justify-content-between">
+                    class="info-address__item mt-md-4 mt-2 item-info-address d-flex gap-md-0 gap-3 align-items-center justify-content-between">
                     <p>
                         Возможность подключения <br />
                         на скорости до 10 Гбит/с:
@@ -797,19 +799,368 @@
             <img src="./img/usluga/map.jpg" alt="Map"
                 class="map-address__map position-absolute w-100 h-100 rounded-4" />
 
-            <div class="map-address__wrapper p-4 d-inline-flex gap-3">
+            <div class="map-address__wrapper p-4 d-flex gap-3">
                 <label for="mainSearch"
                     class="search-input__wrapper d-flex align-items-center white map-address__input position-relative ms-3 p-4 rounded-4">
-                    <svg class="d-block ms-4">
+                    <svg class="d-block me-4">
                         <use xlink:href="./img/svg/sprite.svg#search_icon"></use>
                     </svg>
-                    <input type="text" id="mainSearch" class="search-input" placeholder="Поиск по сайту">
+                    <input type="text" id="mainSearch" class="search-input flex-fill" placeholder="Поиск по сайту">
                 </label>
-                <button class="map-address__btn position-relative btn shadow-none btn-white none">Найти
+                <button class="map-address__btn position-relative btn shadow-none btn-white none rounded-4">Найти
                     на карте</button>
             </div>
         </div>
     </div>
+</section>
+      <section class="form default-margin">
+    <h2 class="title fw-bold fs-1 d-none d-md-block">Оставить запрос на подключение</h2>
+    <div class="form-wrapper gap-lg-6 gap-0 d-grid mt-md-6 mt-4">
+        <div class="form__block d-none d-lg-block image rounded-4"></div>
+        <form action="#" class="form__block d-flex flex-column rounded-4">
+            <p class="d-sm-block d-md-none block-address__mobile fw-bold mb-md-0 mb-4">Оставить запрос на подключение
+            </p>
+            <p class="form-title fs-4 d-none d-sm-none d-md-block">Оставьте заявку — мы подберём подходящий тариф и
+                договоримся о подключении</p>
+            <input type="text" class="form__input rounded-4 mt-md-6 mt-0 default-input" placeholder="Как вас зовут?" />
+            <input type="tel" id="phone" class="form__input rounded-4 tel mt-4 default-input"
+                placeholder="+7 - 999 - 999 - 99 - 99" />
+            <label class="form__checkbox d-grid mt-4 gap-md-4 gap-2">
+                <div class="d-inline position-relative form-input-wrapper d-flex align-items-center">
+                    <input type="checkbox" />
+                    <svg width="22" height="15" class="checkbox-icon">
+                        <use xlink:href="./img/svg/sprite.svg#tick"></use>
+                    </svg>
+                </div>
+                <p class="form__description">
+                    Да, я соглашаюсь <br />
+                    с <a href="#" class="link-strong">условиями обработки персональных данных</a>
+                </p>
+            </label>
+            <button class="form__btn btn btn-primary mt-md-6 mt-4 py-4 mb-0 shadow-none" type="submit">Оставить
+                заявку</button>
+        </form>
+    </div>
+</section>
+      <section class="video default-margin">
+    <h2 class="title fw-bold fs-1">Проверка скорости подключения TELEZON</h2>
+    <div class="video__background mt-md-7 mt-4 pt-lg-7 pt-0 rounded-4 w-100 position-relative">
+        <svg class="position-absolute">
+            <use xlink:href="./img/svg/sprite.svg#player"></use>
+        </svg>
+    </div>
+</section>
+      <section class="services-mobile default-margin">
+    <h1 class="title fs-1 fw-bold">Частые вопросы и ответы</h1>
+    <div class="accordion mt-lg-7 pt-lg-7 mt-md-6 pt-0 mt-4 d-grid services-accordion gap-lg-5 gap-4" id="accordion">
+        <div class="accordion-service-wrapper d-flex flex-column gap-lg-5 gap-4">
+            <div class="accordion-service-item">
+                <h2 class="accordion-service-header" id="headingOne">
+                    <button class="accordion-service-button py-2 ps-5 pe-3 d-flex justify-content-between" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
+                        Какие приемущества предлагает «БИЗНЕС ИНТЕРНЕТ» от «TELEZON» в Красноярске? <span></span>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-service-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-service-body px-5 py-3">
+                        <p>«Бизнес Интернет» от «Telezon» в Красноярске предлагает множество преимуществ, таких как
+                            подключение
+                            с «0» под «ключ»,
+                            специализированные тарифы для юридических лиц и оперативное включение в течение 5 дней.
+                            Также
+                            клиенты могут рассчитывать
+                            на круглосуточную техническую поддержку, защиту от DDoS-атак, скорость передачи данных
+                            до 10 Гбит/с
+                            и поддержку адресов
+                            протокола IPv6. Стоимость подключения начинается от 2300 ₽ за 100 Мбит/с.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-service-item">
+                <h2 class="accordion-service-header" id="headingTwo">
+                    <button class="accordion-service-button py-2 ps-5 pe-3 collapsed d-flex justify-content-between"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                        aria-controls="collapseTwo">
+                        Как можно проверить возможность подключения интернета по вашему адресу? <span></span>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-service-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-service-body px-5 py-3">
+                        <p>«Бизнес Интернет» от «Telezon» в Красноярске предлагает множество преимуществ, таких как
+                            подключение
+                            с «0» под «ключ»,
+                            специализированные тарифы для юридических лиц и оперативное включение в течение 5 дней.
+                            Также
+                            клиенты могут рассчитывать
+                            на круглосуточную техническую поддержку, защиту от DDoS-атак, скорость передачи данных
+                            до 10 Гбит/с
+                            и поддержку адресов
+                            протокола IPv6. Стоимость подключения начинается от 2300 ₽ за 100 Мбит/с.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-service-item">
+                <h2 class="accordion-service-header" id="headingThree">
+                    <button class="accordion-service-button py-2 ps-5 pe-3 collapsed d-flex justify-content-between"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                        aria-controls="collapseThree">
+                        Какие шаги нужно предпринять для подключения «БИЗНЕС ИНТЕРНЕТ»? <span></span>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-service-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-service-body px-5 py-3">
+                        <p>«Бизнес Интернет» от «Telezon» в Красноярске предлагает множество преимуществ, таких как
+                            подключение
+                            с «0» под «ключ»,
+                            специализированные тарифы для юридических лиц и оперативное включение в течение 5 дней.
+                            Также
+                            клиенты могут рассчитывать
+                            на круглосуточную техническую поддержку, защиту от DDoS-атак, скорость передачи данных
+                            до 10 Гбит/с
+                            и поддержку адресов
+                            протокола IPv6. Стоимость подключения начинается от 2300 ₽ за 100 Мбит/с.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-service-wrapper d-flex flex-column gap-lg-5 gap-4">
+            <div class="accordion-service-item">
+                <h2 class="accordion-service-header" id="headingFour">
+                    <button class="accordion-service-button py-2 ps-5 pe-3 collapsed d-flex justify-content-between"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                        aria-controls="collapseFour">
+                        Почему стоит выбрать «TELEZON»? <span></span>
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-service-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-service-body px-5 py-3">
+                        <p>«Бизнес Интернет» от «Telezon» в Красноярске предлагает множество преимуществ, таких как
+                            подключение
+                            с «0» под «ключ»,
+                            специализированные тарифы для юридических лиц и оперативное включение в течение 5 дней.
+                            Также
+                            клиенты могут рассчитывать
+                            на круглосуточную техническую поддержку, защиту от DDoS-атак, скорость передачи данных
+                            до 10 Гбит/с
+                            и поддержку адресов
+                            протокола IPv6. Стоимость подключения начинается от 2300 ₽ за 100 Мбит/с.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-service-item">
+                <h2 class="accordion-service-header" id="headingFive">
+                    <button class="accordion-service-button py-2 ps-5 pe-3 collapsed d-flex justify-content-between"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                        aria-controls="collapseFive">
+                        Какие услуги включены в «БИЗНЕС ИНТЕРНЕТ» от «TELEZON»? <span></span>
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-service-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-service-body px-5 py-3">
+                        <p>«Бизнес Интернет» от «Telezon» в Красноярске предлагает множество преимуществ, таких как
+                            подключение
+                            с «0» под «ключ»,
+                            специализированные тарифы для юридических лиц и оперативное включение в течение 5 дней.
+                            Также
+                            клиенты могут рассчитывать
+                            на круглосуточную техническую поддержку, защиту от DDoS-атак, скорость передачи данных
+                            до 10 Гбит/с
+                            и поддержку адресов
+                            протокола IPv6. Стоимость подключения начинается от 2300 ₽ за 100 Мбит/с.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-service-item">
+                <h2 class="accordion-service-header" id="headingSix">
+                    <button class="accordion-service-button py-2 ps-5 pe-3 collapsed d-flex justify-content-between"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
+                        aria-controls="collapseSix">
+                        Какие возможности предоставляет интернет-подключение для бизнеса? <span></span>
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-service-collapse collapse" aria-labelledby="headingSix"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-service-body px-5 py-3">
+                        <p>«Бизнес Интернет» от «Telezon» в Красноярске предлагает множество преимуществ, таких как
+                            подключение
+                            с «0» под «ключ»,
+                            специализированные тарифы для юридических лиц и оперативное включение в течение 5 дней.
+                            Также
+                            клиенты могут рассчитывать
+                            на круглосуточную техническую поддержку, защиту от DDoS-атак, скорость передачи данных
+                            до 10 Гбит/с
+                            и поддержку адресов
+                            протокола IPv6. Стоимость подключения начинается от 2300 ₽ за 100 Мбит/с.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+      <section class="default-margin">
+    <h2 class="title fw-bold fs-1">Кейсы</h2>
+
+    <div class="d-grid gap-6 news mt-md-7 pt-lg-7 pt-0 mt-4">
+        <article class="item-news pb-lg-6 p-4 p-lg-0 rounded-4 d-flex flex-column gap-4">
+            <a href="#" class="item-news__image position-relative overflow-hidden"><img src="./img/gray-rect.png"
+                    alt="Gray" /></a>
+            <p class="item-news__title fw-bold mt-lg-6 mt-0 mb-lg-4 mb-0 fs-3"><a href="#">Как использовать интернет для
+                    увеличения продуктивности сотрудников офиса?</a></p>
+            <p class="item-news__description fs-4 flex-fill mt-lg-4 mt-0 mb-lg-4 mb-0">Интернет стал незаменимым
+                инструментом в современном офисе, и его правильное использование может значительно повысить
+                производительность и эффективность работы сотрудников.</p>
+            <div class="item-news__marks d-flex gap-3 marks-news mt-lg-4 mt-0">
+                <p class="marks-news__item text-primary text-decoration-none rounded-3 py-md-2 px-md-4 py-1 px-2 mb-0">
+                    <a href="#">SIP</a>
+                </p>
+                <p class="marks-news__item text-primary text-decoration-none rounded-3 py-md-2 px-md-4 py-1 px-2 mb-0">
+                    <a href="#">IP-Телефония</a>
+                </p>
+            </div>
+        </article>
+        <article class="item-news pb-lg-6 p-4 p-lg-0 rounded-4 d-flex flex-column gap-4">
+            <a href="#" class="item-news__image position-relative overflow-hidden"><img src="./img/gray-rect.png"
+                    alt="Gray" /></a>
+            <p class="item-news__title fw-bold mt-lg-6 mt-0 mb-lg-4 mb-0 fs-3"><a href="#">Как использовать интернет для
+                    повышения эффективности маркетинга офиса?</a></p>
+            <p class="item-news__description fs-4 flex-fill mt-lg-4 mt-0 mb-lg-4 mb-0">Узнайте, как использовать
+                интернет для повышения эффективности маркетинга офиса юридического лица.</p>
+            <div class="item-news__marks d-flex gap-3 marks-news mt-lg-4 mt-0">
+                <p class="marks-news__item text-primary text-decoration-none rounded-3 py-md-2 px-md-4 py-1 px-2 mb-0">
+                    <a href="#">SIP</a>
+                </p>
+                <p class="marks-news__item text-primary text-decoration-none rounded-3 py-md-2 px-md-4 py-1 px-2 mb-0">
+                    <a href="#">IP-Телефония</a>
+                </p>
+            </div>
+        </article>
+    </div>
+
+    <p class="news__readmore text-primary text-right p-md-0 py-4 px-5 mt-md-6 pt-md-2 mt-4 mb-7">
+        <a href="#" class="d-flex align-items-center justify-content-end"><span class="d-md-block me-md-2">Читать другие
+                кейсы</span>
+            <svg class="svg-arrow svg-arrow d-md-flex align-center d-none">
+                <use href="./img/svg/sprite.svg#arrow"></use>
+            </svg>
+        </a>
+    </p>
+</section>
+      <section class="reviews default-margin">
+    <h2 class="title fw-bold fs-1">Отзывы клиентов о Telezon</h2>
+
+    <div class="reviews-wrapper d-flex align-items-end justify-content-between gap-4 pt-xl-7 mt-xl-7 mt-md-6 mt-4">
+        <div class="reviews__block block-reviews d-grid gap-5">
+            <div class="block-reviews__review p-4 rounded-4 review-block gap-2 d-flex flex-column">
+                <p class="review-block__date">29.06.2024</p>
+                <div class="review-block__user d-flex align-items-center">
+                    <img src="./img/usluga/gray-user.jpg" alt="#" class="review-block__icon" />
+                    <p class="review-block__name ms-4">stand-art24</p>
+                </div>
+                <p class="review-block__paragraph">
+                    Проводили подключение на Маерчака, 65. Работу выполнили быстро и чисто, благодарность монтажникам!
+                </p>
+            </div>
+            <div class="block-reviews__review p-4 rounded-4 review-block d-flex flex-column gap-2">
+                <p class="review-block__date">29.06.2024</p>
+                <div class="review-block__user d-flex align-items-center">
+                    <img src="./img/usluga/gray-user.jpg" alt="#" class="review-block__icon" />
+                    <p class="review-block__name ms-4">stand-art24</p>
+                </div>
+                <p class="review-block__paragraph">
+                    Проводили подключение на Маерчака, 65. Работу выполнили быстро и чисто, благодарность монтажникам!
+                </p>
+            </div>
+        </div>
+        <div class="reviews__block block-reviews d-grid gap-5">
+            <div class="block-reviews__review p-4 rounded-4 review-block d-flex flex-column gap-2">
+                <p class="review-block__date">29.06.2024</p>
+                <div class="review-block__user d-flex align-items-center">
+                    <img src="./img/usluga/gray-user.jpg" alt="#" class="review-block__icon" />
+                    <p class="review-block__name ms-4">stand-art24</p>
+                </div>
+                <p class="review-block__paragraph">
+                    Проводили подключение на Маерчака, 65. Работу выполнили быстро и чисто, благодарность монтажникам!
+                </p>
+            </div>
+            <div class="block-reviews__review p-4 rounded-4 review-block d-flex flex-column gap-2">
+                <p class="review-block__date">29.06.2024</p>
+                <div class="review-block__user d-flex align-items-center">
+                    <img src="./img/usluga/gray-user.jpg" alt="#" class="review-block__icon" />
+                    <p class="review-block__name ms-4">stand-art24</p>
+                </div>
+                <p class="review-block__paragraph">
+                    Добрый день! С компанией Телезон работаем с самого открытия офиса. Интернет всегда стабильный. Цены
+                    оптимальные. Если
+                    случается отключение, то ребята его быстро исправляют. Так же всегда проконсультируют по возникшим
+                    вопросам. С
+                    уважением, ООО РА «Инсайт».
+                </p>
+            </div>
+        </div>
+        <div class="reviews__block block-reviews gap-5 d-grid">
+            <div class="block-reviews__review p-4 rounded-4 review-block d-flex flex-column gap-2">
+                <p class="review-block__date">29.06.2024</p>
+                <div class="review-block__user d-flex align-items-center">
+                    <img src="./img/usluga/gray-user.jpg" alt="#" class="review-block__icon" />
+                    <p class="review-block__name ms-4">stand-art24</p>
+                </div>
+                <p class="review-block__paragraph">
+                    Проводили подключение на Маерчака, 65. Работу выполнили быстро и чисто, благодарность монтажникам!
+                </p>
+            </div>
+            <div class="block-reviews__review p-4 rounded-4 review-block d-flex flex-column gap-2">
+                <p class="review-block__date">29.06.2024</p>
+                <div class="review-block__user d-flex align-items-center">
+                    <img src="./img/usluga/gray-user.jpg" alt="#" class="review-block__icon" />
+                    <p class="review-block__name ms-4">stand-art24</p>
+                </div>
+                <p class="review-block__paragraph">
+                    Проводили подключение на Маерчака, 65. Работу выполнили быстро и чисто, благодарность монтажникам!
+                </p>
+            </div>
+        </div>
+        <div class="reviews__block block-reviews d-grid gap-5">
+            <div class="block-reviews__review p-4 rounded-4 review-block d-flex flex-column gap-2">
+                <p class="review-block__date">29.06.2024</p>
+                <div class="review-block__user d-flex align-items-center">
+                    <img src="./img/usluga/gray-user.jpg" alt="#" class="review-block__icon" />
+                    <p class="review-block__name ms-4">stand-art24</p>
+                </div>
+                <p class="review-block__paragraph">
+                    Наша управляющая компания подключила интернет в компании Телезон, понравилась девушка менеджер Елена
+                    Глазкова, которая
+                    оперативно подобрала оптимальный тариф, отправила заявку в тех. поддержку и на следующий день нам
+                    подключили интернет.
+                    Огромное спасибо специалисту Никите, который подключил нас за 15 минут. Желаем вашей компании
+                    процветания!
+                </p>
+            </div>
+            <div class="block-reviews__review p-4 rounded-4 review-block d-flex flex-column gap-2">
+                <p class="review-block__date">29.06.2024</p>
+                <div class="review-block__user d-flex align-items-center">
+                    <img src="./img/usluga/gray-user.jpg" alt="#" class="review-block__icon" />
+                    <p class="review-block__name ms-4">stand-art24</p>
+                </div>
+                <p class="review-block__paragraph">
+                    Проводили подключение на Маерчака, 65. Работу выполнили быстро и чисто, благодарность монтажникам!
+                </p>
+            </div>
+        </div>
+    </div>
+    <p class="news__readmore text-primary text-right p-md-0 py-4 px-5 mt-md-6 pt-md-2 mt-4 mb-7">
+        <a href="#" class="d-flex align-items-center justify-content-end"><span class="d-md-block me-md-2">Читать другие
+                отзывы</span>
+            <svg class="svg-arrow svg-arrow d-md-flex align-center d-none">
+                <use href="./img/svg/sprite.svg#arrow"></use>
+            </svg>
+        </a>
+    </p>
 </section>
       <section class="clients-wrapper default-margin">
     <h2 class="fw-bold fs-1 title">Наши клиенты</h2>
@@ -934,12 +1285,41 @@
         </div>
     </div>
 </section>
+      <section class="default-margin form">
+    <h2 class="title d-none d-md-block fw-bold fs-1">Заинтересовало предложение? Оставьте заявку!</h2>
+    <div class="form-wrapper gap-lg-6 gap-0 d-grid mt-md-6 mt-4">
+        <form action="#" class="form__block d-flex flex-column no-border rounded-4">
+            <p class="d-sm-block d-md-none block-address__mobile fw-bold mb-md-0 mb-4">Заинтересовало предложение?</p>
+            <input type="text" class="form__input rounded-4 mt-0 default-input" placeholder="Как вас зовут?" />
+            <input type="mail" id="email" class="form__input tel default-input rounded-4 mt-4"
+                placeholder="Ваш email" />
+            <input type="tel" id="phone" class="form__input rounded-4 tel mt-4 default-input"
+                placeholder="+7 - 999 - 999 - 99 - 99" />
+            <textarea rows="7" name="form__textarea" class="form__textarea rounded-4 mt-4" id="form-textarea"
+                placeholder="Комментарий"></textarea>
+            <label class="form__checkbox d-grid mt-4 gap-md-4 gap-2">
+                <div class="d-inline position-relative form-input-wrapper d-flex align-items-center">
+                    <input type="checkbox" />
+                    <svg width="22" height="15" class="checkbox-icon">
+                        <use xlink:href="./img/svg/sprite.svg#tick"></use>
+                    </svg>
+                </div>
+                <p class="form__description">
+                    Да, я соглашаюсь <br />
+                    с <a href="#" class="link-strong">условиями обработки персональных данных</a>
+                </p>
+            </label>
+            <button class="form__btn btn btn-primary mt-md-6 mt-4 py-4 mb-0 shadow-none" type="submit">Оставить
+                заявку</button>
+        </form>
+        <img src="./img/blue-image.jpg" class="form__block h-100 d-none d-lg-block image rounded-4"></img>
+    </div>
+</section>
       <a href="#" class="arrow-wrapper d-none d-lg-block position-fixed rounded-circle">
     <svg class="arrow__up">
         <use href="./img/svg/sprite.svg#arrow"></use>
     </svg>
 </a>
-
     </main>
 
   </div>
