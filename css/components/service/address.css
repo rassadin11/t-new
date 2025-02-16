@@ -53,11 +53,11 @@
     display: none;
   }
 }
-.map-address__map {
+.map-address__wrapper {
   top: 0;
   left: 0;
-  -o-object-fit: cover;
-  object-fit: cover;
+  z-index: 100000;
+  overflow: hidden;
 }
 .map-address__input {
   z-index: 100;

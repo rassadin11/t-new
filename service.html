@@ -338,8 +338,11 @@
     <h2 class="service-banner__title fs-2 fw-bold mt-lg-6 mt-0 mb-lg-0 mb-6 d-xs-block d-lg-none mobile">Подключить
         «Бизнес Интернет» в Красноярске</h2>
     <div class="service-banner position-relative overflow-hidden rounded-4 px-md-4 py-4 px-5">
-        <img src="./img/usluga/background.jpg" alt="Banner"
-            class="service-banner__background w-100 h-100 position-absolute" />
+        <picture class="service-banner__background w-100 h-100 position-absolute">
+            <source srcset="./img/usluga/background.webp" type="image/webp">
+            <source srcset="./img/usluga/background.jpg" type="image/jpeg">
+            <img class="h-100" src="./img/usluga/background.jpg">
+        </picture>
         <p class="service-banner__type text-end d-none d-lg-block"><span
                 class="rounded-4 text-uppercase py-2 px-4 c-white">Интернет</span>
         </p>
@@ -795,11 +798,13 @@
                 </div>
             </div>
         </div>
-        <div class="address__block map-address position-relative">
-            <img src="./img/usluga/map.jpg" alt="Map"
-                class="map-address__map position-absolute w-100 h-100 rounded-4" />
+        <div class="address__block map-address position-relative rounded-4 overflow-hidden">
+            <div class="map-disable position-absolute w-100 h-100"></div>
 
-            <div class="map-address__wrapper p-4 d-flex gap-3">
+            <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6bb13b7648abb08828996ad9854fd25857c085c36753dfd53e60b7e4098f07b1&amp;width=100%25&amp;height=494&amp;lang=ru_RU&amp;scroll=true"></script>
+
+            <div class="map-address__wrapper p-4 d-flex gap-3 position-absolute w-100">
                 <label for="mainSearch"
                     class="search-input__wrapper d-flex align-items-center white map-address__input position-relative ms-3 p-4 rounded-4">
                     <svg class="d-block me-4">
@@ -816,7 +821,11 @@
       <section class="form default-margin">
     <h2 class="title fw-bold fs-1 d-none d-md-block">Оставить запрос на подключение</h2>
     <div class="form-wrapper gap-lg-6 gap-0 d-grid mt-md-6 mt-4">
-        <div class="form__block d-none d-lg-block image rounded-4"></div>
+        <picture class="form__block h-100 d-none d-lg-block image rounded-4 overflow-hidden">
+            <source srcset="./img/blue-image.webp" type="image/webp">
+            <source srcset="./img/blue-image.jpg" type="image/jpeg">
+            <img class="h-100" src="./img/blue-image.jpg">
+        </picture>
         <form action="#" class="form__block d-flex flex-column rounded-4">
             <p class="d-sm-block d-md-none block-address__mobile fw-bold mb-md-0 mb-4">Оставить запрос на подключение
             </p>
@@ -1008,8 +1017,13 @@
 
     <div class="d-grid gap-6 news mt-md-7 pt-lg-7 pt-0 mt-4">
         <article class="item-news pb-lg-6 p-4 p-lg-0 rounded-4 d-flex flex-column gap-4">
-            <a href="#" class="item-news__image position-relative overflow-hidden"><img src="./img/gray-rect.png"
-                    alt="Gray" /></a>
+            <a href="#" class="item-news__image position-relative overflow-hidden">
+                <picture>
+                    <source srcset="./img/gray-rect.webp" type="image/webp">
+                    <source srcset="./img/gray-rect.png" type="image/jpeg">
+                    <img class="h-100" src="./img/gray-rect.png">
+                </picture>
+            </a>
             <p class="item-news__title fw-bold mt-lg-6 mt-0 mb-lg-4 mb-0 fs-3"><a href="#">Как использовать интернет для
                     увеличения продуктивности сотрудников офиса?</a></p>
             <p class="item-news__description fs-4 flex-fill mt-lg-4 mt-0 mb-lg-4 mb-0">Интернет стал незаменимым
@@ -1025,8 +1039,13 @@
             </div>
         </article>
         <article class="item-news pb-lg-6 p-4 p-lg-0 rounded-4 d-flex flex-column gap-4">
-            <a href="#" class="item-news__image position-relative overflow-hidden"><img src="./img/gray-rect.png"
-                    alt="Gray" /></a>
+            <a href="#" class="item-news__image position-relative overflow-hidden">
+                <picture>
+                    <source srcset="./img/gray-rect.webp" type="image/webp">
+                    <source srcset="./img/gray-rect.png" type="image/jpeg">
+                    <img class="h-100" src="./img/gray-rect.png">
+                </picture>
+            </a>
             <p class="item-news__title fw-bold mt-lg-6 mt-0 mb-lg-4 mb-0 fs-3"><a href="#">Как использовать интернет для
                     повышения эффективности маркетинга офиса?</a></p>
             <p class="item-news__description fs-4 flex-fill mt-lg-4 mt-0 mb-lg-4 mb-0">Узнайте, как использовать
@@ -1059,7 +1078,11 @@
             <div class="block-reviews__review p-4 rounded-4 review-block gap-2 d-flex flex-column">
                 <p class="review-block__date">29.06.2024</p>
                 <div class="review-block__user d-flex align-items-center">
-                    <img src="./img/usluga/gray-user.jpg" alt="#" class="review-block__icon" />
+                    <picture class="review-block__icon">
+                        <source srcset="./img/usluga/gray-user.webp" type="image/webp">
+                        <source srcset="./img/usluga/gray-user.jpg" type="image/jpeg">
+                        <img class="h-100" src="./img/usluga/gray-user.jpg">
+                    </picture>
                     <p class="review-block__name ms-4">stand-art24</p>
                 </div>
                 <p class="review-block__paragraph">
@@ -1069,7 +1092,12 @@
             <div class="block-reviews__review p-4 rounded-4 review-block d-flex flex-column gap-2">
                 <p class="review-block__date">29.06.2024</p>
                 <div class="review-block__user d-flex align-items-center">
-                    <img src="./img/usluga/gray-user.jpg" alt="#" class="review-block__icon" />
+                    <picture class="review-block__icon">
+                        <source srcset="./img/usluga/gray-user.webp" type="image/webp">
+                        <source srcset="./img/usluga/gray-user.jpg" type="image/jpeg">
+                        <img class="h-100" src="./img/usluga/gray-user.jpg">
+                    </picture>
+
                     <p class="review-block__name ms-4">stand-art24</p>
                 </div>
                 <p class="review-block__paragraph">
@@ -1081,7 +1109,12 @@
             <div class="block-reviews__review p-4 rounded-4 review-block d-flex flex-column gap-2">
                 <p class="review-block__date">29.06.2024</p>
                 <div class="review-block__user d-flex align-items-center">
-                    <img src="./img/usluga/gray-user.jpg" alt="#" class="review-block__icon" />
+                    <picture class="review-block__icon">
+                        <source srcset="./img/usluga/gray-user.webp" type="image/webp">
+                        <source srcset="./img/usluga/gray-user.jpg" type="image/jpeg">
+                        <img class="h-100" src="./img/usluga/gray-user.jpg">
+                    </picture>
+
                     <p class="review-block__name ms-4">stand-art24</p>
                 </div>
                 <p class="review-block__paragraph">
@@ -1091,7 +1124,12 @@
             <div class="block-reviews__review p-4 rounded-4 review-block d-flex flex-column gap-2">
                 <p class="review-block__date">29.06.2024</p>
                 <div class="review-block__user d-flex align-items-center">
-                    <img src="./img/usluga/gray-user.jpg" alt="#" class="review-block__icon" />
+                    <picture class="review-block__icon">
+                        <source srcset="./img/usluga/gray-user.webp" type="image/webp">
+                        <source srcset="./img/usluga/gray-user.jpg" type="image/jpeg">
+                        <img class="h-100" src="./img/usluga/gray-user.jpg">
+                    </picture>
+
                     <p class="review-block__name ms-4">stand-art24</p>
                 </div>
                 <p class="review-block__paragraph">
@@ -1107,7 +1145,12 @@
             <div class="block-reviews__review p-4 rounded-4 review-block d-flex flex-column gap-2">
                 <p class="review-block__date">29.06.2024</p>
                 <div class="review-block__user d-flex align-items-center">
-                    <img src="./img/usluga/gray-user.jpg" alt="#" class="review-block__icon" />
+                    <picture class="review-block__icon">
+                        <source srcset="./img/usluga/gray-user.webp" type="image/webp">
+                        <source srcset="./img/usluga/gray-user.jpg" type="image/jpeg">
+                        <img class="h-100" src="./img/usluga/gray-user.jpg">
+                    </picture>
+
                     <p class="review-block__name ms-4">stand-art24</p>
                 </div>
                 <p class="review-block__paragraph">
@@ -1117,7 +1160,12 @@
             <div class="block-reviews__review p-4 rounded-4 review-block d-flex flex-column gap-2">
                 <p class="review-block__date">29.06.2024</p>
                 <div class="review-block__user d-flex align-items-center">
-                    <img src="./img/usluga/gray-user.jpg" alt="#" class="review-block__icon" />
+                    <picture class="review-block__icon">
+                        <source srcset="./img/usluga/gray-user.webp" type="image/webp">
+                        <source srcset="./img/usluga/gray-user.jpg" type="image/jpeg">
+                        <img class="h-100" src="./img/usluga/gray-user.jpg">
+                    </picture>
+
                     <p class="review-block__name ms-4">stand-art24</p>
                 </div>
                 <p class="review-block__paragraph">
@@ -1129,7 +1177,12 @@
             <div class="block-reviews__review p-4 rounded-4 review-block d-flex flex-column gap-2">
                 <p class="review-block__date">29.06.2024</p>
                 <div class="review-block__user d-flex align-items-center">
-                    <img src="./img/usluga/gray-user.jpg" alt="#" class="review-block__icon" />
+                    <picture class="review-block__icon">
+                        <source srcset="./img/usluga/gray-user.webp" type="image/webp">
+                        <source srcset="./img/usluga/gray-user.jpg" type="image/jpeg">
+                        <img class="h-100" src="./img/usluga/gray-user.jpg">
+                    </picture>
+
                     <p class="review-block__name ms-4">stand-art24</p>
                 </div>
                 <p class="review-block__paragraph">
@@ -1144,7 +1197,12 @@
             <div class="block-reviews__review p-4 rounded-4 review-block d-flex flex-column gap-2">
                 <p class="review-block__date">29.06.2024</p>
                 <div class="review-block__user d-flex align-items-center">
-                    <img src="./img/usluga/gray-user.jpg" alt="#" class="review-block__icon" />
+                    <picture class="review-block__icon">
+                        <source srcset="./img/usluga/gray-user.webp" type="image/webp">
+                        <source srcset="./img/usluga/gray-user.jpg" type="image/jpeg">
+                        <img class="h-100" src="./img/usluga/gray-user.jpg">
+                    </picture>
+
                     <p class="review-block__name ms-4">stand-art24</p>
                 </div>
                 <p class="review-block__paragraph">
@@ -1163,94 +1221,206 @@
     </p>
 </section>
       <section class="clients-wrapper default-margin">
-    <h2 class="fw-bold fs-1 title">Наши клиенты</h2>
+        <h2 class="fw-bold fs-1 title">Наши клиенты</h2>
 
-    <div class="row clients mt-lg-7 mt-md-6 pt-md-0 pt-lg-2 mt-0 d-md-flex d-grid align-items-center">
-        <div class="col-lg-2 col-md-4 clients__item p-2"><img src="./img/clients/01.jpg" alt="Client 01"
-                class="w-100" />
+        <div class="row clients mt-lg-7 mt-md-6 pt-md-0 pt-lg-2 mt-0 d-md-flex d-grid align-items-center">
+                <div class="col-lg-2 col-md-4 clients__item p-2">
+                        <picture>
+                                <source srcset="./img/clients/01.webp" type="image/webp">
+                                <source srcset="./img/clients/01.jpg" type="image/jpeg">
+                                <img src="./img/clients/01.jpg">
+                        </picture>
+                </div>
+                <div class="col-lg-2 col-md-4 clients__item p-2">
+                        <picture>
+                                <source srcset="./img/clients/02.webp" type="image/webp">
+                                <source srcset="./img/clients/02.jpg" type="image/jpeg">
+                                <img src="./img/clients/02.jpg">
+                        </picture>
+                </div>
+                <div class="col-lg-2 col-md-4 clients__item p-2">
+                        <picture>
+                                <source srcset="./img/clients/03.webp" type="image/webp">
+                                <source srcset="./img/clients/03.jpg" type="image/jpeg">
+                                <img src="./img/clients/03.jpg">
+                        </picture>
+                </div>
+                <div class="col-lg-2 col-md-4 clients__item p-2">
+                        <picture>
+                                <source srcset="./img/clients/04.webp" type="image/webp">
+                                <source srcset="./img/clients/04.jpg" type="image/jpeg">
+                                <img src="./img/clients/04.jpg">
+                        </picture>
+                </div>
+                <div class="col-lg-2 col-md-4 clients__item p-2">
+                        <picture>
+                                <source srcset="./img/clients/05.webp" type="image/webp">
+                                <source srcset="./img/clients/05.jpg" type="image/jpeg">
+                                <img src="./img/clients/05.jpg">
+                        </picture>
+                </div>
+                <div class="col-lg-2 col-md-4 clients__item p-2">
+                        <picture>
+                                <source srcset="./img/clients/06.webp" type="image/webp">
+                                <source srcset="./img/clients/06.jpg" type="image/jpeg">
+                                <img src="./img/clients/06.jpg">
+                        </picture>
+                </div>
+                <div class="col-lg-2 col-md-4 clients__item p-2">
+                        <picture>
+                                <source srcset="./img/clients/07.webp" type="image/webp">
+                                <source srcset="./img/clients/07.jpg" type="image/jpeg">
+                                <img src="./img/clients/07.jpg">
+                        </picture>
+                </div>
+                <div class="col-lg-2 col-md-4 clients__item p-2">
+                        <picture>
+                                <source srcset="./img/clients/08.webp" type="image/webp">
+                                <source srcset="./img/clients/08.jpg" type="image/jpeg">
+                                <img src="./img/clients/08.jpg">
+                        </picture>
+                </div>
+                <div class="col-lg-2 col-md-4 clients__item p-2">
+                        <picture>
+                                <source srcset="./img/clients/09.webp" type="image/webp">
+                                <source srcset="./img/clients/09.jpg" type="image/jpeg">
+                                <img src="./img/clients/09.jpg">
+                        </picture>
+                </div>
+                <div class="col-lg-2 col-md-4 clients__item p-2">
+                        <picture>
+                                <source srcset="./img/clients/10.webp" type="image/webp">
+                                <source srcset="./img/clients/10.jpg" type="image/jpeg">
+                                <img src="./img/clients/10.jpg">
+                        </picture>
+                </div>
+                <div class="col-lg-2 col-md-4 clients__item p-2">
+                        <picture>
+                                <source srcset="./img/clients/11.webp" type="image/webp">
+                                <source srcset="./img/clients/11.jpg" type="image/jpeg">
+                                <img src="./img/clients/11.jpg">
+                        </picture>
+                </div>
+                <div class="col-lg-2 col-md-4 clients__item p-2">
+                        <picture>
+                                <source srcset="./img/clients/12.webp" type="image/webp">
+                                <source srcset="./img/clients/12.jpg" type="image/jpeg">
+                                <img src="./img/clients/12.jpg">
+                        </picture>
+                </div>
+                <div class="col-lg-2 col-md-4 clients__item p-2">
+                        <picture>
+                                <source srcset="./img/clients/13.webp" type="image/webp">
+                                <source srcset="./img/clients/13.jpg" type="image/jpeg">
+                                <img src="./img/clients/13.jpg">
+                        </picture>
+                </div>
+                <div class="col-lg-2 col-md-4 clients__item p-2">
+                        <picture>
+                                <source srcset="./img/clients/14.webp" type="image/webp">
+                                <source srcset="./img/clients/14.jpg" type="image/jpeg">
+                                <img src="./img/clients/14.jpg">
+                        </picture>
+                </div>
+                <div class="col-lg-2 col-md-4 clients__item p-2">
+                        <picture>
+                                <source srcset="./img/clients/15.webp" type="image/webp">
+                                <source srcset="./img/clients/15.jpg" type="image/jpeg">
+                                <img src="./img/clients/15.jpg">
+                        </picture>
+                </div>
+                <div class="col-lg-2 col-md-4 clients__item p-2">
+                        <picture>
+                                <source srcset="./img/clients/16.webp" type="image/webp">
+                                <source srcset="./img/clients/16.jpg" type="image/jpeg">
+                                <img src="./img/clients/16.jpg">
+                        </picture>
+                </div>
+                <div class="col-lg-2 col-md-4 clients__item p-2">
+                        <picture>
+                                <source srcset="./img/clients/17.webp" type="image/webp">
+                                <source srcset="./img/clients/17.jpg" type="image/jpeg">
+                                <img src="./img/clients/17.jpg">
+                        </picture>
+                </div>
+                <div class="col-lg-2 col-md-4 clients__item p-2">
+                        <picture>
+                                <source srcset="./img/clients/18.webp" type="image/webp">
+                                <source srcset="./img/clients/18.jpg" type="image/jpeg">
+                                <img src="./img/clients/18.jpg">
+                        </picture>
+                </div>
+                <div class="col-lg-2 col-md-4 clients__item p-2">
+                        <picture>
+                                <source srcset="./img/clients/19.webp" type="image/webp">
+                                <source srcset="./img/clients/19.jpg" type="image/jpeg">
+                                <img src="./img/clients/19.jpg">
+                        </picture>
+                </div>
+                <div class="col-lg-2 col-md-4 clients__item p-2">
+                        <picture>
+                                <source srcset="./img/clients/20.webp" type="image/webp">
+                                <source srcset="./img/clients/20.jpg" type="image/jpeg">
+                                <img src="./img/clients/20.jpg">
+                        </picture>
+                </div>
+                <div class="col-lg-2 col-md-4 clients__item p-2">
+                        <picture>
+                                <source srcset="./img/clients/21.webp" type="image/webp">
+                                <source srcset="./img/clients/21.jpg" type="image/jpeg">
+                                <img src="./img/clients/21.jpg">
+                        </picture>
+                </div>
+                <div class="col-lg-2 col-md-4 clients__item p-2">
+                        <picture>
+                                <source srcset="./img/clients/22.webp" type="image/webp">
+                                <source srcset="./img/clients/22.jpg" type="image/jpeg">
+                                <img src="./img/clients/22.jpg">
+                        </picture>
+                </div>
+                <div class="col-lg-2 col-md-4 clients__item p-2">
+                        <picture>
+                                <source srcset="./img/clients/23.webp" type="image/webp">
+                                <source srcset="./img/clients/23.jpg" type="image/jpeg">
+                                <img src="./img/clients/23.jpg">
+                        </picture>
+                </div>
+                <div class="col-lg-2 col-md-4 clients__item p-2">
+                        <picture>
+                                <source srcset="./img/clients/24.webp" type="image/webp">
+                                <source srcset="./img/clients/24.jpg" type="image/jpeg">
+                                <img src="./img/clients/24.jpg">
+                        </picture>
+                </div>
+                <div class="col-lg-2 col-md-4 clients__item p-2">
+                        <picture>
+                                <source srcset="./img/clients/25.webp" type="image/webp">
+                                <source srcset="./img/clients/25.jpg" type="image/jpeg">
+                                <img src="./img/clients/25.jpg">
+                        </picture>
+                </div>
+                <div class="col-lg-2 col-md-4 clients__item p-2">
+                        <picture>
+                                <source srcset="./img/clients/26.webp" type="image/webp">
+                                <source srcset="./img/clients/26.jpg" type="image/jpeg">
+                                <img src="./img/clients/26.jpg">
+                        </picture>
+                </div>
+                <div class="col-lg-2 col-md-4 clients__item p-2">
+                        <picture>
+                                <source srcset="./img/clients/27.webp" type="image/webp">
+                                <source srcset="./img/clients/27.jpg" type="image/jpeg">
+                                <img src="./img/clients/27.jpg">
+                        </picture>
+                </div>
+                <div class="col-lg-2 col-md-4 clients__item p-2">
+                        <picture>
+                                <source srcset="./img/clients/28.webp" type="image/webp">
+                                <source srcset="./img/clients/28.jpg" type="image/jpeg">
+                                <img src="./img/clients/28.jpg">
+                        </picture>
+                </div>
         </div>
-        <div class="col-lg-2 col-md-4 clients__item p-2"><img src="./img/clients/02.jpg" alt="Client 02"
-                class="w-100" />
-        </div>
-        <div class="col-lg-2 col-md-4 clients__item p-2"><img src="./img/clients/03.jpg" alt="Client 03"
-                class="w-100" />
-        </div>
-        <div class="col-lg-2 col-md-4 clients__item p-2"><img src="./img/clients/04.jpg" alt="Client 04"
-                class="w-100" />
-        </div>
-        <div class="col-lg-2 col-md-4 clients__item p-2"><img src="./img/clients/05.jpg" alt="Client 05"
-                class="w-100" />
-        </div>
-        <div class="col-lg-2 col-md-4 clients__item p-2"><img src="./img/clients/06.jpg" alt="Client 06"
-                class="w-100" />
-        </div>
-        <div class="col-lg-2 col-md-4 clients__item p-2"><img src="./img/clients/07.jpg" alt="Client 07"
-                class="w-100" />
-        </div>
-        <div class="col-lg-2 col-md-4 clients__item p-2"><img src="./img/clients/08.jpg" alt="Client 08"
-                class="w-100" />
-        </div>
-        <div class="col-lg-2 col-md-4 clients__item p-2"><img src="./img/clients/09.jpg" alt="Client 09"
-                class="w-100" />
-        </div>
-        <div class="col-lg-2 col-md-4 clients__item p-2"><img src="./img/clients/10.jpg" alt="Client 10"
-                class="w-100" />
-        </div>
-        <div class="col-lg-2 col-md-4 clients__item p-2"><img src="./img/clients/11.jpg" alt="Client 11"
-                class="w-100" />
-        </div>
-        <div class="col-lg-2 col-md-4 clients__item p-2"><img src="./img/clients/12.jpg" alt="Client 12"
-                class="w-100" />
-        </div>
-        <div class="col-lg-2 col-md-4 clients__item p-2"><img src="./img/clients/13.jpg" alt="Client 13"
-                class="w-100" />
-        </div>
-        <div class="col-lg-2 col-md-4 clients__item p-2"><img src="./img/clients/14.jpg" alt="Client 14"
-                class="w-100" />
-        </div>
-        <div class="col-lg-2 col-md-4 clients__item p-2"><img src="./img/clients/15.jpg" alt="Client 15"
-                class="w-100" />
-        </div>
-        <div class="col-lg-2 col-md-4 clients__item p-2"><img src="./img/clients/16.jpg" alt="Client 16"
-                class="w-100" />
-        </div>
-        <div class="col-lg-2 col-md-4 clients__item p-2"><img src="./img/clients/17.jpg" alt="Client 17"
-                class="w-100" />
-        </div>
-        <div class="col-lg-2 col-md-4 clients__item p-2"><img src="./img/clients/18.jpg" alt="Client 18"
-                class="w-100" />
-        </div>
-        <div class="col-lg-2 col-md-4 clients__item p-2"><img src="./img/clients/19.jpg" alt="Client 19"
-                class="w-100" />
-        </div>
-        <div class="col-lg-2 col-md-4 clients__item p-2"><img src="./img/clients/20.jpg" alt="Client 20"
-                class="w-100" />
-        </div>
-        <div class="col-lg-2 col-md-4 clients__item p-2"><img src="./img/clients/21.jpg" alt="Client 21"
-                class="w-100" />
-        </div>
-        <div class="col-lg-2 col-md-4 clients__item p-2"><img src="./img/clients/22.jpg" alt="Client 22"
-                class="w-100" />
-        </div>
-        <div class="col-lg-2 col-md-4 clients__item p-2"><img src="./img/clients/23.jpg" alt="Client 23"
-                class="w-100" />
-        </div>
-        <div class="col-lg-2 col-md-4 clients__item p-2"><img src="./img/clients/24.jpg" alt="Client 24"
-                class="w-100" />
-        </div>
-        <div class="col-lg-2 col-md-4 clients__item p-2"><img src="./img/clients/25.jpg" alt="Client 25"
-                class="w-100" />
-        </div>
-        <div class="col-lg-2 col-md-4 clients__item p-2"><img src="./img/clients/26.jpg" alt="Client 26"
-                class="w-100" />
-        </div>
-        <div class="col-lg-2 col-md-4 clients__item p-2"><img src="./img/clients/27.jpg" alt="Client 27"
-                class="w-100" />
-        </div>
-        <div class="col-lg-2 col-md-4 clients__item p-2"><img src="./img/clients/28.jpg" alt="Client 28"
-                class="w-100" />
-        </div>
-    </div>
 </section>
       <section class="about default-margin">
     <h2 class="fw-bold fs-1 title">О нас</h2>
@@ -1281,7 +1451,11 @@
             </p>
         </div>
         <div class="about_us__item overflow-hidden rounded-4">
-            <img src="./img/about_us.jpg" alt="About us" />
+            <picture>
+                <source srcset="./img/about_us.webp" type="image/webp">
+                <source srcset="./img/about_us.jpg" type="image/jpeg">
+                <img src="./img/about_us.jpg">
+            </picture>
         </div>
     </div>
 </section>
@@ -1312,7 +1486,11 @@
             <button class="form__btn btn btn-primary mt-md-6 mt-4 py-4 mb-0 shadow-none" type="submit">Оставить
                 заявку</button>
         </form>
-        <img src="./img/blue-image.jpg" class="form__block h-100 d-none d-lg-block image rounded-4"></img>
+        <picture class="form__block h-100 d-none d-lg-block image rounded-4 overflow-hidden">
+            <source srcset="./img/blue-image.webp" type="image/webp">
+            <source srcset="./img/blue-image.jpg" type="image/jpeg">
+            <img class="h-100" src="./img/blue-image.jpg">
+        </picture>
     </div>
 </section>
       <a href="#" class="arrow-wrapper d-none d-lg-block position-fixed rounded-circle">

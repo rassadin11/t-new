@@ -299,10 +299,6 @@ function loadMap() {
       dot.parentElement.parentElement.querySelector('.dot-text').classList.remove('active');
     });
   });
-  const yandexMap = document.querySelector('.map-disable');
-  yandexMap.addEventListener('click', () => {
-    yandexMap.classList.add('active');
-  });
 }
 
 /***/ }),
@@ -5080,6 +5076,12 @@ if (matchMedia('only screen and (min-width: 991px)').matches) {
     emailMasks.push(mask2);
   });
 }
+const yandexMap = document.querySelectorAll('.map-disable');
+yandexMap.forEach(item => {
+  item.addEventListener('click', () => {
+    item.classList.add('active');
+  });
+});
 })();
 
 /******/ })()
