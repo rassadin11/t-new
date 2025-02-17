@@ -162,6 +162,9 @@
   border: none;
   outline: none;
   color: var(--dark-gray);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .notifies-calc {
