@@ -89,7 +89,6 @@
   background-attachment: fixed;
   background-clip: padding-box;
   font-variant-numeric: lining-nums;
-  word-break: break-all;
 }
 @media (max-width: 992px) {
   .internet-card {
@@ -103,7 +102,11 @@
 }
 .internet-card__desc {
   font-size: 1.3125rem;
-  word-wrap: break-word;
+}
+@media (min-width: 1700px) {
+  .internet-card__desc {
+    word-break: break-all;
+  }
 }
 .internet-card__desc:not(:first-child) {
   margin-top: 1rem;

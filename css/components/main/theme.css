@@ -124,6 +124,13 @@ body {
   border-radius: 100px;
 }
 
+p,
+strong,
+span {
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
 p {
   font-size: 1rem;
   line-height: 1.3;
@@ -141,6 +148,7 @@ ul {
 .default-input {
   color: var(--bs-primary);
   margin-top: 2rem;
+  font-size: 1rem;
   padding: 0.9rem;
   width: 100%;
   outline: none;

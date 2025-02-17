@@ -64,7 +64,7 @@
               </svg>
             </div>
           </div>
-          <ul class="navbar-nav p-xxl-0 p-4 gap-xxl-3 gap-1">
+          <ul class="navbar-nav p-xxl-0 p-4 gap-xxl-3 gap-2">
             <li class="nav-item fs-5 py-xxl-5">
               <a class="nav-link c-white gap-3 py-2 px-3 d-flex align-items-center tab-title" href="#" id="menu1"
                 role="button" aria-expanded="false">
@@ -313,22 +313,22 @@
         class="container post-header__wrapper gap-6 text-nowrap d-flex align-items-center justify-content-between py-xxl-6 py-6 px-4 mb-4 mb-md-0">
         <nav class="post-header__item item-post">
             <ul
-                class="item-post__list flex-lg-wrap flex-nowrap ps-0 mb-0 gap-xxl-6 gap-4 list-post d-flex align-items-center">
-                <li><a href="#" class="px-4 py-2">Все</a></li>
-                <li><a href="#" class="px-4 py-2">Инструкции</a></li>
-                <li><a href="#" class="px-4 py-2">Документы</a></li>
-                <li><a href="#" class="px-4 py-2">Оплата услуг</a></li>
-                <li><a href="#" class="px-4 py-2">Благодарности</a></li>
-                <li><a href="#" class="px-4 py-2">Благотворительность</a></li>
-                <li><a href="#" class="px-4 py-2">Реквизиты</a></li>
+                class="item-post__list flex-lg-wrap flex-nowrap ps-0 mb-0 gap-xxl-6 list-post d-flex align-items-center">
+                <li class="px-4 py-2"><a href="#">Все</a></li>
+                <li class="px-4 py-2"><a href="#">Инструкции</a></li>
+                <li class="px-4 py-2"><a href="#">Документы</a></li>
+                <li class="px-4 py-2"><a href="#">Оплата услуг</a></li>
+                <li class="px-4 py-2"><a href="#">Благодарности</a></li>
+                <li class="px-4 py-2"><a href="#">Благотворительность</a></li>
+                <li class="px-4 py-2"><a href="#">Реквизиты</a></li>
             </ul>
         </nav>
-        <div class="post-header__item item-post gap-6 d-flex align-items-center">
+        <div class="post-header__item item-post gap-xxl-6 gap-5 d-flex align-items-center">
             <a href="#" class="item-post__link py-2">Техническая поддержка</a>
             <svg class="item-post__search">
                 <use href="./img/svg/sprite.svg#menu_search"></use>
             </svg>
-            <button class="item-post__btn btn btn-primary shadow-none">Личный кабинет</button>
+            <button class="item-post__btn btn btn-primary shadow-none d-none d-xxl-block">Личный кабинет</button>
         </div>
     </div>
 </section>
@@ -397,51 +397,31 @@
         <div class="mb-3 services__item item-services p-0">
             <a href="#" class="item-services__wrapper p-5 h-100 d-block">
                 <p class="item-services__title fs-4 fw-bold d-flex flex-column mb-3 pe-2">Бизнес интернет</p>
-                <picture class="lazy">
-                    <source data-srcset="./img/wifi.webp" type="image/webp">
-                    <source data-srcset="./img/wifi.png" type="image/jpeg">
-                    <img data-srcset="./img/wifi.png">
-                </picture>
+                <img alt="icon" src="./img/wifi.png">
             </a>
         </div>
         <div class="mb-3 services__item item-services p-0">
             <a href="#" class="item-services__wrapper p-5 h-100 d-block">
                 <p class="item-services__title fs-4 fw-bold d-flex flex-column mb-3 pe-2">Бизнес интернет</p>
-                <picture class="lazy">
-                    <source data-srcset="./img/ula.webp" type="image/webp">
-                    <source data-srcset="./img/ula.png" type="image/jpeg">
-                    <img data-srcset="./img/ula.png">
-                </picture>
+                <img alt="icon" src="./img/ula.png">
             </a>
         </div>
         <div class="mb-3 services__item item-services p-0">
             <a href="#" class="item-services__wrapper p-5 h-100 d-block">
                 <p class="item-services__title fs-4 fw-bold d-flex flex-column mb-3 pe-2">Бизнес интернет</p>
-                <picture class="lazy">
-                    <source data-srcset="./img/internet.webp" type="image/webp">
-                    <source data-srcset="./img/internet.png" type="image/jpeg">
-                    <img data-srcset="./img/internet.png">
-                </picture>
+                <img alt="icon" src="./img/internet.png">
             </a>
         </div>
         <div class="mb-3 services__item item-services p-0">
             <a href="#" class="item-services__wrapper p-5 h-100 d-block ">
                 <p class="item-services__title fs-4 fw-bold d-flex flex-column mb-3 pe-2">Бизнес интернет</p>
-                <picture class="lazy">
-                    <source data-srcset="./img/defence.webp" type="image/webp">
-                    <source data-srcset="./img/defence.png" type="image/jpeg">
-                    <img data-srcset="./img/defence.png">
-                </picture>
+                <img alt="icon" src="./img/defence.png">
             </a>
         </div>
         <div class="mb-3 services__item item-services p-0">
             <a href="#" class="item-services__wrapper p-5 h-100 d-block ">
                 <p class="item-services__title fs-4 fw-bold d-flex flex-column mb-3 pe-2">Бизнес интернет</p>
-                <picture class="lazy">
-                    <source data-srcset="./img/lego.webp" type="image/webp">
-                    <source data-srcset="./img/lego.png" type="image/jpeg">
-                    <img data-srcset="./img/lego.png">
-                </picture>
+                <img alt="icon" src="./img/lego.png">
             </a>
         </div>
         <div class="mb-3 services__item item-services p-0">
@@ -542,11 +522,8 @@
 </section>
       <section class="d-none d-lg-block default-margin">
     <div class="banner position-relative rounded-4 overflow-hidden c-white">
-        <picture class="banner__background position-absolute w-100 h-100 lazy">
-            <source data-srcset="./img/banner.webp" type="image/webp">
-            <source data-srcset="./img/banner.jpg" type="image/jpeg">
-            <img data-srcset="./img/banner.jpg" class="h-100 w-100">
-        </picture>
+        <div class="banner__background position-absolute"><img src="./img/banner.jpg" alt="banner"></div>
+
         <h2 class="banner__title fw-bold mb-0 c-white">Переходи на 1Гбит/с</h2>
         <p class="banner__description fs-3 c-white pt-6 p-0 mb-7 pb-3">
             До конца августа 2024 года действует субсидируемый переход на бизнес-интеренет со скорость 1 Гбит/с
@@ -566,33 +543,27 @@
             <p><a href="#"
                     class="sale__link c-white position-relative py-md-4 px-md-5 py-3 px-4 rounded-4">Подробнее</a>
             </p>
-            <picture class="sale__image lazy position-absolute d-inline-block text-decoration-none">
-                <source data-srcset="./img/sales1.webp" type="image/webp">
-                <source data-srcset="./img/sales1.png" type="image/jpeg">
-                <img class="h-100 w-100" data-srcset="./img/sales1.png">
-            </picture>
+            <div class="sale__image position-absolute d-inline-block text-decoration-none">
+                <img alt="sale" class="h-100" src="./img/sales1.png">
+            </div>
         </div>
         <div class="d-flex flex-column p-md-7 rounded-4 overflow-hidden p-4 sale__blue position-relative">
             <p class="sale__title flex-fill fw-bold fs-2 c-white">Безопасность и надёжность с Telezon</p>
             <p><a href="#"
                     class="sale__link c-white position-relative py-md-4 px-md-5 py-3 px-4 rounded-4">Подробнее</a>
             </p>
-            <picture class="sale__image lazy position-absolute d-inline-block text-decoration-none">
-                <source data-srcset="./img/sales2.webp" type="image/webp">
-                <source data-srcset="./img/sales2.png" type="image/jpeg">
-                <img class="h-100 w-100" data-srcset="./img/sales2.png">
-            </picture>
+            <div class="sale__image position-absolute d-inline-block text-decoration-none">
+                <img alt="sale" class="h-100" src="./img/sales2.png">
+            </div>
         </div>
         <div class="d-flex flex-column p-md-7 rounded-4 overflow-hidden p-4 sale__pink position-relative">
             <p class="sale__title flex-fill fw-bold fs-2 c-white">Мощь облака в твоих руках</p>
             <p><a href="#"
                     class="sale__link c-white position-relative py-md-4 px-md-5 py-3 px-4 rounded-4">Подробнее</a>
             </p>
-            <picture class="sale__image lazy position-absolute d-inline-block text-decoration-none">
-                <source data-srcset="./img/sales3.webp" type="image/webp">
-                <source data-srcset="./img/sales3.png" type="image/jpeg">
-                <img class="h-100 w-100" data-srcset="./img/sales3.png">
-            </picture>
+            <div class="sale__image position-absolute d-inline-block text-decoration-none">
+                <img alt="sale" class="h-100" src="./img/sales3.png">
+            </div>
         </div>
     </div>
 </section>
@@ -602,18 +573,14 @@
     <div class="d-grid gap-6 news mt-md-7 pt-lg-7 pt-0 mt-4">
         <article class="item-news pb-lg-6 p-4 p-lg-0 rounded-4 d-flex flex-column gap-4">
             <a href="#" class="item-news__image position-relative overflow-hidden">
-                <picture class="lazy">
-                    <source data-srcset="./img/gray-rect.webp" type="image/webp">
-                    <source data-srcset="./img/gray-rect.png" type="image/jpeg">
-                    <img class="h-100 w-100" data-srcset="./img/gray-rect.png">
-                </picture>
+                <img src="./img/gray-rect.png" alt="news">
             </a>
             <div class="item-news__info d-flex info-news mt-lg-5 mt-0 gap-3">
                 <div class="info-news__block d-flex align-items-center gap-2">
                     <svg class="svg-calendar">
                         <use href="./img/svg/sprite.svg#calendar"></use>
                     </svg>
-                    <span class="info-news__date mb-0">17.07.2024</span>
+                    <time class="info-news__date mb-0" datetime="17.07.2024">17.07.2024</time>
                 </div>
                 <div class="info-news__block d-flex align-items-center gap-2">
                     <svg class="svg-eye">
@@ -644,18 +611,14 @@
         </article>
         <article class="item-news pb-lg-6 p-4 p-lg-0 rounded-4 d-flex flex-column gap-4">
             <a href="#" class="item-news__image position-relative overflow-hidden">
-                <picture class="lazy">
-                    <source data-srcset="./img/gray-rect.webp" type="image/webp">
-                    <source data-srcset="./img/gray-rect.png" type="image/jpeg">
-                    <img class="h-100 w-100" data-srcset="./img/gray-rect.png">
-                </picture>
+                <img src="./img/gray-rect.png" alt="news">
             </a>
             <div class="item-news__info d-flex info-news mt-lg-5 mt-0 gap-3">
                 <div class="info-news__block d-flex align-items-center gap-2">
                     <svg class="svg-calendar">
                         <use href="./img/svg/sprite.svg#calendar"></use>
                     </svg>
-                    <span class="info-news__date mb-0">17.07.2024</span>
+                    <time class="info-news__date mb-0" datetime="17.07.2024">17.07.2024</time>
                 </div>
                 <div class="info-news__block d-flex align-items-center gap-2">
                     <svg class="svg-eye">
@@ -723,200 +686,116 @@
 
         <div class="row clients mt-lg-7 mt-md-6 pt-md-0 pt-lg-2 mt-0 d-md-flex d-grid align-items-center">
                 <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <picture class="lazy">
-                                <source data-srcset="./img/clients/01.webp" type="image/webp">
-                                <source data-srcset="./img/clients/01.jpg" type="image/jpeg">
-                                <img class="h-100 w-100" data-srcset="./img/clients/01.jpg">
-                        </picture>
+                        <img fetchpriority="low" loading="lazy" decoding="async" src="./img/clients/01.jpg"
+                                alt="client01">
                 </div>
                 <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <picture class="lazy">
-                                <source data-srcset="./img/clients/02.webp" type="image/webp">
-                                <source data-srcset="./img/clients/02.jpg" type="image/jpeg">
-                                <img class="h-100 w-100" data-srcset="./img/clients/02.jpg">
-                        </picture>
+                        <img fetchpriority="low" loading="lazy" decoding="async" src="./img/clients/02.jpg"
+                                alt="client02">
                 </div>
                 <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <picture class="lazy">
-                                <source data-srcset="./img/clients/03.webp" type="image/webp">
-                                <source data-srcset="./img/clients/03.jpg" type="image/jpeg">
-                                <img class="h-100 w-100" data-srcset="./img/clients/03.jpg">
-                        </picture>
+                        <img fetchpriority="low" loading="lazy" decoding="async" src="./img/clients/03.jpg"
+                                alt="client03">
                 </div>
                 <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <picture class="lazy">
-                                <source data-srcset="./img/clients/04.webp" type="image/webp">
-                                <source data-srcset="./img/clients/04.jpg" type="image/jpeg">
-                                <img class="h-100 w-100" data-srcset="./img/clients/04.jpg">
-                        </picture>
+                        <img fetchpriority="low" loading="lazy" decoding="async" src="./img/clients/04.jpg"
+                                alt="client04">
                 </div>
                 <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <picture class="lazy">
-                                <source data-srcset="./img/clients/05.webp" type="image/webp">
-                                <source data-srcset="./img/clients/05.jpg" type="image/jpeg">
-                                <img class="h-100 w-100" data-srcset="./img/clients/05.jpg">
-                        </picture>
+                        <img fetchpriority="low" loading="lazy" decoding="async" src="./img/clients/05.jpg"
+                                alt="client05">
                 </div>
                 <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <picture class="lazy">
-                                <source data-srcset="./img/clients/06.webp" type="image/webp">
-                                <source data-srcset="./img/clients/06.jpg" type="image/jpeg">
-                                <img class="h-100 w-100" data-srcset="./img/clients/06.jpg">
-                        </picture>
+                        <img fetchpriority="low" loading="lazy" decoding="async" src="./img/clients/06.jpg"
+                                alt="client06">
                 </div>
                 <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <picture class="lazy">
-                                <source data-srcset="./img/clients/07.webp" type="image/webp">
-                                <source data-srcset="./img/clients/07.jpg" type="image/jpeg">
-                                <img class="h-100 w-100" data-srcset="./img/clients/07.jpg">
-                        </picture>
+                        <img fetchpriority="low" loading="lazy" decoding="async" src="./img/clients/07.jpg"
+                                alt="client07">
                 </div>
                 <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <picture class="lazy">
-                                <source data-srcset="./img/clients/08.webp" type="image/webp">
-                                <source data-srcset="./img/clients/08.jpg" type="image/jpeg">
-                                <img class="h-100 w-100" data-srcset="./img/clients/08.jpg">
-                        </picture>
+                        <img fetchpriority="low" loading="lazy" decoding="async" src="./img/clients/08.jpg"
+                                alt="client08">
                 </div>
                 <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <picture class="lazy">
-                                <source data-srcset="./img/clients/09.webp" type="image/webp">
-                                <source data-srcset="./img/clients/09.jpg" type="image/jpeg">
-                                <img class="h-100 w-100" data-srcset="./img/clients/09.jpg">
-                        </picture>
+                        <img fetchpriority="low" loading="lazy" decoding="async" src="./img/clients/09.jpg"
+                                alt="client09">
                 </div>
                 <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <picture class="lazy">
-                                <source data-srcset="./img/clients/10.webp" type="image/webp">
-                                <source data-srcset="./img/clients/10.jpg" type="image/jpeg">
-                                <img class="h-100 w-100" data-srcset="./img/clients/10.jpg">
-                        </picture>
+                        <img fetchpriority="low" loading="lazy" decoding="async" src="./img/clients/10.jpg"
+                                alt="client10">
                 </div>
                 <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <picture class="lazy">
-                                <source data-srcset="./img/clients/11.webp" type="image/webp">
-                                <source data-srcset="./img/clients/11.jpg" type="image/jpeg">
-                                <img class="h-100 w-100" data-srcset="./img/clients/11.jpg">
-                        </picture>
+                        <img fetchpriority="low" loading="lazy" decoding="async" src="./img/clients/11.jpg"
+                                alt="client11">
                 </div>
                 <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <picture class="lazy">
-                                <source data-srcset="./img/clients/12.webp" type="image/webp">
-                                <source data-srcset="./img/clients/12.jpg" type="image/jpeg">
-                                <img class="h-100 w-100" data-srcset="./img/clients/12.jpg">
-                        </picture>
+                        <img fetchpriority="low" loading="lazy" decoding="async" src="./img/clients/12.jpg"
+                                alt="client12">
                 </div>
                 <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <picture class="lazy">
-                                <source data-srcset="./img/clients/13.webp" type="image/webp">
-                                <source data-srcset="./img/clients/13.jpg" type="image/jpeg">
-                                <img class="h-100 w-100" data-srcset="./img/clients/13.jpg">
-                        </picture>
+                        <img fetchpriority="low" loading="lazy" decoding="async" src="./img/clients/13.jpg"
+                                alt="client13">
                 </div>
                 <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <picture class="lazy">
-                                <source data-srcset="./img/clients/14.webp" type="image/webp">
-                                <source data-srcset="./img/clients/14.jpg" type="image/jpeg">
-                                <img class="h-100 w-100" data-srcset="./img/clients/14.jpg">
-                        </picture>
+                        <img fetchpriority="low" loading="lazy" decoding="async" src="./img/clients/14.jpg"
+                                alt="client14">
                 </div>
                 <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <picture class="lazy">
-                                <source data-srcset="./img/clients/15.webp" type="image/webp">
-                                <source data-srcset="./img/clients/15.jpg" type="image/jpeg">
-                                <img class="h-100 w-100" data-srcset="./img/clients/15.jpg">
-                        </picture>
+                        <img fetchpriority="low" loading="lazy" decoding="async" src="./img/clients/15.jpg"
+                                alt="client15">
                 </div>
                 <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <picture class="lazy">
-                                <source data-srcset="./img/clients/16.webp" type="image/webp">
-                                <source data-srcset="./img/clients/16.jpg" type="image/jpeg">
-                                <img class="h-100 w-100" data-srcset="./img/clients/16.jpg">
-                        </picture>
+                        <img fetchpriority="low" loading="lazy" decoding="async" src="./img/clients/16.jpg"
+                                alt="client16">
                 </div>
                 <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <picture class="lazy">
-                                <source data-srcset="./img/clients/17.webp" type="image/webp">
-                                <source data-srcset="./img/clients/17.jpg" type="image/jpeg">
-                                <img class="h-100 w-100" data-srcset="./img/clients/17.jpg">
-                        </picture>
+                        <img fetchpriority="low" loading="lazy" decoding="async" src="./img/clients/17.jpg"
+                                alt="client17">
                 </div>
                 <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <picture class="lazy">
-                                <source data-srcset="./img/clients/18.webp" type="image/webp">
-                                <source data-srcset="./img/clients/18.jpg" type="image/jpeg">
-                                <img class="h-100 w-100" data-srcset="./img/clients/18.jpg">
-                        </picture>
+                        <img fetchpriority="low" loading="lazy" decoding="async" src="./img/clients/18.jpg"
+                                alt="client18">
                 </div>
                 <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <picture class="lazy">
-                                <source data-srcset="./img/clients/19.webp" type="image/webp">
-                                <source data-srcset="./img/clients/19.jpg" type="image/jpeg">
-                                <img class="h-100 w-100" data-srcset="./img/clients/19.jpg">
-                        </picture>
+                        <img fetchpriority="low" loading="lazy" decoding="async" src="./img/clients/19.jpg"
+                                alt="client19">
                 </div>
                 <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <picture class="lazy">
-                                <source data-srcset="./img/clients/20.webp" type="image/webp">
-                                <source data-srcset="./img/clients/20.jpg" type="image/jpeg">
-                                <img class="h-100 w-100" data-srcset="./img/clients/20.jpg">
-                        </picture>
+                        <img fetchpriority="low" loading="lazy" decoding="async" src="./img/clients/20.jpg"
+                                alt="client20">
                 </div>
                 <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <picture class="lazy">
-                                <source data-srcset="./img/clients/21.webp" type="image/webp">
-                                <source data-srcset="./img/clients/21.jpg" type="image/jpeg">
-                                <img class="h-100 w-100" data-srcset="./img/clients/21.jpg">
-                        </picture>
+                        <img fetchpriority="low" loading="lazy" decoding="async" src="./img/clients/21.jpg"
+                                alt="client21">
                 </div>
                 <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <picture class="lazy">
-                                <source data-srcset="./img/clients/22.webp" type="image/webp">
-                                <source data-srcset="./img/clients/22.jpg" type="image/jpeg">
-                                <img class="h-100 w-100" data-srcset="./img/clients/22.jpg">
-                        </picture>
+                        <img fetchpriority="low" loading="lazy" decoding="async" src="./img/clients/22.jpg"
+                                alt="client22">
                 </div>
                 <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <picture class="lazy">
-                                <source data-srcset="./img/clients/23.webp" type="image/webp">
-                                <source data-srcset="./img/clients/23.jpg" type="image/jpeg">
-                                <img class="h-100 w-100" data-srcset="./img/clients/23.jpg">
-                        </picture>
+                        <img fetchpriority="low" loading="lazy" decoding="async" src="./img/clients/23.jpg"
+                                alt="client23">
                 </div>
                 <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <picture class="lazy">
-                                <source data-srcset="./img/clients/24.webp" type="image/webp">
-                                <source data-srcset="./img/clients/24.jpg" type="image/jpeg">
-                                <img class="h-100 w-100" data-srcset="./img/clients/24.jpg">
-                        </picture>
+                        <img fetchpriority="low" loading="lazy" decoding="async" src="./img/clients/24.jpg"
+                                alt="client24">
                 </div>
                 <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <picture class="lazy">
-                                <source data-srcset="./img/clients/25.webp" type="image/webp">
-                                <source data-srcset="./img/clients/25.jpg" type="image/jpeg">
-                                <img class="h-100 w-100" data-srcset="./img/clients/25.jpg">
-                        </picture>
+                        <img fetchpriority="low" loading="lazy" decoding="async" src="./img/clients/25.jpg"
+                                alt="client25">
                 </div>
                 <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <picture class="lazy">
-                                <source data-srcset="./img/clients/26.webp" type="image/webp">
-                                <source data-srcset="./img/clients/26.jpg" type="image/jpeg">
-                                <img class="h-100 w-100" data-srcset="./img/clients/26.jpg">
-                        </picture>
+                        <img fetchpriority="low" loading="lazy" decoding="async" src="./img/clients/26.jpg"
+                                alt="client26">
                 </div>
                 <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <picture class="lazy">
-                                <source data-srcset="./img/clients/27.webp" type="image/webp">
-                                <source data-srcset="./img/clients/27.jpg" type="image/jpeg">
-                                <img class="h-100 w-100" data-srcset="./img/clients/27.jpg">
-                        </picture>
+                        <img fetchpriority="low" loading="lazy" decoding="async" src="./img/clients/27.jpg"
+                                alt="client27">
                 </div>
                 <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <picture class="lazy">
-                                <source data-srcset="./img/clients/28.webp" type="image/webp">
-                                <source data-srcset="./img/clients/28.jpg" type="image/jpeg">
-                                <img class="h-100 w-100" data-srcset="./img/clients/28.jpg">
-                        </picture>
+                        <img fetchpriority="low" loading="lazy" decoding="async" src="./img/clients/28.jpg"
+                                alt="client28">
                 </div>
         </div>
 </section>
@@ -949,11 +828,7 @@
             </p>
         </div>
         <div class="about_us__item overflow-hidden rounded-4">
-            <picture class="lazy">
-                <source data-srcset="./img/about_us.webp" type="image/webp">
-                <source data-srcset="./img/about_us.jpg" type="image/jpeg">
-                <img data-srcset="./img/about_us.jpg" class="h-100 w-100">
-            </picture>
+            <img alt="about us" fetchpriority="low" loading="lazy" decoding="async" src="./img/about_us.jpg">
         </div>
     </div>
 </section>
