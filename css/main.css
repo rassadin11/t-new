@@ -15020,6 +15020,7 @@ svg > use {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
+  background: var(--bs-white);
 }
 
 .notifies-calc {
