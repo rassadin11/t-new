@@ -5095,7 +5095,7 @@ const resultsFixed = document.querySelector('.results-block');
 const footer = document.querySelector('footer');
 const toggleResults = () => {
   console.log(isInViewport(resultsCalc), isInViewport(footer));
-  if (!resultsCalc) {
+  if (!resultsCalc || document.body.clientWidth < 768) {
     if (isInViewport(footer)) {
       resultsFixed.classList.add('hide');
     } else {
