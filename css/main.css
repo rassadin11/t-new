@@ -12168,6 +12168,11 @@ body {
   }
 }
 
+.hide {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
 .btn-white {
   font-weight: 600;
   color: var(--bs-primary);
@@ -14182,7 +14187,7 @@ svg > use {
   background: var(--bs-blue);
   top: 0;
   left: 0;
-  z-index: 100000;
+  z-index: 9999;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -15099,6 +15104,10 @@ svg > use {
   -webkit-box-shadow: 0px -4px 40px var(--bs-gray);
   box-shadow: 0px -4px 40px var(--bs-gray);
   z-index: 10000;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 1;
+  visibility: visible;
 }
 @media (max-width: 350px) {
   .results-block {
@@ -15251,7 +15260,7 @@ svg > use {
 .map-address__wrapper {
   top: 0;
   left: 0;
-  z-index: 100000;
+  z-index: 9999;
   overflow: hidden;
 }
 .map-address__input {

@@ -82,6 +82,11 @@ body {
   }
 }
 
+.hide {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
 .btn-white {
   font-weight: 600;
   color: var(--bs-primary);

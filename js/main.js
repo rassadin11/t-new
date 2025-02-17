@@ -5083,6 +5083,35 @@ yandexMap.forEach(item => {
     item.classList.add('active');
   });
 });
+
+// calc results
+
+function isInViewport(element) {
+  let rect = element.getBoundingClientRect();
+  return rect.bottom >= 0 && rect.right >= 0 && rect.top <= (window.innerHeight || document.documentElement.clientHeight) && rect.left <= (window.innerWidth || document.documentElement.clientWidth);
+}
+const resultsCalc = document.querySelector('.results-wrap.d-md-flex');
+const resultsFixed = document.querySelector('.results-block');
+const footer = document.querySelector('footer');
+const toggleResults = () => {
+  console.log(isInViewport(resultsCalc), isInViewport(footer));
+  if (!resultsCalc) {
+    if (isInViewport(footer)) {
+      resultsFixed.classList.add('hide');
+    } else {
+      resultsFixed.classList.remove('hide');
+    }
+  } else {
+    if (isInViewport(resultsCalc) || isInViewport(footer)) {
+      resultsFixed.classList.add('hide');
+    } else {
+      resultsFixed.classList.remove('hide');
+    }
+  }
+};
+window.addEventListener('scroll', () => {
+  toggleResults();
+});
 })();
 
 /******/ })()
