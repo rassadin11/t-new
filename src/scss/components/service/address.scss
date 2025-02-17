@@ -57,10 +57,11 @@
     display: none;
   }
 
-  &__map {
+  &__wrapper {
     top: 0;
     left: 0;
-    object-fit: cover;
+    z-index: 100000;
+    overflow: hidden;
   }
 
   &__input {

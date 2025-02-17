@@ -271,6 +271,7 @@ cross.forEach(item => {
 
 background.addEventListener('click', () => {
     if (isBurgerOpen) {
+        document.body.classList.remove('overflow-hidden')
         changeMenu();
     } else {
         burger.classList.add('active');
@@ -325,7 +326,6 @@ tabsServices.forEach((tab, index) => {
 
 
 if (matchMedia('only screen and (min-width: 991px)').matches) {
-
     // arrow
 
     const arrow = document.querySelector('.arrow-wrapper');
@@ -390,3 +390,11 @@ if (matchMedia('only screen and (min-width: 991px)').matches) {
         emailMasks.push(mask2);
     })
 }
+
+const yandexMap = document.querySelectorAll('.map-disable')
+
+yandexMap.forEach(item => {
+    item.addEventListener('click', () => {
+        item.classList.add('active')
+    })
+})

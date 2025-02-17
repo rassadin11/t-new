@@ -381,10 +381,4 @@ function loadMap() {
             dot.parentElement.parentElement.querySelector('.dot-text').classList.remove('active')
         })
     })
-
-    const yandexMap = document.querySelector('.map-disable')
-
-    yandexMap.addEventListener('click', () => {
-        yandexMap.classList.add('active')
-    })
 }
