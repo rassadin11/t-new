@@ -11927,6 +11927,62 @@ textarea.form-control-lg {
 /* stylelint-disable */
 /* stylelint-disable */
 /* stylelint-disable value-keyword-case */
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/../fonts/OpenSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/../fonts/OpenSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/../fonts/OpenSans-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/../fonts/Raleway-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/../fonts/Raleway-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/../fonts/Raleway-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/../fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/../fonts/Inter-Medium.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
 *,
 *::before,
 *::after {
@@ -12067,10 +12123,9 @@ a {
   --red: #d12067;
   --light-info: rgba(77, 94, 255, 0.1);
   --dark-info: rgba(77, 94, 255, 0.4);
-  --bs-raleway: "Raleway";
-  --bs-inter: "Inter";
-  --bs-open-sans: "Open Sans";
-  --bs-fonts: "Open Sans", "Raleway", "Inter";
+  --bs-raleway: "Raleway", "Open Sans", "Inter";
+  --bs-inter: "Inter", "Open Sans", "Raleway";
+  --bs-open-sans: "Open Sans", "Raleway", "Inter";
 }
 
 body {
@@ -12164,7 +12219,7 @@ span {
 p {
   font-size: 1rem;
   line-height: 1.3;
-  font-family: var(--bs-fonts);
+  font-family: var(--bs-open-sans);
   color: var(--bs-black);
   font-variant-numeric: lining-nums;
   margin-bottom: 0;
@@ -14793,7 +14848,7 @@ svg > use {
 
 .calculator p {
   margin-bottom: 0;
-  font-family: var(--bs-fonts);
+  font-family: var(--bs-open-sans);
 }
 @media (max-width: 992px) {
   .calculator p {
