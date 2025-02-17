@@ -12778,6 +12778,8 @@ svg > use {
   .item-uslugi__title {
     font-size: 1rem;
     padding-right: 1.875rem !important;
+    font-family: var(--bs-open-sans);
+    font-weight: 400;
   }
 }
 
