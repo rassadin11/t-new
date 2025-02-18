@@ -9,6 +9,11 @@
     margin-top: 3rem !important;
   }
 }
+@media (max-width: 992px) {
+  .address-wrapper {
+    margin-top: 2rem !important;
+  }
+}
 
 .block-address {
   color: var(--bs-dark);

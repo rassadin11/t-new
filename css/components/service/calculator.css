@@ -166,6 +166,11 @@
   -webkit-appearance: none;
   appearance: none;
   background: var(--bs-white);
+  position: relative;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTS4zMTQuMzM3YTEuMDIgMS4wMiAwIDAxMS41MTUgMEw1IDMuNzQ0IDguMTcxLjMzN2ExLjAyIDEuMDIgMCAwMTEuNTE1IDBjLjQxOS40NS40MTkgMS4xNzkgMCAxLjYyOEw1IDcgLjMxNCAxLjk2NWExLjIxMyAxLjIxMyAwIDAxMC0xLjYyOHoiIGZpbGw9IiMwMDAzMUEiLz48L3N2Zz4=");
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 1rem);
+  background-position-y: 50%;
 }
 
 .notifies-calc {

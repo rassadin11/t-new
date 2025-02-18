@@ -3691,6 +3691,37 @@ textarea.form-control-lg {
   border-radius: 0.2rem;
 }
 
+.fade {
+  -webkit-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+}
+@media (prefers-reduced-motion: reduce) {
+  .fade {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+.fade:not(.show) {
+  opacity: 0;
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+
+.collapsing {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.35s ease;
+  transition: height 0.35s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .collapsing {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
 .dropup,
 .dropend,
 .dropdown,
@@ -5063,7 +5094,8 @@ textarea.form-control-lg {
   background-color: var(--bs-gray);
 }
 .accordion-service-body p {
-  font-size: 1.375rem;
+  font-size: 1.3125rem;
+  line-height: 1.2;
 }
 @media (max-width: 768px) {
   .accordion-service-body p {
