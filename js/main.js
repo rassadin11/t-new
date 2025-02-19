@@ -4862,6 +4862,7 @@ function configScreen(item) {
                         </a>
 
                         <ul class="dropdown-menu header__dropdown default-dropdown right list tab-list p-0 gap-2 deep-ul d-block overflow-hidden mb-0" aria-labelledby="menu3">
+                            <li class="sub-list__item deep-list me-3 w-100"><a href="#" class="dropdown-item py-3 px-4">${item.querySelector('a').innerHTML}</a></li>
                            ${temp}
                         </ul>
                     `;
@@ -4876,6 +4877,7 @@ function configScreen(item) {
 				</a>
 
 				<ul class="dropdown-menu header__dropdown default-dropdown right gap-2 list tab-list p-0 mb-0" aria-labelledby="menu3">
+                <li class="sub-list__item deep-list me-3 w-100"><a href="#" class="dropdown-item py-3 px-4">${children[count].innerHTML}</a></li>
                     ${lis}
 				</ul>
             `);
