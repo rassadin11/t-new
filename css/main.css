@@ -14048,11 +14048,8 @@ svg > use {
 }
 .internet-card__desc {
   font-size: 1.3125rem;
-}
-@media (min-width: 1700px) {
-  .internet-card__desc {
-    word-break: break-all;
-  }
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 .internet-card__desc:not(:first-child) {
   margin-top: 1rem;

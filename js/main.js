@@ -5093,9 +5093,10 @@ function isInViewport(element) {
 const resultsCalc = document.querySelector('.results-wrap.d-md-flex');
 const resultsFixed = document.querySelector('.results-block');
 const footer = document.querySelector('footer');
+const calculator = document.querySelector(".calculator");
 const toggleResults = () => {
   if (!resultsCalc || document.body.clientWidth < 768) {
-    if (isInViewport(footer)) {
+    if (calculator.offsetTop + calculator.getBoundingClientRect().top / 2 > window.scrollY || calculator.offsetTop + calculator.clientHeight < window.scrollY) {
       resultsFixed.classList.add('hide');
     } else {
       resultsFixed.classList.remove('hide');
