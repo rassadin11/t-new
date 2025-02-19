@@ -13,7 +13,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ map)
 /* harmony export */ });
 function map() {
-  if (window.location.pathname === '/') {
+  if (window.location.pathname === '/' || window.location.pathname === '/t-new/') {
     loadMap();
   }
 }
