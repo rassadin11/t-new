@@ -324,6 +324,9 @@ ul {
 }
 
 @media (max-width: 1500px) {
+  .sub-list__item .dropdown-item {
+    white-space: wrap;
+  }
   .dropdown-item:hover {
     background-color: inherit !important;
   }

@@ -4833,58 +4833,53 @@ window.onresize = () => {
   dropdownMenu();
 };
 function configScreen(item) {
+  document.querySelector(".header__menu").scroll(0, 0);
   const children = item.parentNode.children;
   const ul = document.querySelector('.sub-list.uslugi-mobile');
   ul.innerHTML = '';
   document.querySelector('.menu-social p').innerHTML = children[0].querySelector("span").innerHTML;
   let count = 1;
-  while (count < children.length - 1) {
+  console.log(children);
+  while (count < children.length) {
     const li = document.createElement('li');
     li.classList.add('sub-list__item');
     li.classList.add('tab');
-    if (children[count + 1].nodeName === 'UL' && children[count].nodeName === 'A') {
+    if (count + 1 !== children.length && children[count + 1].nodeName === 'UL' && children[count].nodeName === 'A') {
       let lis = '';
       children[count + 1].querySelectorAll(':scope > li').forEach(item => {
         if (!item.querySelector('ul')) {
-          lis += `<li class="sub-list__item"><a class="dropdown-item py-3 px-4" href="#">${item.querySelector('a').innerHTML}</a></li>`;
+          lis += `<li class="sub-list__item ms-4"><a class="dropdown-item py-3 px-4" href="#">${item.querySelector('a').innerHTML}</a></li>`;
         } else {
           let temp;
           const deep_li = item.querySelectorAll('li');
           deep_li.forEach(elem => {
-            temp = `<li class="sub-list__item deep-list me-3 w-100"><a class="dropdown-item py-3 px-4" href="#">${elem.querySelector('a').innerHTML}</a></li>`;
+            temp = `<li class="sub-list__item deep-list ms-4"><a class="dropdown-item py-3 px-4" href="#">${elem.querySelector('a').innerHTML}</a></li>`;
           });
           lis += `
-                        <a class="nested-dropdown align-items-center d-flex tab-title nav-link gap-3 py-3 px-4 sub-list__link justify-content-between" href="#" role="button">
-                            <span>${item.querySelector('a').innerHTML}</span>
-                            <svg class="menu__arrow-dropdown">
-                                <use href="./img/svg/sprite.svg#menu_arrow"></use>
-                            </svg>
-                        </a>
+                        <li class="sub-list__item deep-list ms-4 d-flex flex-column gap-2">
+                            <a class="dropdown-item py-3 px-4" href="#">${item.querySelector('a').innerHTML}</a>
 
-                        <ul class="dropdown-menu header__dropdown default-dropdown right list tab-list p-0 gap-2 deep-ul d-block overflow-hidden mb-0" aria-labelledby="menu3">
-                            <li class="sub-list__item deep-list me-3 w-100"><a href="#" class="dropdown-item py-3 px-4">${item.querySelector('a').innerHTML}</a></li>
-                           ${temp}
-                        </ul>
+                            <ul class="d-flex flex-column gap-2">
+                                ${temp}
+                            </ul>
+                        </li>
                     `;
         }
       });
       li.insertAdjacentHTML('beforeend', `
-                <a class="align-items-center d-flex tab-title nav-link gap-3 py-3 px-4 sub-list__link justify-content-between" href="#" role="button">
-					<span>${children[count].innerHTML}</span>
-					<svg class="menu__arrow-dropdown">
-						<use href="./img/svg/sprite.svg#menu_arrow"></use>
-					</svg>
-				</a>
+                <li class="sub-list__item deep-list">
+                    <a class="dropdown-item py-3 px-4" href="#">${children[count].innerHTML}</a>
 
-				<ul class="dropdown-menu header__dropdown default-dropdown right gap-2 list tab-list p-0 mb-0" aria-labelledby="menu3">
-                <li class="sub-list__item deep-list me-3 w-100"><a href="#" class="dropdown-item py-3 px-4">${children[count].innerHTML}</a></li>
-                    ${lis}
-				</ul>
+                    <ul class="d-flex flex-column gap-2 mt-2">
+                        ${lis}
+                    </ul>
+				</li>
+
             `);
       count += 2;
     } else {
       li.insertAdjacentHTML('beforeend', `
-                <a class="align-items-center d-flex nav-link" href="${children[count].href}" role="button">
+                <a class="align-items-center d-flex nav-link py-3 px-4" href="${children[count].href}" role="button">
 					${children[count].innerHTML}
 				</a>`);
       count++;
@@ -4939,11 +4934,9 @@ function changeMenu() {
   burger.classList.remove('active');
   menu.classList.remove('active');
   background.classList.remove('active');
-  burger.classList.add('hide');
   menu.classList.add('hide');
   background.classList.add('hide');
   setTimeout(() => {
-    burger.classList.remove('hide');
     menu.classList.remove('hide');
     background.classList.remove('hide');
   }, 300);
@@ -4961,7 +4954,6 @@ burger.addEventListener('click', () => {
   if (!isBurgerOpen) {
     document.body.classList.remove('overflow-hidden');
   } else {
-    burger.classList.add('active');
     menu.classList.add('active');
     background.classList.add('active');
     document.body.classList.add('overflow-hidden');
@@ -4979,7 +4971,6 @@ cross.forEach(item => {
       document.body.classList.remove('overflow-hidden');
       changeMenu();
     } else {
-      burger.classList.add('active');
       menu.classList.add('active');
       background.classList.add('active');
       document.body.classList.add('overflow-hidden');
@@ -4991,7 +4982,6 @@ background.addEventListener('click', () => {
     document.body.classList.remove('overflow-hidden');
     changeMenu();
   } else {
-    burger.classList.add('active');
     menu.classList.add('active');
     background.classList.add('active');
   }

@@ -11481,6 +11481,9 @@ ul {
 }
 
 @media (max-width: 1500px) {
+  .sub-list__item .dropdown-item {
+    white-space: wrap;
+  }
   .dropdown-item:hover {
     background-color: inherit !important;
   }
@@ -11494,7 +11497,9 @@ svg > use {
 
 .header {
   background: var(--bs-primary);
-  z-index: 10;
+  position: sticky;
+  top: 0;
+  z-index: 100000;
 }
 
 .dropdown-submenu .dropdown-menu {
@@ -11606,12 +11611,6 @@ svg > use {
 @media (max-width: 768px) {
   .header__menu {
     width: 100%;
-  }
-}
-
-@media (max-width: 1500px) {
-  .default-dropdown a {
-    white-space: wrap;
   }
 }
 
@@ -11736,7 +11735,7 @@ svg > use {
     min-height: 44px;
   }
   .nav-item > a {
-    background: var(--bs-white);
+    background: var(--bs-gray);
     border-radius: 0.5rem;
   }
 }
@@ -11896,11 +11895,14 @@ svg > use {
     border-radius: 0;
   }
   .default-dropdown a {
-    background: var(--bs-white);
+    background: var(--bs-gray);
     border-radius: 0.5rem;
   }
 }
 @media (max-width: 1500px) and (min-width: 992px) {
+  .default-dropdown a {
+    white-space: wrap;
+  }
   .default-dropdown a:hover {
     background: var(--bs-gray);
   }
@@ -11925,6 +11927,19 @@ svg > use {
     -webkit-box-shadow: none;
     box-shadow: none;
   }
+}
+
+.nav-link.c-white.gap-3.py-2.px-3.d-flex.align-items-center.tab-title.active {
+  background: var(--bs-primary);
+}
+.nav-link.c-white.gap-3.py-2.px-3.d-flex.align-items-center.tab-title.active span {
+  color: var(--bs-white) !important;
+}
+.nav-link.c-white.gap-3.py-2.px-3.d-flex.align-items-center.tab-title.active .menu-icon use {
+  fill: var(--bs-white);
+}
+.nav-link.c-white.gap-3.py-2.px-3.d-flex.align-items-center.tab-title.active .menu__arrow-dropdown use {
+  stroke: var(--bs-white);
 }
 
 @media (max-width: 1500px) {
@@ -12105,10 +12120,13 @@ svg > use {
 }
 
 .mobile__sub-menu.active {
-  position: absolute;
+  position: fixed;
   top: 0;
+  left: 0;
+  z-index: 10001;
   display: block !important;
   width: 100%;
+  overflow: auto;
   height: 100%;
   background: var(--bs-light);
 }
@@ -12141,13 +12159,13 @@ svg > use {
   }
   .sub-list a {
     color: var(--sub-list-link);
-    background: var(--bs-white);
+    background: var(--bs-gray);
     border-radius: 0.5rem;
   }
 }
 
 .sub-list__item .nav-link {
-  background: var(--bs-white);
+  background: var(--bs-gray);
   word-wrap: normal;
   border-radius: 0.5rem;
   -webkit-transition: all 0.3s ease;
