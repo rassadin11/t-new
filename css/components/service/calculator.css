@@ -82,6 +82,11 @@
     max-height: none;
   }
 }
+@media (max-width: 550px) {
+  .calc-internet__cards.add-scroll > * {
+    min-width: 90% !important;
+  }
+}
 
 .internet-card {
   background: url("../img/usluga/background.jpg");
@@ -95,11 +100,6 @@
     background-size: 100% 100%;
   }
 }
-@media (max-width: 600px) {
-  .internet-card p {
-    font-size: 0.75rem;
-  }
-}
 .internet-card__desc {
   font-size: 1.3125rem;
   -ms-hyphens: auto;
@@ -109,15 +109,12 @@
   margin-top: 1rem;
 }
 @media (max-width: 768px) {
-  .internet-card__desc {
-    font-size: 0.75rem;
-  }
   .internet-card__desc:not(:first-child) {
     margin-top: 0.5rem;
   }
 }
 .internet-card__price {
-  font-family: Raleway;
+  font-family: var(--bs-raleway);
   line-height: 1.4;
 }
 @media (max-width: 768px) {
@@ -127,11 +124,6 @@
 }
 .internet-card__post-price {
   font-size: 1.3125rem;
-}
-@media (max-width: 768px) {
-  .internet-card__post-price {
-    font-size: 0.75rem;
-  }
 }
 
 .item-internet__wrapper {

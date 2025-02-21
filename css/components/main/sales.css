@@ -95,7 +95,7 @@
 }
 
 .sale__link {
-  font-family: var(--bs-inter);
+  font-family: var(--bs-open-sans);
   border: 1px solid var(--bs-white);
   background: transparent;
   font-weight: 600;

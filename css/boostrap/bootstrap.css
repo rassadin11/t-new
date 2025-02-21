@@ -4986,7 +4986,6 @@ textarea.form-control-lg {
 }
 @media (max-width: 768px) {
   .accordion-service-button:not(.collapsed) span {
-    font-size: 0.75rem;
     padding: 0.9rem 6px;
   }
 }
@@ -5055,6 +5054,11 @@ textarea.form-control-lg {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+@media (max-width: 768px) {
+  .accordion-service-button {
+    font-size: 1rem !important;
+  }
+}
 
 .accordion-service-header {
   margin-bottom: 0;
@@ -5070,11 +5074,6 @@ textarea.form-control-lg {
   border-top-right-radius: calc(0.5rem - 1px);
   border-bottom-right-radius: calc(0.5rem - 1px);
   border-bottom-left-radius: calc(0.5rem - 1px);
-}
-@media (max-width: 768px) {
-  .accordion-service-item .accordion-service-button {
-    font-size: 0.75rem;
-  }
 }
 .accordion-service-item:last-of-type {
   border-bottom-right-radius: 0.5rem;
@@ -5099,7 +5098,7 @@ textarea.form-control-lg {
 }
 @media (max-width: 768px) {
   .accordion-service-body p {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 }
 

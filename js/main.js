@@ -4862,7 +4862,6 @@ function configScreen(item) {
   ul.innerHTML = '';
   document.querySelector('.menu-social p').innerHTML = children[0].querySelector("span").innerHTML;
   let count = 1;
-  console.log(children);
   while (count < children.length) {
     const li = document.createElement('li');
     li.classList.add('sub-list__item');

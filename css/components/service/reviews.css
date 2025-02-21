@@ -38,9 +38,4 @@
   font-size: 0.75rem;
   color: var(--sub-list-link);
   opacity: 0.5;
-}
-@media (max-width: 768px) {
-  .review-block__paragraph {
-    font-size: 0.75rem;
-  }
 }/*# sourceMappingURL=reviews.css.map */
