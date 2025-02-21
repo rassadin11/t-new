@@ -4757,6 +4757,29 @@ __webpack_require__.r(__webpack_exports__);
 // грузим карту
 (0,_map_js__WEBPACK_IMPORTED_MODULE_1__["default"])();
 
+// iframes
+
+let yboxs = document.querySelectorAll("iframe[data-src*='rutube']");
+if (yboxs.length) {
+  yboxs.forEach(element => {
+    let match = element.getAttribute("data-src").match(/\/embed\/([^?]+)/);
+    let thumb = match[1];
+    // element.classList.add("img-rounded", "shadow-xl");
+    element.srcdoc = "<style>*{padding:0;margin:0;box-sizing:border-box}a,img{display:block;position:absolute;top:0;left:0;width:100%;height:100%}a:after, a:before{position:absolute;content:'';left:50%;top:50%;display:block;z-index:1}a:before{width:100%;height:100%;z-index:1;position:absolute;top:0;left:0;background:rgba(77, 94, 255, 0.2);}</style><a href='" + element.getAttribute("data-src") + `' rel='nofollow noopener'>
+            <svg data-testid="play-icon" viewBox="0 0 58 52" fill="none" xmlns="http://www.w3.org/2000/svg" style="
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 58px;
+                height: 68px;
+                z-index: 1;">
+                <path d="M49.5 24.926C52.8333 26.8505 52.8333 31.6618 49.5 33.5863L7.50001 57.835C4.16668 59.7595 1.30768e-06 57.3539 1.47592e-06 53.5049L3.59581e-06 5.00747C3.76406e-06 1.15846 4.16667 -1.24717 7.5 0.677329L49.5 24.926Z" fill="#4D5EFF" fill-opacity="0.2"/>
+            </svg>
+          <img loading=lazy decoding=async src='https://rutube.ru/api/video/${thumb}/thumbnail/?redirect=1' alt='Запустить видео'></a>`;
+  });
+}
+
 // input
 
 const inputs = document.querySelectorAll('.search-input');
@@ -5087,6 +5110,7 @@ const resultsFixed = document.querySelector('.results-block');
 const footer = document.querySelector('footer');
 const calculator = document.querySelector(".calculator");
 const toggleResults = () => {
+  if (!calculator) return;
   if (!resultsCalc || document.body.clientWidth < 768) {
     if (calculator.offsetTop + calculator.getBoundingClientRect().top / 2 > window.scrollY || calculator.offsetTop + calculator.clientHeight < window.scrollY) {
       resultsFixed.classList.add('hide');
@@ -5104,26 +5128,6 @@ const toggleResults = () => {
 window.addEventListener('scroll', () => {
   toggleResults();
 });
-let yboxs = document.querySelectorAll("iframe[data-src*='rutube']");
-if (yboxs.length) {
-  yboxs.forEach(element => {
-    let match = element.getAttribute("data-src").match(/\/embed\/([^?]+)/);
-    let thumb = match[1];
-    // element.classList.add("img-rounded", "shadow-xl");
-    element.srcdoc = "<style>*{padding:0;margin:0;box-sizing:border-box}a,img{display:block;position:absolute;top:0;left:0;width:100%;height:100%}a:after, a:before{position:absolute;content:'';left:50%;top:50%;display:block;z-index:1}a:before{width:100%;height:100%;z-index:1;position:absolute;top:0;left:0;background:rgba(77, 94, 255, 0.2);}</style><a href='" + element.getAttribute("data-src") + `' rel='nofollow noopener'>
-            <svg data-testid="play-icon" viewBox="0 0 58 52" fill="none" xmlns="http://www.w3.org/2000/svg" style="
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 58px;
-                height: 68px;
-                z-index: 1;">
-                <path d="M49.5 24.926C52.8333 26.8505 52.8333 31.6618 49.5 33.5863L7.50001 57.835C4.16668 59.7595 1.30768e-06 57.3539 1.47592e-06 53.5049L3.59581e-06 5.00747C3.76406e-06 1.15846 4.16667 -1.24717 7.5 0.677329L49.5 24.926Z" fill="#4D5EFF" fill-opacity="0.2"/>
-            </svg>
-          <img loading=lazy decoding=async src='https://rutube.ru/api/video/${thumb}/thumbnail/?redirect=1' alt='Запустить видео'></a>`;
-  });
-}
 })();
 
 /******/ })()
