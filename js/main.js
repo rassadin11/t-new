@@ -5047,18 +5047,20 @@ if (matchMedia('only screen and (min-width: 991px)').matches) {
 
   const arrow = document.querySelector('.arrow-wrapper');
   const height = document.documentElement.clientHeight;
-  if (window.scrollY < height * 2) {
-    arrow.classList.add('hidden');
-  } else {
-    arrow.classList.remove('hidden');
-  }
-  window.addEventListener('scroll', e => {
+  if (arrow) {
     if (window.scrollY < height * 2) {
       arrow.classList.add('hidden');
     } else {
       arrow.classList.remove('hidden');
     }
-  });
+    window.addEventListener('scroll', e => {
+      if (window.scrollY < height * 2) {
+        arrow.classList.add('hidden');
+      } else {
+        arrow.classList.remove('hidden');
+      }
+    });
+  }
 
   // phone input
   let elements = document.querySelectorAll('#phone');

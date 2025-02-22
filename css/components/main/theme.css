@@ -121,10 +121,31 @@ body {
   border-radius: 100px;
 }
 .table-wrap::-webkit-scrollbar-thumb {
-  background: #8d93cf;
+  background: var(--footer-color);
   width: 6px;
   height: 6px;
   border-radius: 100px;
+}
+
+.table-responsive .table-wrapper {
+  border: 1px solid var(--bs-blue);
+  overflow-x: auto;
+}
+.table-responsive .table-wrapper tr:not(:last-child) * {
+  border-bottom: 1px solid var(--bs-blue);
+}
+.table-responsive .table-wrapper tr:not(:last-child) *:not(:last-child) {
+  border-right: 1px solid var(--bs-blue);
+}
+.table-responsive .table-wrapper thead {
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+.table-responsive .table-wrapper thead th:last-child {
+  border-right-color: transparent;
+}
+.table-responsive .table-wrapper tbody {
+  border-bottom-color: transparent;
 }
 
 p,

@@ -87,7 +87,7 @@
 @media (max-width: 550px) {
   .item-news__info {
     font-size: 0.75rem !important;
-    gap: 0.5rem !important;
+    gap: 0.75rem !important;
   }
 }
 .item-news__title {
@@ -139,6 +139,17 @@
 .info-news__date {
   font-weight: 600;
   color: var(--footer-color);
+}
+@media (max-width: 768px) {
+  .info-news__date {
+    font-size: 0.75rem !important;
+    white-space: nowrap;
+  }
+}
+
+.toc {
+  position: relative;
+  top: -80px;
 }
 
 .svg-calendar,

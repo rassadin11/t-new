@@ -23,4 +23,22 @@
 .banner__btn:hover {
   color: var(--bs-black) !important;
   background: var(--bs-white);
+}
+
+.banner-instruction {
+  -ms-grid-columns: (1fr)[12];
+  grid-template-columns: repeat(12, 1fr);
+}
+.banner-instruction > *:first-child {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 8;
+  grid-column: 3/11;
+  padding: 3rem;
+}
+@media (max-width: 1100px) {
+  .banner-instruction > *:first-child {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1/13;
+  }
 }/*# sourceMappingURL=banner.css.map */
