@@ -4,7 +4,9 @@ svg > use {
 
 .header {
   background: var(--bs-primary);
-  z-index: 10;
+  position: sticky;
+  top: 0;
+  z-index: 100000;
 }
 
 .dropdown-submenu .dropdown-menu {
@@ -101,12 +103,6 @@ svg > use {
   }
 }
 
-.default-dropdown a {
-  @media (max-width: 1500px) {
-    white-space: wrap;
-  }
-}
-
 .deep-ul {
   margin-top: -7px !important;
   transition: all 0.3s ease;
@@ -159,12 +155,11 @@ svg > use {
 }
 
 .cross {
-  background: var(--bs-gray);
-
   & > svg {
     width: 16px;
     height: 16px;
     box-sizing: content-box;
+    background: var(--bs-gray);
   }
 }
 
@@ -213,7 +208,7 @@ svg > use {
     min-height: 44px;
 
     & > a {
-      background: var(--bs-white);
+      background: var(--bs-gray);
       border-radius: 0.5rem;
     }
   }
@@ -308,7 +303,7 @@ svg > use {
 }
 
 .item-uslugi__title {
-  font-family: var(--bs-raleway);
+  font-family: var(--bs-open-sans);
   font-weight: 600;
   font-size: 1.125rem;
   color: var(--bs-dark);
@@ -319,6 +314,7 @@ svg > use {
   @media (max-width: 1500px) {
     font-size: 1rem;
     padding-right: 1.875rem !important;
+    font-weight: 400;
   }
 }
 
@@ -361,10 +357,12 @@ svg > use {
     border-radius: 0;
 
     & a {
-      background: var(--bs-white);
+      background: var(--bs-gray);
       border-radius: 0.5rem;
 
       @media (min-width: 992px) {
+        white-space: wrap;
+
         &:hover {
           background: var(--bs-gray);
         }
@@ -390,6 +388,24 @@ svg > use {
   &.active {
     @media (max-width: 1500px) {
       box-shadow: none;
+    }
+  }
+}
+
+.nav-link.c-white.gap-3.py-2.px-3.d-flex.align-items-center.tab-title {
+  &.active {
+    background: var(--bs-primary);
+
+    span {
+      color: var(--bs-white) !important;
+    }
+
+    & .menu-icon use {
+      fill: var(--bs-white);
+    }
+
+    & .menu__arrow-dropdown use {
+      stroke: var(--bs-white);
     }
   }
 }
@@ -441,6 +457,10 @@ svg > use {
 }
 
 .dropdown-menu__icon {
+  &.news {
+    flex: 0 0 49px;
+  }
+
   & use {
     fill: var(--bs-black);
   }
@@ -574,10 +594,13 @@ svg > use {
 
 .mobile__sub-menu {
   &.active {
-    position: absolute;
+    position: fixed;
     top: 0;
+    left: 0;
+    z-index: 10001;
     display: block !important;
     width: 100%;
+    overflow: auto;
     height: 100%;
     background: var(--bs-light);
   }
@@ -605,7 +628,7 @@ svg > use {
 
     a {
       color: var(--sub-list-link);
-      background: var(--bs-white);
+      background: var(--bs-gray);
       border-radius: 0.5rem;
     }
   }
@@ -613,7 +636,7 @@ svg > use {
 
 .sub-list__item {
   .nav-link {
-    background: var(--bs-white);
+    background: var(--bs-gray);
     word-wrap: normal;
     border-radius: 0.5rem;
     transition: all 0.3s ease;

@@ -1,6 +1,6 @@
 
 export default function map() {
-    if (window.location.pathname === '/') {
+    if (window.location.pathname === '/' || window.location.pathname === '/t-new/') {
         loadMap();
     }
 }

@@ -28,3 +28,16 @@
     }
   }
 }
+
+.banner-instruction {
+  grid-template-columns: repeat(12, 1fr);
+
+  & > *:first-child {
+    grid-column: 3 / 11;
+    padding: 3rem;
+
+    @media (max-width: 1100px) {
+      grid-column: 1 / 13;
+    }
+  }
+}

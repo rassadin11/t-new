@@ -1,26 +1,14 @@
-.video__background {
-  background: var(--bs-blue);
-  height: min(100vh, 860px);
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
 
-  @media (max-width: 992px) {
-    height: 80vh;
-  }
-
-  @media (max-width: 768px) {
-    height: auto;
-    min-height: 250px;
-  }
-
-  @media (max-width: 500px) {
-    min-height: 178px;
-  }
-
-  & svg {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 58px;
-    height: 52px;
-    margin: auto;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }

@@ -2,29 +2,28 @@
 // Headings
 //
 .h1 {
-  @extend h1;
+  @extend h1 !optional;
 }
 
 .h2 {
-  @extend h2;
+  @extend h2 !optional;
 }
 
 .h3 {
-  @extend h3;
+  @extend h3 !optional;
 }
 
 .h4 {
-  @extend h4;
+  @extend h4 !optional;
 }
 
 .h5 {
-  @extend h5;
+  @extend h5 !optional;
 }
 
 .h6 {
-  @extend h6;
+  @extend h6 !optional;
 }
-
 
 .lead {
   @include font-size($lead-font-size);
@@ -44,11 +43,11 @@
 // Emphasis
 //
 .small {
-  @extend small;
+  @extend small !optional;
 }
 
 .mark {
-  @extend mark;
+  @extend mark !optional;
 }
 
 //
@@ -70,7 +69,6 @@
     margin-right: $list-inline-padding;
   }
 }
-
 
 //
 // Misc

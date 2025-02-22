@@ -10,6 +10,10 @@
 .form {
   &__block.image {
     background: var(--bs-primary);
+
+    img {
+      height: 100%;
+    }
   }
 
   &__block:not(.image) {
@@ -67,6 +71,10 @@
 
     @media (max-width: 768px) {
       font-size: 1rem;
+
+      &::placeholder {
+        font-size: 1rem;
+      }
     }
   }
 }

@@ -4,6 +4,32 @@ import map from './map.js'
 // грузим карту
 map();
 
+// iframes
+
+let yboxs = document.querySelectorAll("iframe[data-src*='rutube']");
+if (yboxs.length) {
+    yboxs.forEach((element) => {
+        let match = element.getAttribute("data-src").match(/\/embed\/([^?]+)/);
+        let thumb = match[1];
+        // element.classList.add("img-rounded", "shadow-xl");
+        element.srcdoc =
+            "<style>*{padding:0;margin:0;box-sizing:border-box}a,img{display:block;position:absolute;top:0;left:0;width:100%;height:100%}a:after, a:before{position:absolute;content:'';left:50%;top:50%;display:block;z-index:1}a:before{width:100%;height:100%;z-index:1;position:absolute;top:0;left:0;background:rgba(77, 94, 255, 0.2);}</style><a href='" +
+            element.getAttribute("data-src") +
+            `' rel='nofollow noopener'>
+            <svg data-testid="play-icon" viewBox="0 0 58 52" fill="none" xmlns="http://www.w3.org/2000/svg" style="
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 58px;
+                height: 68px;
+                z-index: 1;">
+                <path d="M49.5 24.926C52.8333 26.8505 52.8333 31.6618 49.5 33.5863L7.50001 57.835C4.16668 59.7595 1.30768e-06 57.3539 1.47592e-06 53.5049L3.59581e-06 5.00747C3.76406e-06 1.15846 4.16667 -1.24717 7.5 0.677329L49.5 24.926Z" fill="#4D5EFF" fill-opacity="0.2"/>
+            </svg>
+          <img loading=lazy decoding=async src='https://rutube.ru/api/video/${thumb}/thumbnail/?redirect=1' alt='Запустить видео'></a>`;
+    });
+}
+
 // input
 
 const inputs = document.querySelectorAll('.search-input')
@@ -93,6 +119,7 @@ window.onresize = () => {
 };
 
 function configScreen(item) {
+    document.querySelector(".header__menu").scroll(0, 0)
     const children = item.parentNode.children;
     const ul = document.querySelector('.sub-list.uslugi-mobile')
     ul.innerHTML = '';
@@ -100,57 +127,53 @@ function configScreen(item) {
     document.querySelector('.menu-social p').innerHTML = children[0].querySelector("span").innerHTML;
     let count = 1;
 
-    while (count < children.length - 1) {
+    while (count < children.length) {
         const li = document.createElement('li');
         li.classList.add('sub-list__item');
         li.classList.add('tab');
 
-        if (children[count + 1].nodeName === 'UL' && children[count].nodeName === 'A') {
+        if (count + 1 !== children.length && children[count + 1].nodeName === 'UL' && children[count].nodeName === 'A') {
             let lis = '';
 
             children[count + 1].querySelectorAll(':scope > li').forEach(item => {
                 if (!item.querySelector('ul')) {
-                    lis += `<li class="sub-list__item"><a class="dropdown-item py-3 px-4" href="#">${item.querySelector('a').innerHTML}</a></li>`
+                    lis += `<li class="sub-list__item ms-4"><a class="dropdown-item py-3 px-4" href="#">${item.querySelector('a').innerHTML}</a></li>`
                 } else {
                     let temp;
                     const deep_li = item.querySelectorAll('li')
 
                     deep_li.forEach(elem => {
-                        temp = `<li class="sub-list__item deep-list me-3 w-100"><a class="dropdown-item py-3 px-4" href="#">${elem.querySelector('a').innerHTML}</a></li>`
+                        temp = `<li class="sub-list__item deep-list ms-4"><a class="dropdown-item py-3 px-4" href="#">${elem.querySelector('a').innerHTML}</a></li>`
                     })
 
                     lis += `
-                        <a class="nested-dropdown align-items-center d-flex tab-title nav-link gap-3 py-3 px-4 sub-list__link justify-content-between" href="#" role="button">
-                            <span>${item.querySelector('a').innerHTML}</span>
-                            <svg class="menu__arrow-dropdown">
-                                <use href="./img/svg/sprite.svg#menu_arrow"></use>
-                            </svg>
-                        </a>
+                        <li class="sub-list__item deep-list ms-4 d-flex flex-column gap-2">
+                            <a class="dropdown-item py-3 px-4" href="#">${item.querySelector('a').innerHTML}</a>
 
-                        <ul class="dropdown-menu header__dropdown default-dropdown right list tab-list p-0 gap-2 deep-ul d-block overflow-hidden mb-0" aria-labelledby="menu3">
-                           ${temp}
-                        </ul>
+                            <ul class="d-flex flex-column gap-2">
+                                ${temp}
+                            </ul>
+                        </li>
                     `
                 }
             })
 
             li.insertAdjacentHTML('beforeend', `
-                <a class="align-items-center d-flex tab-title nav-link gap-3 py-3 px-4 sub-list__link justify-content-between" href="#" role="button">
-					<span>${children[count].innerHTML}</span>
-					<svg class="menu__arrow-dropdown">
-						<use href="./img/svg/sprite.svg#menu_arrow"></use>
-					</svg>
-				</a>
+                <li class="sub-list__item deep-list">
+                    <a class="dropdown-item py-3 px-4" href="#">${children[count].innerHTML}</a>
 
-				<ul class="dropdown-menu header__dropdown default-dropdown right gap-2 list tab-list p-0 mb-0" aria-labelledby="menu3">
-                    ${lis}
-				</ul>
+                    <ul class="d-flex flex-column gap-2 mt-2">
+                        ${lis}
+                    </ul>
+				</li>
+
             `)
 
             count += 2;
-        } else {
+        }
+        else {
             li.insertAdjacentHTML('beforeend', `
-                <a class="align-items-center d-flex nav-link" href="${children[count].href}" role="button">
+                <a class="align-items-center d-flex nav-link py-3 px-4" href="${children[count].href}" role="button">
 					${children[count].innerHTML}
 				</a>`)
             count++;
@@ -215,12 +238,10 @@ function changeMenu() {
     menu.classList.remove('active');
     background.classList.remove('active');
 
-    burger.classList.add('hide');
     menu.classList.add('hide');
     background.classList.add('hide');
 
     setTimeout(() => {
-        burger.classList.remove('hide');
         menu.classList.remove('hide');
         background.classList.remove('hide');
     }, 300)
@@ -241,7 +262,6 @@ burger.addEventListener('click', () => {
     if (!isBurgerOpen) {
         document.body.classList.remove('overflow-hidden')
     } else {
-        burger.classList.add('active');
         menu.classList.add('active');
         background.classList.add('active');
         document.body.classList.add('overflow-hidden')
@@ -261,7 +281,6 @@ cross.forEach(item => {
             document.body.classList.remove('overflow-hidden')
             changeMenu();
         } else {
-            burger.classList.add('active');
             menu.classList.add('active');
             background.classList.add('active');
             document.body.classList.add('overflow-hidden')
@@ -274,7 +293,6 @@ background.addEventListener('click', () => {
         document.body.classList.remove('overflow-hidden')
         changeMenu();
     } else {
-        burger.classList.add('active');
         menu.classList.add('active');
         background.classList.add('active');
     }
@@ -331,19 +349,21 @@ if (matchMedia('only screen and (min-width: 991px)').matches) {
     const arrow = document.querySelector('.arrow-wrapper');
     const height = document.documentElement.clientHeight;
 
-    if (window.scrollY < height * 2) {
-        arrow.classList.add('hidden')
-    } else {
-        arrow.classList.remove('hidden')
-    }
-
-    window.addEventListener('scroll', e => {
+    if (arrow) {
         if (window.scrollY < height * 2) {
             arrow.classList.add('hidden')
         } else {
             arrow.classList.remove('hidden')
         }
-    })
+
+        window.addEventListener('scroll', e => {
+            if (window.scrollY < height * 2) {
+                arrow.classList.add('hidden')
+            } else {
+                arrow.classList.remove('hidden')
+            }
+        })
+    }
 
     // phone input
     let elements = document.querySelectorAll('#phone');
@@ -397,4 +417,44 @@ yandexMap.forEach(item => {
     item.addEventListener('click', () => {
         item.classList.add('active')
     })
+})
+
+// calc results
+
+function isInViewport(element) {
+    let rect = element.getBoundingClientRect();
+    return (
+        rect.bottom >= 0 &&
+        rect.right >= 0 &&
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.left <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+const resultsCalc = document.querySelector('.results-wrap.d-md-flex')
+const resultsFixed = document.querySelector('.results-block');
+const footer = document.querySelector('footer');
+
+const calculator = document.querySelector(".calculator");
+
+const toggleResults = () => {
+    if (!calculator) return;
+
+    if (!resultsCalc || document.body.clientWidth < 768) {
+        if (calculator.offsetTop + calculator.getBoundingClientRect().top / 2 > window.scrollY || calculator.offsetTop + calculator.clientHeight < window.scrollY) {
+            resultsFixed.classList.add('hide')
+        } else {
+            resultsFixed.classList.remove('hide')
+        }
+    } else {
+        if (isInViewport(resultsCalc) || isInViewport(footer)) {
+            resultsFixed.classList.add('hide')
+        } else {
+            resultsFixed.classList.remove('hide')
+        }
+    }
+}
+
+window.addEventListener('scroll', () => {
+    toggleResults();
 })

@@ -32,10 +32,10 @@
 
 .numbers-items__item {
   background: transparent;
+  border: 1px solid var(--bs-blue);
 
   @media (min-width: 768px) {
     background: var(--bs-white);
-    border: 1px solid var(--bs-blue);
   }
 }
 
