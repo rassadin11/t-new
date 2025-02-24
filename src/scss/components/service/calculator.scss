@@ -87,7 +87,14 @@
 }
 
 .internet-card {
-  background: url("../img/usluga/background.jpg");
+  @media (max-width: 768px) {
+    background-image: url("../img/usluga/background_mobile.jpg");
+  }
+
+  @media (min-width: 768px) {
+    background-image: url("../img/usluga/background_pc.jpg");
+  }
+
   background-size: 68% 100%;
   background-attachment: fixed;
   background-clip: padding-box;

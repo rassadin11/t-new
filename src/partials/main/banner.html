@@ -1,7 +1,12 @@
 <section class="d-none d-lg-block default-margin">
     <div class="banner position-relative rounded-4 overflow-hidden c-white">
-        <div class="banner__background position-absolute"><img src="./img/banner.jpg" fetchpriority="low" loading="lazy"
-                decoding="async" alt="banner" class="h-100"></div>
+        <div class="banner__background position-absolute w-100 h-100">
+            <picture>
+                <source srcset="./img/usluga/background_mobile.jpg" media="(max-width: 768px)">
+                <img src="./img/usluga/background_pc.jpg" alt="задний фон" fetchpriority="low" loading="lazy"
+                    decoding="async" class="h-100 w-100">
+            </picture>
+        </div>
 
         <h2 class="banner__title fw-bold mb-0 c-white">Переходи на 1Гбит/с</h2>
         <p class="banner__description fs-3 c-white pt-6 p-0 mb-7 pb-3">
