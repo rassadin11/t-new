@@ -332,8 +332,11 @@
         «Бизнес Интернет» в Красноярске</h2>
     <div class="service-banner position-relative overflow-hidden rounded-4 px-md-4 py-4 px-5">
         <div class="service-banner__background position-absolute h-100 w-100">
-            <img alt="background" fetchpriority="low" loading="lazy" decoding="async" src="./img/usluga/background.jpg"
-                class="h-100 w-100">
+            <picture>
+                <source srcset="./img/usluga/background_mobile.jpg" media="(max-width: 768px)">
+                <img src="./img/usluga/background_pc.jpg" alt="задний фон" fetchpriority="low" loading="lazy"
+                    decoding="async" class="h-100 w-100">
+            </picture>
         </div>
 
         <p class="service-banner__type text-end d-none d-lg-block"><span

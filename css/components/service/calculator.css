@@ -89,11 +89,20 @@
 }
 
 .internet-card {
-  background: url("../img/usluga/background.jpg");
   background-size: 68% 100%;
   background-attachment: fixed;
   background-clip: padding-box;
   font-variant-numeric: lining-nums;
+}
+@media (max-width: 768px) {
+  .internet-card {
+    background-image: url("../img/usluga/background_mobile.jpg");
+  }
+}
+@media (min-width: 768px) {
+  .internet-card {
+    background-image: url("../img/usluga/background_pc.jpg");
+  }
 }
 @media (max-width: 992px) {
   .internet-card {
