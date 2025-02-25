@@ -13271,6 +13271,8 @@ svg > use {
   right: 2rem;
   background: var(--bs-gray);
   border: 5px solid var(--arrow-border);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
   padding: 45px 36px 44px 41px;
   opacity: 1;
   visibility: visible;
