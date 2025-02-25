@@ -38,7 +38,7 @@
 }
 
 .info-address__item {
-  font-weight: 600;
+  font-weight: 700;
   color: var(--bs-dark);
 }
 .info-address__item > p:last-child {
