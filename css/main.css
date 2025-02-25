@@ -13982,7 +13982,7 @@ svg > use {
 
 .calculator p {
   margin-bottom: 0;
-  font-family: var(--bs-open-sans);
+  font-family: var(--bs-open-sans), sans-serif;
 }
 @media (max-width: 992px) {
   .calculator p {
