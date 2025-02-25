@@ -123,7 +123,7 @@
   }
 }
 .internet-card__price {
-  font-family: var(--bs-raleway);
+  font-family: var(--bs-raleway), var(--bs-open-sans);
   line-height: 1.4;
 }
 @media (max-width: 768px) {
@@ -139,13 +139,13 @@
   margin-top: 1.25rem;
 }
 .item-internet__price {
-  font-weight: 700;
+  font-weight: 600;
   color: var(--dark-gray);
   white-space: nowrap;
   background: var(--bs-white);
 }
 .item-internet__text {
-  font-weight: 700;
+  font-weight: 600;
 }
 @media (max-width: 992px) {
   .item-internet__text.c-pink {
@@ -218,7 +218,7 @@
   border-bottom: 1px solid var(--gray-background);
 }
 .results__btn {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .results-checkbox {
@@ -231,7 +231,7 @@
 }
 
 .results-checkbox__text {
-  font-weight: 700;
+  font-weight: 600;
 }
 @media (max-width: 768px) {
   .results-checkbox__text {
@@ -240,7 +240,7 @@
 }
 
 .results__item {
-  font-weight: 700;
+  font-weight: 600;
   color: var(--dark-gray);
 }
 .results__item:not(:first-child) {
@@ -252,7 +252,7 @@
 }
 
 .item-results__desc {
-  font-weight: 700;
+  font-weight: 600;
   color: var(--dark-gray);
 }
 .item-results__price {
@@ -262,7 +262,7 @@
 
 .results__monthly,
 .results__once {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .c-pink {
@@ -307,7 +307,7 @@
 }
 .success p {
   color: var(--green);
-  font-weight: 700;
+  font-weight: 600;
 }
 .success svg {
   width: 27px;
@@ -327,7 +327,7 @@
 }
 .warning p {
   color: var(--yellow);
-  font-weight: 700;
+  font-weight: 600;
 }
 .warning svg {
   width: 27px;
@@ -347,7 +347,7 @@
 }
 .error p {
   color: var(--red);
-  font-weight: 700;
+  font-weight: 600;
 }
 .error svg {
   width: 27px;
@@ -367,7 +367,7 @@
 }
 .notification-info p {
   color: var(--bs-primary);
-  font-weight: 700;
+  font-weight: 600;
 }
 .notification-info svg {
   width: 27px;

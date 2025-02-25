@@ -36,7 +36,7 @@
   color: var(--bs-white);
 }
 .news-banner__title {
-  font-family: var(--bs-raleway);
+  font-family: var(--bs-raleway), var(--bs-open-sans);
   margin-top: 200px;
 }
 @media (max-width: 992px) {

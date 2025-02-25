@@ -1,5 +1,5 @@
 .main-services {
-  font-family: var(--bs-raleway);
+  font-family: var(--bs-raleway), var(--bs-open-sans);
   -ms-grid-columns: (1fr)[6];
   grid-template-columns: repeat(6, 1fr);
   margin-top: 6rem;
@@ -18,7 +18,7 @@
 
 .item-services__title {
   color: var(--bs-dark);
-  font-family: var(--bs-raleway);
+  font-family: var(--bs-raleway), var(--bs-open-sans);
 }
 
 .item-services__wrapper {

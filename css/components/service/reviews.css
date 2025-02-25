@@ -31,10 +31,10 @@
 }
 
 .review-block__name {
-  font-weight: 700;
+  font-weight: 600;
 }
 .review-block__date {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 0.75rem;
   color: var(--sub-list-link);
   opacity: 0.5;

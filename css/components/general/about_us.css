@@ -9,7 +9,7 @@
   -ms-grid-column-span: 6;
   grid-column: 1/7;
   background: var(--transparent-pink-light);
-  font-family: var(--bs-raleway);
+  font-family: var(--bs-raleway), var(--bs-open-sans);
   color: var(--bs-black);
 }
 @media (max-width: 1600px) {

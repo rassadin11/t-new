@@ -1,6 +1,6 @@
 .instruction h1,
 .instruction h2 {
-  font-family: var(--bs-raleway);
+  font-family: var(--bs-raleway), var(--bs-open-sans);
 }
 @media (max-width: 500px) {
   .instruction h1,

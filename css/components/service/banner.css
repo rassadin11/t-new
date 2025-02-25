@@ -1,5 +1,5 @@
 .service-banner {
-  font-family: var(--bs-raleway);
+  font-family: var(--bs-raleway), var(--bs-open-sans);
 }
 @media (min-width: 992px) {
   .service-banner {
@@ -44,7 +44,7 @@
   }
 }
 .service-banner__btn {
-  font-family: var(--bs-raleway);
+  font-family: var(--bs-raleway), var(--bs-open-sans);
   color: var(--bs-dark);
   background: var(--bs-white);
   font-variant-numeric: lining-nums;

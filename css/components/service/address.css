@@ -32,13 +32,13 @@
   }
 }
 .block-address__mobile {
-  font-family: var(--bs-raleway);
+  font-family: var(--bs-raleway), var(--bs-open-sans);
   font-size: 1.3125rem;
   color: var(--bs-dark);
 }
 
 .info-address__item {
-  font-weight: 700;
+  font-weight: 600;
   color: var(--bs-dark);
 }
 .info-address__item > p:last-child {

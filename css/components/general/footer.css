@@ -18,7 +18,7 @@
   }
   .menu-footer__title:not(.not) {
     font-size: 1.3125rem !important;
-    font-weight: 700;
+    font-weight: 600;
   }
   .menu-footer__title.not {
     text-align: center;
@@ -41,7 +41,7 @@
 }
 @media (max-width: 768px) {
   .menu-footer__link {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1rem !important;
   }
 }
@@ -385,7 +385,7 @@
   }
 }
 .footer-grid__title a {
-  font-family: var(--bs-raleway);
+  font-family: var(--bs-raleway), var(--bs-open-sans);
   font-weight: 500;
   color: var(--bs-dark);
   font-variant-numeric: lining-nums;
@@ -403,7 +403,7 @@
 @media (max-width: 768px) {
   .footer-grid__title a {
     font-size: 1.3125rem !important;
-    font-weight: 700;
+    font-weight: 600;
   }
 }
 

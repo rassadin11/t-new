@@ -44,7 +44,7 @@
 .item-news__image::after {
   content: "Читать далее";
   position: absolute;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.3;
   color: var(--bs-white);
   top: 50%;
@@ -74,7 +74,7 @@
   visibility: visible;
 }
 .item-news__info {
-  font-weight: 700;
+  font-weight: 600;
   color: var(--footer-color);
 }
 @media (max-width: 992px) {
@@ -91,7 +91,7 @@
   }
 }
 .item-news__title {
-  font-family: var(--bs-raleway);
+  font-family: var(--bs-raleway), var(--bs-open-sans);
 }
 .item-news__title > a {
   color: inherit;
@@ -108,7 +108,7 @@
 }
 @media (max-width: 768px) {
   .item-news__title {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1rem !important;
     color: var(--bs-black);
   }
@@ -137,7 +137,7 @@
 }
 
 .info-news__date {
-  font-weight: 700;
+  font-weight: 600;
   color: var(--footer-color);
 }
 @media (max-width: 768px) {
@@ -239,7 +239,7 @@
 }
 @media (max-width: 768px) {
   .news__readmore {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1rem;
     color: var(--dark-blue-color);
     background: var(--bs-gray);
