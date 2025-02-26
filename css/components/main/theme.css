@@ -126,6 +126,11 @@ body {
   height: 6px;
   border-radius: 100px;
 }
+@media (max-width: 768px) {
+  .table-wrap {
+    max-width: 95vw;
+  }
+}
 
 .table-responsive .table-wrapper {
   border: 1px solid var(--bs-blue);
