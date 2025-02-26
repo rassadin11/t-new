@@ -1,6 +1,6 @@
 .sale__title {
   max-width: 320px;
-  font-family: var(--bs-raleway);
+  font-family: var(--bs-raleway), var(--bs-open-sans);
   z-index: 2;
 
   @media (max-width: 992px) {

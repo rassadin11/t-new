@@ -1,16 +1,25 @@
 <section class="news-item default-margin">
     <div class="d-grid news-item__wrapper">
-        <div class="news-item__block d-none d-lg-block">
-            <p class="d-none d-md-block notify rounded-4">На странице с новостью передвинули текст в центр, чтобы Вам
-                было удобнее
-                читать :)</p>
-            <svg class="news-item__arrow d-flex justify-content-end">
-                <use xlink:href="./img/svg/sprite.svg#arrow-news-item"></use>
-            </svg>
+        <div class="news-item__block d-none d-lg-block position-relative">
+            <div class="position-sticky stick-news">
+                <h2 class="news-item__h2 fs-3 mb-5 fw-bold">H2 Содержание</h2>
+                <ul class="news-item__links ps-4">
+                    <li><a href="#introduction" class="news-item__link">Предисловие</a></li>
+                    <li><a href="#predictions" class="news-item__link">Интернет для бизнеса: основные
+                            предложения</a></li>
+                    <li><a href="#criterias" class="news-item__link">Важные критерии для бизнеса</a></li>
+                    <li><a href="#provider" class="news-item__link">Как выбрать провайдера для бизнеса?</a></li>
+                    <li><a href="#tarifs" class="news-item__link">Сравнение тарифов</a></li>
+                    <li><a href="#colocation" class="news-item__link">ЦОД и колокейшн — как высокая скорость стирает
+                            границы</a></li>
+                    <li><a href="#conclusion" class="news-item__link">Заключение</a></li>
+                    <li><a href="#to_read" class="news-item__link">Полезно почитать</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="news-item__block mt-md-7">
-            <h1 class="fw-bold">H1 Обзор тарифов на бизнес-интернет в Красноярске: Что предлагают провайдеры?</h1>
-            <div class="item-news__info news-item-info mt-lg-7 mt-6 d-flex flex-lg-row flex-column  info-news gap-3">
+        <div class="news-item__block p-lg-6 p-0 rounded-4">
+            <h1 class="fw-bold fs-2">H1 Обзор тарифов на бизнес-интернет в Красноярске: Что предлагают провайдеры?</h1>
+            <div class="item-news__info news-item-info mt-lg-7 mt-6 d-flex flex-lg-row flex-column info-news gap-3">
                 <div class="info-news__block d-flex align-items-center gap-2">
                     <svg class="svg-calendar">
                         <use href="./img/svg/sprite.svg#calendar"></use>
@@ -27,29 +36,30 @@
                     <svg class="svg-clock">
                         <use href="./img/svg/sprite.svg#clock"></use>
                     </svg>
-                    <p class="info-news__date">Время на прочтение статьи: примерно <span>5</span> минут</p>
+                    <p class="info-news__date">примерно <span>5</span> минут</p>
                 </div>
             </div>
 
-            <div class="d-grid news-item__info-wrapper mb-md-7 pb-md-7 pb-0 mb-6">
+            <div class="d-lg-none d-block">
+                <h2 class="news-item__h2 fs-3 mb-4 mt-md-7 mt-6 fw-bold">H2 Содержание</h2>
+                <ul class="news-item__links ps-4">
+                    <li><a href="#introduction" class="news-item__link">Предисловие</a></li>
+                    <li><a href="#predictions" class="news-item__link">Интернет для бизнеса: основные
+                            предложения</a></li>
+                    <li><a href="#criterias" class="news-item__link">Важные критерии для бизнеса</a></li>
+                    <li><a href="#provider" class="news-item__link">Как выбрать провайдера для бизнеса?</a></li>
+                    <li><a href="#tarifs" class="news-item__link">Сравнение тарифов</a></li>
+                    <li><a href="#colocation" class="news-item__link">ЦОД и колокейшн — как высокая скорость стирает
+                            границы</a></li>
+                    <li><a href="#conclusion" class="news-item__link">Заключение</a></li>
+                    <li><a href="#to_read" class="news-item__link">Полезно почитать</a></li>
+                </ul>
+            </div>
+
+            <div class="news-item__info-wrapper mb-md-7 pb-md-7 pb-0 mb-6">
                 <div class="info-wrap">
                     <div class="news-item__info">
-                        <h2 class="news-item__h2 fs-3 mb-5 mt-md-7 mt-6 fw-bold">H2 Содержание</h2>
-                        <div class="news-item__links">
-                            <a href="#introduction" class="news-item__link">Предисловие</a>
-                            <a href="#predictions" class="news-item__link">Интернет для бизнеса: основные
-                                предложения</a>
-                            <a href="#criterias" class="news-item__link">Важные критерии для бизнеса</a>
-                            <a href="#provider" class="news-item__link">Как выбрать провайдера для бизнеса?</a>
-                            <a href="#tarifs" class="news-item__link">Сравнение тарифов</a>
-                            <a href="#colocation" class="news-item__link">ЦОД и колокейшн — как высокая скорость стирает
-                                границы</a>
-                            <a href="#conclusion" class="news-item__link">Заключение</a>
-                            <a href="#to_read" class="news-item__link">Полезно почитать</a>
-                        </div>
-
-                        <p id="introduction" class="toc"></p>
-                        <h2 class="news-item__h2 fs-3 mb-4 mt-md-7 mt-6 fw-bold">H2 Предисловие</h2>
+                        <h2 class="news-item__h2 fs-3 mb-4 mt-md-7 mt-6 fw-bold" id="introduction">H2 Предисловие</h2>
                         <p>
                             Сегодня интернет — это важнейший инструмент для ведения бизнеса, особенно в крупных городах,
                             таких как Красноярск. В этом
@@ -63,8 +73,7 @@
                             для юридических лиц.
                         </p>
 
-                        <p id="predictions" class="toc"></p>
-                        <h2 class="news-item__h2 fs-3 mb-4 mt-md-7 mt-6 fw-bold">H2 Интернет для
+                        <h2 class="news-item__h2 fs-3 mb-4 mt-md-7 mt-6 fw-bold" id="predictions">H2 Интернет для
                             бизнеса: основные
                             предложения
                         </h2>
@@ -84,8 +93,8 @@
                             поддержка, возможность подключения дополнительных услуг, таких как интернет телефония или
                             облачные сервисы.
                         </p>
-                        <p id="criterias" class="toc"></p>
-                        <h2 class="news-item__h2 fs-3 mb-4 mt-md-7 mt-6 fw-bold">H2 Важные критерии для
+
+                        <h2 id="criterias" class="news-item__h2 fs-3 mb-4 mt-md-7 mt-6 fw-bold">H2 Важные критерии для
                             бизнеса</h2>
                         <div
                             class="d-flex flex-column align-items-start news-item__item numbers-items__item p-6 rounded-4">
@@ -141,8 +150,8 @@
                             </blockquote>
                             <p>figcaption Подпись источника цитаты</p>
                         </div>
-                        <p id="provider" class="toc"></p>
-                        <h2 class="news-item__h2 fs-3 mb-4 mt-md-7 mt-6 fw-bold">H2 Как выбрать провайдера
+
+                        <h2 id="provider" class="news-item__h2 fs-3 mb-4 mt-md-7 mt-6 fw-bold">H2 Как выбрать провайдера
                             для бизнеса?
                         </h2>
                         <p>
@@ -155,8 +164,8 @@
                             гарантирует стабильное соединение и высокую скорость. Также компания предоставляет услуги
                             для юридических лиц, такие как интернет телефония и системы видеонаблюдения.</p>
                         </p>
-                        <p id="tarifs" class="toc"></p>
-                        <h2 class="news-item__h2 fs-3 mb-4 mt-md-7 mt-6 fw-bold">H2 Сравнение тарифов</h2>
+
+                        <h2 id="tarifs" class="news-item__h2 fs-3 mb-4 mt-md-7 mt-6 fw-bold">H2 Сравнение тарифов</h2>
                         <p>Для удобства сравнения представим основные показатели в таблице:</p>
 
                         <div class="table-responsive table-wrap mt-5">
@@ -239,8 +248,8 @@
                                 </table>
                             </div>
                         </div>
-                        <p id="colocation" class="toc"></p>
-                        <h2 class="news-item__h2 fs-3 mb-4 mt-md-7 mt-6 fw-bold">H2 Горячая тема: ЦОД
+
+                        <h2 id="colocation" class="news-item__h2 fs-3 mb-4 mt-md-7 mt-6 fw-bold">H2 Горячая тема: ЦОД
                             и колокейшн — как
                             высокая
                             скорость
@@ -266,8 +275,8 @@
                             серверах и одновременно получать мгновенный доступ к ним, что значительно улучшает
                             производительность и надежность бизнес-процессов.</p>
 
-                        <p id="conclusion" class="toc"></p>
-                        <h2 class="news-item__h2 fs-3 mb-4 mt-md-7 mt-6 fw-bold">H2 Заключение</h2>
+
+                        <h2 id="conclusion" class="news-item__h2 fs-3 mb-4 mt-md-7 mt-6 fw-bold">H2 Заключение</h2>
                         <p>Интернет для бизнеса — это важный инструмент для успешной работы компании. Подключение
                             интернета в офис или подключение интернета для юридических лиц необходимо тщательно
                             продумывать, выбирая провайдера не только по цене, но и по качеству предоставляемых услуг.

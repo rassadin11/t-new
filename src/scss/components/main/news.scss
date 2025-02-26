@@ -75,7 +75,7 @@
   }
 
   &__title {
-    font-family: var(--bs-raleway);
+    font-family: var(--bs-raleway), var(--bs-open-sans);
 
     & > a {
       color: inherit;
@@ -123,11 +123,6 @@
     font-size: 0.75rem !important;
     white-space: nowrap;
   }
-}
-
-.toc {
-  position: relative;
-  top: -80px;
 }
 
 .svg-calendar,

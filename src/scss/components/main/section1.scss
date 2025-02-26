@@ -76,7 +76,7 @@
   }
 
   &__title {
-    font-family: var(--bs-raleway);
+    font-family: var(--bs-raleway), var(--bs-open-sans);
     color: inherit;
 
     @media (max-width: 1400px) {

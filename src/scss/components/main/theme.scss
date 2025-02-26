@@ -51,8 +51,8 @@
 
   // fonts
 
-  --bs-raleway: "Raleway", "Open Sans", "Inter";
-  --bs-open-sans: "Open Sans", "Raleway", "Inter";
+  --bs-raleway: "Raleway";
+  --bs-open-sans: "Open Sans";
 }
 
 body {
@@ -78,7 +78,7 @@ body {
 }
 
 .title {
-  font-family: var(--bs-raleway);
+  font-family: var(--bs-raleway), var(--bs-open-sans);
 }
 
 .fs-1 {
@@ -140,6 +140,10 @@ body {
     width: 6px;
     height: 6px;
     border-radius: 100px;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 95vw;
   }
 }
 

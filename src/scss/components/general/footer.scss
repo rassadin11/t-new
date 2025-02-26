@@ -286,7 +286,7 @@
   }
 
   &__title a {
-    font-family: var(--bs-raleway);
+    font-family: var(--bs-raleway), var(--bs-open-sans);
     font-weight: 500;
     color: var(--bs-dark);
     font-variant-numeric: lining-nums;
