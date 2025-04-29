@@ -11234,6 +11234,7 @@ body {
 
 .table-light th {
   color: var(--bs-primary);
+  font-family: var(--bs-open-sans), sans-serif;
 }
 
 .table-wrap {
