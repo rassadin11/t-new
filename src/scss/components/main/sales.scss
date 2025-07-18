@@ -12,7 +12,7 @@
   }
 }
 
-.sale {
+.sales__list {
   grid-template-columns: 1fr 1fr;
 
   & > *:first-child {
@@ -76,11 +76,11 @@
   }
 }
 
-.sale__pink {
+.sale--pink {
   background: var(--bs-pink);
 }
 
-.sale__blue {
+.sale--blue {
   background: var(--bs-primary);
 }
 

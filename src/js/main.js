@@ -154,14 +154,15 @@ function configScreen(item) {
             })
 
             li.insertAdjacentHTML('beforeend', `
-                <li class="sub-list__item deep-list">
-                    <a class="dropdown-item py-3 px-4" href="#">${children[count].innerHTML}</a>
+                <ul>
+                    <li class="sub-list__item deep-list">
+                        <a class="dropdown-item py-3 px-4" href="#">${children[count].innerHTML}</a>
 
-                    <ul class="d-flex flex-column gap-2 mt-2">
-                        ${lis}
-                    </ul>
-                </li>
-
+                        <ul class="d-flex flex-column gap-2 mt-2">
+                            ${lis}
+                        </ul>
+                    </li>
+                </ul>
             `)
 
             count += 2;
