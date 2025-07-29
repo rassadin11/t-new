@@ -359,4 +359,7 @@ ul {
   .nav-link:focus {
     color: inherit !important;
   }
+}
+.w-85 {
+  width: 85%;
 }/*# sourceMappingURL=theme.css.map */

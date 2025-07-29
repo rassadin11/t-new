@@ -6,27 +6,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>@@title</title>
 
-  <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/OpenSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/Raleway-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/Raleway-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link
+    rel="preload"
+    href="fonts/OpenSans-Regular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="preload"
+    href="fonts/OpenSans-SemiBold.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="preload"
+    href="fonts/Raleway-Bold.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="preload"
+    href="fonts/Raleway-Regular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+  />
 
-  <link as="style" href="css/vendor.css" />
-  <link rel="stylesheet" rel="stylesheet" href="css/main.css" />
+  <link as="style" href="css/vendor.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
-  <script async src="https://api-maps.yandex.ru/v3/?apikey=7fdba8d1-6add-40a5-bf49-8d010d6de718&lang=ru_RU"></script>
+  <script
+    async
+    src="https://api-maps.yandex.ru/v3/?apikey=7fdba8d1-6add-40a5-bf49-8d010d6de718&lang=ru_RU"
+  ></script>
 </head>
 
 <body>
   <header class="header" data-lp>
   <div class="container">
     <nav class="navbar p-0 navbar-expand-lg">
-      <div class="container-fluid p-0 header-container py-xxl-0 py-lg-4 justify-content-between">
-        <a href="#"><svg class="logo py-xxl-0 py-3">
-            <use href="./img/svg/sprite.svg#logo"></use>
-          </svg></a>
-        <div class="mobile-elems align-items-center d-flex align-items-center d-xxl-none">
+      <div
+        class="container-fluid p-0 header-container py-xxl-0 py-lg-4 justify-content-between"
+      >
+        <a href="#"
+          ><svg class="logo py-xxl-0 py-3">
+            <use href="./img/svg/sprite.svg#logo"></use></svg
+        ></a>
+        <div
+          class="mobile-elems align-items-center d-flex align-items-center d-xxl-none"
+        >
           <svg class="mobile-icon phone">
             <use href="./img/svg/sprite.svg#menu_white_phone"></use>
           </svg>
@@ -41,9 +73,14 @@
             </svg>
           </button>
         </div>
-        <div class="header__menu h-100 collapse_header navbar-collapse d-flex" id="navbarNav">
+        <div
+          class="header__menu h-100 collapse_header navbar-collapse d-flex"
+          id="navbarNav"
+        >
           <div class="header-menu-mobile__wrapper">
-            <div class="mobile-header-menu d-xxl-none d-flex align-items-center justify-content-between w-100 p-4">
+            <div
+              class="mobile-header-menu d-xxl-none d-flex align-items-center justify-content-between w-100 p-4"
+            >
               <div class="d-flex menu-social align-items-center">
                 <svg class="mobile-icon telegram">
                   <use href="./img/svg/sprite.svg#telegram"></use>
@@ -60,8 +97,13 @@
             </div>
             <ul class="navbar-nav p-xxl-0 p-4 gap-xxl-3 gap-2">
               <li class="nav-item fs-5 py-xxl-5">
-                <a class="nav-link c-white gap-3 py-2 px-3 d-flex align-items-center tab-title" href="#" id="menu1"
-                  role="button" aria-expanded="false">
+                <a
+                  class="nav-link c-white gap-3 py-2 px-3 d-flex align-items-center tab-title"
+                  href="#"
+                  id="menu1"
+                  role="button"
+                  aria-expanded="false"
+                >
                   <svg class="menu-icon">
                     <use href="./img/svg/sprite.svg#menu_main"></use>
                   </svg>
@@ -69,13 +111,20 @@
                 </a>
               </li>
 
-              <li class="nav-item fs-5 py-xxl-5 menu__dropdown position-static tab fullscreen">
-                <a class="nav-link c-white gap-3 py-2 px-3 d-flex align-items-center tab-title tab-title"
-                  href="https://telezon.ru" role="button">
+              <li
+                class="nav-item fs-5 py-xxl-5 menu__dropdown position-static tab fullscreen"
+              >
+                <a
+                  class="nav-link c-white gap-3 py-2 px-3 d-flex align-items-center tab-title tab-title"
+                  href="https://telezon.ru"
+                  role="button"
+                >
                   <svg class="menu-icon usluga">
                     <use href="./img/svg/sprite.svg#menu_uslugi"></use>
                   </svg>
-                  <p class="tab-header d-flex justify-content-between align-items-center w-100 m-0">
+                  <p
+                    class="tab-header d-flex justify-content-between align-items-center w-100 m-0"
+                  >
                     <span class="fs-5 c-white">Услуги</span>
                     <svg class="menu__arrow-dropdown">
                       <use href="./img/svg/sprite.svg#menu_arrow"></use>
@@ -83,71 +132,127 @@
                   </p>
                 </a>
                 <ul
-                  class="dropdown-menu header__dropdown p-xxl-6 p-0 gap-xxl-0 gap-2 uslugi position-absolute mb-0 tab-list justify-content-between">
+                  class="dropdown-menu header__dropdown p-xxl-6 p-0 gap-xxl-0 gap-2 uslugi position-absolute mb-0 tab-list justify-content-between"
+                >
                   <li class="uslugi__item item-uslugi">
-                    <p class="item-uslugi__title px-lg-4 py-lg-4 py-2 px-2 gap-2 d-flex align-items-center mb-xxl-5">
+                    <p
+                      class="item-uslugi__title px-lg-4 py-lg-4 py-2 px-2 gap-2 d-flex align-items-center mb-xxl-5"
+                    >
                       <svg class="dropdown-menu__icon connection">
                         <use href="./img/svg/sprite.svg#menu_connection"></use>
                       </svg>
                       <span>Стабильное и безопасное соединение</span>
-                      <svg class="menu-mobile__dropdown-arrow d-xxl-none d-block position-absolute">
+                      <svg
+                        class="menu-mobile__dropdown-arrow d-xxl-none d-block position-absolute"
+                      >
                         <use href="./img/svg/sprite.svg#menu_arrow"></use>
                       </svg>
                     </p>
-                    <a class="item-uslugi__default d-xxl-block d-none d-block mt-4">Интернет и офис</a>
-                    <ul class="list sub-list py-xxl-0 px-xxl-4 p-4 gap-2 gap-xxl-4 d-flex flex-column mb-4 mt-4 fs-7">
+                    <a
+                      class="item-uslugi__default d-xxl-block d-none d-block mt-4"
+                      >Интернет и офис</a
+                    >
+                    <ul
+                      class="list sub-list py-xxl-0 px-xxl-4 p-4 gap-2 gap-xxl-4 d-flex flex-column mb-4 mt-4 fs-7"
+                    >
                       <li><a href="#">Защита от DDoS-атак</a></li>
                       <li><a href="#">Тарифы</a></li>
                     </ul>
                   </li>
                   <li class="uslugi__item item-uslugi">
-                    <p class="item-uslugi__title px-lg-4 py-lg-4 py-2 px-2 gap-2 d-flex align-items-center mb-xxl-5">
+                    <p
+                      class="item-uslugi__title px-lg-4 py-lg-4 py-2 px-2 gap-2 d-flex align-items-center mb-xxl-5"
+                    >
                       <svg class="dropdown-menu__icon development">
                         <use href="./img/svg/sprite.svg#menu_development"></use>
                       </svg>
                       <span>Строительство IT-инфраструктуры</span>
-                      <svg class="menu-mobile__dropdown-arrow d-xxl-none d-block position-absolute">
+                      <svg
+                        class="menu-mobile__dropdown-arrow d-xxl-none d-block position-absolute"
+                      >
                         <use href="./img/svg/sprite.svg#menu_arrow"></use>
                       </svg>
                     </p>
-                    <a class="item-uslugi__default d-xxl-block d-none d-block mt-4">Слаботочные сети и сети связи</a>
-                    <a class="item-uslugi__default d-xxl-block d-none d-block mt-4">Аудит ВОЛС</a>
+                    <a
+                      class="item-uslugi__default d-xxl-block d-none d-block mt-4"
+                      >Слаботочные сети и сети связи</a
+                    >
+                    <a
+                      class="item-uslugi__default d-xxl-block d-none d-block mt-4"
+                      >Аудит ВОЛС</a
+                    >
                   </li>
                   <li class="uslugi__item item-uslugi">
-                    <p class="item-uslugi__title px-lg-4 py-lg-4 py-2 px-2 gap-2 d-flex align-items-center mb-xxl-5">
+                    <p
+                      class="item-uslugi__title px-lg-4 py-lg-4 py-2 px-2 gap-2 d-flex align-items-center mb-xxl-5"
+                    >
                       <svg class="dropdown-menu__icon safety">
                         <use href="./img/svg/sprite.svg#menu_safety"></use>
                       </svg>
                       <span>Безопасность имущества и данных</span>
-                      <svg class="menu-mobile__dropdown-arrow d-xxl-none d-block position-absolute">
+                      <svg
+                        class="menu-mobile__dropdown-arrow d-xxl-none d-block position-absolute"
+                      >
                         <use href="./img/svg/sprite.svg#menu_arrow"></use>
                       </svg>
                     </p>
-                    <a class="item-uslugi__default d-xxl-block d-none d-block mt-4">Облачное видеонаблюдение</a>
-                    <a class="item-uslugi__default d-xxl-block d-none d-block mt-4">Охранно-пожарная сигнализация</a>
-                    <a class="item-uslugi__default d-xxl-block d-none d-block mt-4">Колокейшн</a>
-                    <a class="item-uslugi__default d-xxl-block d-none d-block mt-4">Облачная аренда виртуального
-                      выделенного сервера</a>
-                    <a class="item-uslugi__default d-xxl-block d-none d-block mt-4">Дата-центр</a>
+                    <a
+                      class="item-uslugi__default d-xxl-block d-none d-block mt-4"
+                      >Облачное видеонаблюдение</a
+                    >
+                    <a
+                      class="item-uslugi__default d-xxl-block d-none d-block mt-4"
+                      >Охранно-пожарная сигнализация</a
+                    >
+                    <a
+                      class="item-uslugi__default d-xxl-block d-none d-block mt-4"
+                      >Колокейшн</a
+                    >
+                    <a
+                      class="item-uslugi__default d-xxl-block d-none d-block mt-4"
+                      >Облачная аренда виртуального выделенного сервера</a
+                    >
+                    <a
+                      class="item-uslugi__default d-xxl-block d-none d-block mt-4"
+                      >Дата-центр</a
+                    >
 
-                    <ul class="list sub-list py-xxl-0 px-xxl-4 p-4 gap-2 gap-xxl-4 d-flex flex-column mb-4 mt-4 fs-7">
-                      <li><a href="#">Классификация уровней надёжности дата-центров</a></li>
+                    <ul
+                      class="list sub-list py-xxl-0 px-xxl-4 p-4 gap-2 gap-xxl-4 d-flex flex-column mb-4 mt-4 fs-7"
+                    >
+                      <li>
+                        <a href="#"
+                          >Классификация уровней надёжности дата-центров</a
+                        >
+                      </li>
                       <li><a href="#">Форм-фактор сервера</a></li>
                     </ul>
-                    <a class="item-uslugi__default d-xxl-block d-none d-block mt-4">Облачное хранение данных</a>
+                    <a
+                      class="item-uslugi__default d-xxl-block d-none d-block mt-4"
+                      >Облачное хранение данных</a
+                    >
                   </li>
                   <li class="uslugi__item item-uslugi">
-                    <p class="item-uslugi__title px-lg-4 py-lg-4 py-2 px-2 gap-2 d-flex align-items-center mb-xxl-5">
+                    <p
+                      class="item-uslugi__title px-lg-4 py-lg-4 py-2 px-2 gap-2 d-flex align-items-center mb-xxl-5"
+                    >
                       <svg class="dropdown-menu__icon telephone">
                         <use href="./img/svg/sprite.svg#menu_telephone"></use>
                       </svg>
                       <span>Телефонная связь</span>
-                      <svg class="menu-mobile__dropdown-arrow d-xxl-none d-block position-absolute">
+                      <svg
+                        class="menu-mobile__dropdown-arrow d-xxl-none d-block position-absolute"
+                      >
                         <use href="./img/svg/sprite.svg#menu_arrow"></use>
                       </svg>
                     </p>
-                    <a class="item-uslugi__default d-xxl-block d-none d-block mt-4">IP-телефония</a>
-                    <ul class="list sub-list py-xxl-0 px-xxl-4 p-4 gap-2 gap-xxl-0 d-flex flex-column mb-4 mt-4 fs-7">
+                    <a
+                      class="item-uslugi__default d-xxl-block d-none d-block mt-4"
+                      >IP-телефония</a
+                    >
+                    <ul
+                      class="list sub-list py-xxl-0 px-xxl-4 p-4 gap-2 gap-xxl-0 d-flex flex-column mb-4 mt-4 fs-7"
+                    >
                       <li>
                         <a href="#">Безграничная телефония</a>
                         <ul class="list pe-4">
@@ -156,37 +261,67 @@
                       </li>
                       <li class="mt-4"><a href="#">Telezon Security</a></li>
                     </ul>
-                    <a class="item-uslugi__default d-xxl-block d-none d-block mt-4">Городской номер для бизнеса</a>
-                    <a class="item-uslugi__default d-xxl-block d-none d-block mt-4">Виртуальная АТС</a>
-                    <ul class="list sub-list py-xxl-0 px-xxl-4 p-4 gap-2 gap-xxl-4 d-flex flex-column mb-4 mt-4 fs-7">
+                    <a
+                      class="item-uslugi__default d-xxl-block d-none d-block mt-4"
+                      >Городской номер для бизнеса</a
+                    >
+                    <a
+                      class="item-uslugi__default d-xxl-block d-none d-block mt-4"
+                      >Виртуальная АТС</a
+                    >
+                    <ul
+                      class="list sub-list py-xxl-0 px-xxl-4 p-4 gap-2 gap-xxl-4 d-flex flex-column mb-4 mt-4 fs-7"
+                    >
                       <li><a href="#">Вам звонили</a></li>
                       <li><a href="#">Автообзвон</a></li>
                       <li><a href="#">Запись телефонных разговоров</a></li>
                       <li><a href="#">Голосовое меню (IVR)</a></li>
                       <li><a href="#">Обработка входящих звонков</a></li>
                     </ul>
-                    <a class="item-uslugi__default d-xxl-block d-none d-block mt-3">Номер 8-800-355-55-55</a>
+                    <a
+                      class="item-uslugi__default d-xxl-block d-none d-block mt-3"
+                      >Номер 8-800-355-55-55</a
+                    >
                   </li>
                   <li class="uslugi__item item-uslugi">
-                    <p class="item-uslugi__title px-lg-4 py-lg-4 py-2 px-2 gap-2 d-flex align-items-center mb-xxl-5">
+                    <p
+                      class="item-uslugi__title px-lg-4 py-lg-4 py-2 px-2 gap-2 d-flex align-items-center mb-xxl-5"
+                    >
                       <svg class="dropdown-menu__icon solution">
                         <use href="./img/svg/sprite.svg#menu_solution"></use>
                       </svg>
                       <span>Отраслевые решения</span>
-                      <svg class="menu-mobile__dropdown-arrow d-xxl-none d-block position-absolute">
+                      <svg
+                        class="menu-mobile__dropdown-arrow d-xxl-none d-block position-absolute"
+                      >
                         <use href="./img/svg/sprite.svg#menu_arrow"></use>
                       </svg>
                     </p>
-                    <a href="#" class="item-uslugi__default d-xxl-block d-none d-block mt-4">Реализация
-                      CIPM-3</a>
-                    <a href="#" class="item-uslugi__default d-xxl-block d-none d-block mt-4">ИС «Антифрод»</a>
-                    <a class="item-uslugi__default d-xxl-block d-none d-block mt-4">Решения для УК и ТСЖ</a>
+                    <a
+                      href="#"
+                      class="item-uslugi__default d-xxl-block d-none d-block mt-4"
+                      >Реализация CIPM-3</a
+                    >
+                    <a
+                      href="#"
+                      class="item-uslugi__default d-xxl-block d-none d-block mt-4"
+                      >ИС «Антифрод»</a
+                    >
+                    <a
+                      class="item-uslugi__default d-xxl-block d-none d-block mt-4"
+                      >Решения для УК и ТСЖ</a
+                    >
                   </li>
                 </ul>
               </li>
               <li class="nav-item fs-5 py-xxl-5">
-                <a class="nav-link c-white gap-3 py-2 px-3 d-flex align-items-center tab-title" href="#" id="menu2"
-                  role="button" aria-expanded="false">
+                <a
+                  class="nav-link c-white gap-3 py-2 px-3 d-flex align-items-center tab-title"
+                  href="#"
+                  id="menu2"
+                  role="button"
+                  aria-expanded="false"
+                >
                   <svg class="menu-icon">
                     <use href="./img/svg/sprite.svg#menu_news"></use>
                   </svg>
@@ -194,8 +329,13 @@
                 </a>
               </li>
               <li class="nav-item fs-5 py-xxl-5">
-                <a class="nav-link c-white gap-3 py-2 px-3 d-flex align-items-center tab-title" href="#" id="menu3"
-                  role="button" aria-expanded="false">
+                <a
+                  class="nav-link c-white gap-3 py-2 px-3 d-flex align-items-center tab-title"
+                  href="#"
+                  id="menu33"
+                  role="button"
+                  aria-expanded="false"
+                >
                   <svg class="menu-icon">
                     <use href="./img/svg/sprite.svg#menu_academy"></use>
                   </svg>
@@ -204,8 +344,13 @@
               </li>
 
               <li class="nav-item fs-5 py-xxl-5">
-                <a class="nav-link c-white gap-3 py-2 px-3 d-flex align-items-center tab-title" href="#" id="menu4"
-                  role="button" aria-expanded="false">
+                <a
+                  class="nav-link c-white gap-3 py-2 px-3 d-flex align-items-center tab-title"
+                  href="#"
+                  id="menu4"
+                  role="button"
+                  aria-expanded="false"
+                >
                   <svg class="menu-icon">
                     <use href="./img/svg/sprite.svg#menu_sale"></use>
                   </svg>
@@ -213,8 +358,13 @@
                 </a>
               </li>
               <li class="nav-item fs-5 py-xxl-5">
-                <a class="nav-link c-white gap-3 py-2 px-3 d-flex align-items-center tab-title" href="#" id="menu5"
-                  role="button" aria-expanded="false">
+                <a
+                  class="nav-link c-white gap-3 py-2 px-3 d-flex align-items-center tab-title"
+                  href="#"
+                  id="menu5"
+                  role="button"
+                  aria-expanded="false"
+                >
                   <svg class="menu-icon">
                     <use href="./img/svg/sprite.svg#menu_case"></use>
                   </svg>
@@ -222,14 +372,24 @@
                 </a>
               </li>
 
-              <li class="nav-item fs-5 py-xxl-5 dropdown menu__dropdown tab position-static">
-                <a class="nav-link c-white gap-3 py-2 px-3 d-flex align-items-center tab-title" href="#" id="menu6"
-                  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <li
+                class="nav-item fs-5 py-xxl-5 dropdown menu__dropdown tab position-static"
+              >
+                <a
+                  class="nav-link c-white gap-3 py-2 px-3 d-flex align-items-center tab-title"
+                  href="#"
+                  id="menu6"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   <svg class="menu-icon">
                     <use href="./img/svg/sprite.svg#menu_clients"></use>
                   </svg>
 
-                  <p class="tab-header d-flex justify-content-between align-items-center w-100 m-0">
+                  <p
+                    class="tab-header d-flex justify-content-between align-items-center w-100 m-0"
+                  >
                     <span class="fs-5 c-white">Клиентам</span>
                     <svg class="menu__arrow-dropdown">
                       <use href="./img/svg/sprite.svg#menu_arrow"></use>
@@ -238,24 +398,54 @@
                 </a>
                 <ul
                   class="dropdown-menu p-0 header__dropdown default-dropdown mt-xxl-0 gap-xxl-0 gap-2 tab-list list pe-md-4 flex-column"
-                  aria-labelledby="menu3">
-                  <li class="mt-0"><a class="dropdown-item py-3 px-4" href="#">Документы</a></li>
-                  <li class="mt-0"><a class="dropdown-item py-3 px-4" href="#">Оплата услуг</a></li>
-                  <li class="mt-0"><a class="dropdown-item py-3 px-4" href="#">Программное обеспечение</a></li>
-                  <li class="mt-0"><a class="dropdown-item py-3 px-4" href="#">Техническая поддержка</a></li>
-                  <li class="mt-0"><a class="dropdown-item py-3 px-4" href="#">Оборудование связи</a></li>
-                  <li class="mt-0"><a class="dropdown-item py-3 px-4" href="#">Инструкции</a></li>
-                  <li class="mt-0"><a class="dropdown-item py-3 px-4" href="#">Уведомления</a></li>
+                >
+                  <li class="mt-0">
+                    <a class="dropdown-item py-3 px-4" href="#">Документы</a>
+                  </li>
+                  <li class="mt-0">
+                    <a class="dropdown-item py-3 px-4" href="#">Оплата услуг</a>
+                  </li>
+                  <li class="mt-0">
+                    <a class="dropdown-item py-3 px-4" href="#"
+                      >Программное обеспечение</a
+                    >
+                  </li>
+                  <li class="mt-0">
+                    <a class="dropdown-item py-3 px-4" href="#"
+                      >Техническая поддержка</a
+                    >
+                  </li>
+                  <li class="mt-0">
+                    <a class="dropdown-item py-3 px-4" href="#"
+                      >Оборудование связи</a
+                    >
+                  </li>
+                  <li class="mt-0">
+                    <a class="dropdown-item py-3 px-4" href="#">Инструкции</a>
+                  </li>
+                  <li class="mt-0">
+                    <a class="dropdown-item py-3 px-4" href="#">Уведомления</a>
+                  </li>
                 </ul>
               </li>
 
-              <li class="nav-item fs-5 py-xxl-5 dropdown menu__dropdown tab position-static">
-                <a class="nav-link c-white gap-3 py-2 px-3 d-flex align-items-center tab-title tab-title" href="#"
-                  id="menu3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <li
+                class="nav-item fs-5 py-xxl-5 dropdown menu__dropdown tab position-static"
+              >
+                <a
+                  class="nav-link c-white gap-3 py-2 px-3 d-flex align-items-center tab-title tab-title"
+                  href="#"
+                  id="menu3"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   <svg class="menu-icon">
                     <use href="./img/svg/sprite.svg#menu_about"></use>
                   </svg>
-                  <p class="tab-header d-flex justify-content-between align-items-center w-100 m-0">
+                  <p
+                    class="tab-header d-flex justify-content-between align-items-center w-100 m-0"
+                  >
                     <span class="fs-5 c-white">О нас</span>
                     <svg class="menu__arrow-dropdown">
                       <use href="./img/svg/sprite.svg#menu_arrow"></use>
@@ -264,20 +454,46 @@
                 </a>
                 <ul
                   class="dropdown-menu p-0 header__dropdown default-dropdown mt-xxl-0 gap-xxl-0 gap-2 right tab-list list pe-md-4 flex-column"
-                  aria-labelledby="menu3">
-                  <li><a class="dropdown-item py-3 px-4" href="#">Маркетинг-кит</a></li>
-                  <li><a class="dropdown-item py-3 px-4" href="#">Адрес и реквизиты</a></li>
-                  <li><a class="dropdown-item py-3 px-4" href="#">Лицензии</a></li>
-                  <li><a class="dropdown-item py-3 px-4" href="#">Благотворительность</a></li>
-                  <li><a class="dropdown-item py-3 px-4" href="#">Благодарности</a></li>
+                >
+                  <li>
+                    <a class="dropdown-item py-3 px-4" href="#"
+                      >Маркетинг-кит</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item py-3 px-4" href="#"
+                      >Адрес и реквизиты</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item py-3 px-4" href="#">Лицензии</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item py-3 px-4" href="#"
+                      >Благотворительность</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item py-3 px-4" href="#"
+                      >Благодарности</a
+                    >
+                  </li>
                 </ul>
               </li>
-              <li class="mobile-telephone d-xxl-none d-block text-center mt-4">Горячая линия: 8-800-355-55-55</li>
+              <li class="mobile-telephone d-xxl-none d-block text-center mt-4">
+                Горячая линия: 8-800-355-55-55
+              </li>
             </ul>
-            <a href="#" class="menu-mobile d-block d-lg-none private-cabinet c-white text-center p-4">Личный кабинет</a>
+            <a
+              href="#"
+              class="menu-mobile d-block d-lg-none private-cabinet c-white text-center p-4"
+              >Личный кабинет</a
+            >
           </div>
           <div class="mobile__sub-menu d-none sub-menu">
-            <div class="mobile-header-menu d-xxl-none d-flex align-items-center justify-content-between w-100 p-4">
+            <div
+              class="mobile-header-menu d-xxl-none d-flex align-items-center justify-content-between w-100 p-4"
+            >
               <div class="d-flex menu-social align-items-center">
                 <svg class="sub-menu__arrow-dropdown">
                   <use href="./img/svg/sprite.svg#menu_arrow"></use>
@@ -290,16 +506,19 @@
                 </svg>
               </div>
             </div>
-            <ul class="sub-list p-xxl-0 p-4 gap-2 gap-xxl-0 mb-2 uslugi-mobile" aria-labelledby></ul>
+            <ul
+              class="sub-list p-xxl-0 p-4 gap-2 gap-xxl-0 mb-2 uslugi-mobile"
+              aria-labelledby
+            ></ul>
           </div>
         </div>
         <div class="background-mobile"></div>
-
       </div>
     </nav>
   </div>
 
 </header>
+
   <section class="post-header">
     <div
         class="container post-header__wrapper gap-6 text-nowrap d-flex align-items-center justify-content-between py-xxl-6 py-6 px-4 mb-4 mb-md-0">
@@ -327,115 +546,174 @@
   <div class="container">
     <main>
       <section class="default-margin">
-    <h2 class="service-banner__title fs-2 fw-bold mt-lg-6 mt-0 mb-lg-0 mb-6 d-xs-block d-lg-none mobile">Подключить
-        «Бизнес Интернет» в Красноярске</h2>
-    <div class="service-banner position-relative overflow-hidden rounded-4 px-md-4 py-4 px-5">
-        <div class="service-banner__background position-absolute h-100 w-100">
-            <picture>
-                <source srcset="./img/usluga/background_mobile.jpg" media="(max-width: 768px)">
-                <img src="./img/usluga/background_pc.jpg" alt="задний фон" fetchpriority="low" loading="lazy"
-                    decoding="async" class="h-100 w-100" width="100%" height="100%">
-            </picture>
-        </div>
-
-        <p class="service-banner__type text-end d-none d-lg-block"><span
-                class="rounded-4 text-uppercase py-2 px-4 c-white">Интернет</span>
-        </p>
-        <h2 class="service-banner__title fs-2 fw-bold c-white mt-lg-6 mt-0 d-none d-lg-block">Подключить «Бизнес
-            Интернет» в Красноярске</h2>
-        <h2 class="service-banner__title fs-2 fw-bold c-white mt-lg-6 mt-0 d-xs-block d-lg-none">Бизнес интернет
-        </h2>
-        <p class="service-banner__description fs-4 mt-lg-6 mt-4 c-white">Быстрый и надежный интернет для комфорта
-            сотрудников и
-            клиентов вашей
-            компании.</p>
-
-        <button class="service-banner__btn fs-3 fw-bold py-md-2 px-md-4 py-0 px-2 fill mt-lg-6 mt-4 btn btn-primary">от
-            2300
-            ₽</button>
-
-        <div class="item-main__icon rounded-circle position-absolute">
-            <svg>
-                <use href="./img/svg/sprite.svg#block1_sip"></use>
-            </svg>
-        </div>
+  <h2
+    class="service-banner__title fs-2 fw-bold mt-lg-6 mt-0 mb-lg-0 mb-6 d-xs-block d-lg-none mobile"
+  >
+    Подключить «Бизнес Интернет» в Красноярске
+  </h2>
+  <div
+    class="service-banner position-relative overflow-hidden rounded-4 px-md-4 py-4 px-5"
+  >
+    <div class="service-banner__background position-absolute h-100 w-100">
+      <picture>
+        <source
+          srcset="./img/usluga/background_mobile.jpg"
+          media="(max-width: 768px)"
+        />
+        <img
+          src="./img/usluga/background_pc.jpg"
+          alt="задний фон"
+          fetchpriority="low"
+          loading="lazy"
+          decoding="async"
+          class="h-100 w-100"
+          width="2312"
+          height="872"
+        />
+      </picture>
     </div>
+
+    <p class="service-banner__type text-end d-none d-lg-block">
+      <span class="rounded-4 text-uppercase py-2 px-4 c-white">Интернет</span>
+    </p>
+    <h2
+      class="service-banner__title fs-2 fw-bold c-white mt-lg-6 mt-0 d-none d-lg-block"
+    >
+      Подключить «Бизнес Интернет» в Красноярске
+    </h2>
+    <h2
+      class="service-banner__title fs-2 fw-bold c-white mt-lg-6 mt-0 d-xs-block d-lg-none"
+    >
+      Бизнес интернет
+    </h2>
+    <p class="service-banner__description fs-4 mt-lg-6 mt-4 c-white">
+      Быстрый и надежный интернет для комфорта сотрудников и клиентов вашей
+      компании.
+    </p>
+
+    <button
+      class="service-banner__btn fs-3 fw-bold py-md-2 px-md-4 py-0 px-2 fill mt-lg-6 mt-4 btn btn-primary"
+    >
+      от 2300 ₽
+    </button>
+
+    <div class="item-main__icon rounded-circle position-absolute">
+      <svg>
+        <use href="./img/svg/sprite.svg#block1_sip"></use>
+      </svg>
+    </div>
+  </div>
 </section>
+
       <section class="default-margin">
-    <h2 class="fw-bold fs-1 title">Только в Telezon</h2>
-    <div class="d-grid service-info gap-md-5 gap-3 mt-lg-7 pt-lg-7 mt-4 pt-0">
-        <div
-            class="text-center d-flex flex-lg-column numbers-items__item p-lg-6 p-md-4 p-0 rounded-4 justify-content-lg-between justify-content-start align-items-lg-start align-items-center">
-            <svg class="numbers-item__icon rounded-3">
-                <use xlink:href="./img/svg/sprite.svg#key"></use>
-            </svg>
-            <span class="service-info__description text-start mt-lg-6 mt-0 fs-4">Подключение с «0» под «ключ»</span>
-        </div>
-
-        <div
-            class="text-center d-flex flex-lg-column numbers-items__item p-lg-6 p-md-4 p-0 rounded-4 justify-content-lg-between justify-content-start align-items-lg-start align-items-center">
-            <svg class="numbers-item__icon rounded-3">
-                <use xlink:href="./img/svg/sprite.svg#mail"></use>
-            </svg>
-            <span class="service-info__description text-start mt-lg-6 mt-0 fs-4">Специализированные тарифы для
-                юридических
-                лиц</span>
-        </div>
-
-        <div
-            class="text-center d-flex flex-lg-column numbers-items__item p-lg-6 p-md-4 p-0 rounded-4 justify-content-lg-between justify-content-start align-items-lg-start align-items-center">
-            <svg class="numbers-item__icon rounded-3">
-                <use xlink:href="./img/svg/sprite.svg#usluga_calendar"></use>
-            </svg>
-            <span class="service-info__description text-start mt-lg-6 mt-0 fs-4">Оперативное включение в течение
-                5 дней</span>
-        </div>
-
-        <div
-            class="text-center d-flex flex-lg-column numbers-items__item p-lg-6 p-md-4 p-0 rounded-4 justify-content-lg-between justify-content-start align-items-lg-start align-items-center">
-            <svg class="numbers-item__icon rounded-3">
-                <use xlink:href="./img/svg/sprite.svg#headphones"></use>
-            </svg>
-            <span class="service-info__description text-start mt-lg-6 mt-0 fs-4">«Реальная» круглосуточная техническая
-                поддержка</span>
-        </div>
-
-        <div
-            class="text-center d-flex flex-lg-column numbers-items__item p-lg-6 p-md-4 p-0 rounded-4 justify-content-lg-between justify-content-start align-items-lg-start align-items-center">
-            <svg class="numbers-item__icon rounded-3">
-                <use xlink:href="./img/svg/sprite.svg#ddos"></use>
-            </svg>
-            <span class="service-info__description text-start mt-lg-6 mt-0 fs-4">Защита от DDoS-атак</span>
-        </div>
-
-        <div
-            class="text-center d-flex flex-lg-column numbers-items__item p-lg-6 p-md-4 p-0 rounded-4 justify-content-lg-between justify-content-start align-items-lg-start align-items-center">
-            <svg class="numbers-item__icon rounded-3">
-                <use xlink:href="./img/svg/sprite.svg#ruble"></use>
-            </svg>
-            <span class="service-info__description text-start mt-lg-6 mt-0 fs-4">Стоимость от 2300 ₽ за 100 Мбит/с
-                (Тарифы)</span>
-        </div>
-
-        <div
-            class="text-center d-flex flex-lg-column numbers-items__item p-lg-6 p-md-4 p-0 rounded-4 justify-content-lg-between justify-content-start align-items-lg-start align-items-center">
-            <svg class="numbers-item__icon rounded-3">
-                <use xlink:href="./img/svg/sprite.svg#speed"></use>
-            </svg>
-            <span class="service-info__description text-start mt-lg-6 mt-0 fs-4">Скорость передачи данных до вашего
-                устройства
-                до 10 Гбит/с</span>
-        </div>
-
-        <div
-            class="text-center d-flex flex-lg-column numbers-items__item p-lg-6 p-md-4 p-0 rounded-4 justify-content-lg-between justify-content-start align-items-lg-start align-items-center">
-            <svg class="numbers-item__icon rounded-3 fill-none">
-                <use xlink:href="./img/svg/sprite.svg#ipv6"></use>
-            </svg>
-            <span class="service-info__description text-start mt-lg-6 mt-0 fs-4">Поддержка адресов протокола IPv6</span>
-        </div>
+  <h2 class="fw-bold fs-1 title">Только в Telezon</h2>
+  <div class="d-grid service-info gap-md-5 gap-3 mt-lg-7 pt-lg-7 mt-4 pt-0">
+    <div
+      class="text-center gap-4 d-flex numbers-items__item align-items-center p-lg-4 p-md-4 p-0 rounded-4 align-items-center"
+    >
+      <div>
+        <svg class="numbers-item__icon rounded-3">
+          <use xlink:href="./img/svg/sprite.svg#key"></use>
+        </svg>
+      </div>
+      <span class="service-info__description text-start fs-5"
+        >Подключение с «0» под «ключ»</span
+      >
     </div>
+
+    <div
+      class="text-center gap-4 d-flex numbers-items__item align-items-center p-lg-4 p-md-4 p-0 rounded-4 align-items-center"
+    >
+      <div>
+        <svg class="numbers-item__icon rounded-3">
+          <use xlink:href="./img/svg/sprite.svg#mail"></use>
+        </svg>
+      </div>
+      <span class="service-info__description text-start fs-5"
+        >Специализированные тарифы для юридических лиц</span
+      >
+    </div>
+
+    <div
+      class="text-center gap-4 d-flex numbers-items__item align-items-center p-lg-4 p-md-4 p-0 rounded-4 align-items-center"
+    >
+      <div>
+        <svg class="numbers-item__icon rounded-3">
+          <use xlink:href="./img/svg/sprite.svg#usluga_calendar"></use>
+        </svg>
+      </div>
+      <span class="service-info__description text-start fs-5"
+        >Оперативное включение в течение 5 дней</span
+      >
+    </div>
+
+    <div
+      class="text-center gap-4 d-flex numbers-items__item align-items-center p-lg-4 p-md-4 p-0 rounded-4 align-items-center"
+    >
+      <div>
+        <svg class="numbers-item__icon rounded-3">
+          <use xlink:href="./img/svg/sprite.svg#headphones"></use>
+        </svg>
+      </div>
+      <span class="service-info__description text-start fs-5"
+        >«Реальная» круглосуточная техническая поддержка</span
+      >
+    </div>
+
+    <div
+      class="text-center gap-4 d-flex numbers-items__item align-items-center p-lg-4 p-md-4 p-0 rounded-4 align-items-center"
+    >
+      <div>
+        <svg class="numbers-item__icon rounded-3">
+          <use xlink:href="./img/svg/sprite.svg#ddos"></use>
+        </svg>
+      </div>
+      <span class="service-info__description text-start fs-5"
+        >Защита от DDoS-атак</span
+      >
+    </div>
+
+    <div
+      class="text-center gap-4 d-flex numbers-items__item align-items-center p-lg-4 p-md-4 p-0 rounded-4 align-items-center"
+    >
+      <div>
+        <svg class="numbers-item__icon rounded-3">
+          <use xlink:href="./img/svg/sprite.svg#ruble"></use>
+        </svg>
+      </div>
+      <span class="service-info__description text-start fs-5"
+        >Стоимость от 2300 ₽ за 100 Мбит/с (Тарифы)</span
+      >
+    </div>
+
+    <div
+      class="text-center gap-4 d-flex numbers-items__item align-items-center p-lg-4 p-md-4 p-0 rounded-4 align-items-center"
+    >
+      <div>
+        <svg class="numbers-item__icon rounded-3">
+          <use xlink:href="./img/svg/sprite.svg#speed"></use>
+        </svg>
+      </div>
+      <span class="service-info__description text-start fs-5"
+        >Скорость передачи данных до вашего устройства до 10 Гбит/с</span
+      >
+    </div>
+
+    <div
+      class="text-center gap-4 d-flex numbers-items__item align-items-center p-lg-4 p-md-4 p-0 rounded-4 align-items-center"
+    >
+      <div>
+        <svg class="numbers-item__icon rounded-3">
+          <use xlink:href="./img/svg/sprite.svg#ipv6"></use>
+        </svg>
+      </div>
+      <span class="service-info__description text-start fs-5"
+        >Поддержка адресов протокола IPv6</span
+      >
+    </div>
+  </div>
 </section>
+
       <section class="calculator default-margin">
     <h2 class="fw-bold fs-1 title">Акции и скидки</h2>
     <div class="row calculator-wrapper mt-lg-7 pt-lg-7 pt-0 mt-4">
@@ -815,35 +1093,67 @@
     </div>
 </section>
       <section class="form default-margin">
-    <h2 class="title fw-bold fs-1 d-none d-md-block">Оставить запрос на подключение</h2>
-    <div class="form-wrapper gap-lg-6 gap-0 d-grid mt-md-6 mt-4">
-        <img alt="image" class="form__block h-100 d-none d-lg-block image rounded-4 overflow-hidden" fetchpriority="low"
-            loading="lazy" decoding="async" src="./img/blue-image.jpg" width="100%" height="100%">
-        <form action="#" class="form__block d-flex flex-column rounded-4">
-            <p class="d-sm-block d-md-none block-address__mobile fw-bold mb-md-0 mb-4">Оставить запрос на подключение
-            </p>
-            <p class="form-title fs-4 d-none d-sm-none d-md-block">Оставьте заявку — мы подберём подходящий тариф и
-                договоримся о подключении</p>
-            <input type="text" class="form__input rounded-4 mt-md-6 mt-0 default-input" placeholder="Как вас зовут?" />
-            <input type="tel" id="phone" class="form__input rounded-4 tel mt-4 default-input"
-                placeholder="+7 - 999 - 999 - 99 - 99" />
-            <label class="form__checkbox d-grid mt-4 gap-md-4 gap-2">
-                <div class="d-inline position-relative form-input-wrapper d-flex align-items-center">
-                    <input type="checkbox" />
-                    <svg width="22" height="15" class="checkbox-icon">
-                        <use xlink:href="./img/svg/sprite.svg#tick"></use>
-                    </svg>
-                </div>
-                <p class="form__description">
-                    Да, я соглашаюсь <br />
-                    с <a href="#" class="link-strong">условиями обработки персональных данных</a>
-                </p>
-            </label>
-            <button class="form__btn btn btn-primary mt-md-6 mt-4 py-4 mb-0 shadow-none" type="submit">Оставить
-                заявку</button>
-        </form>
-    </div>
+  <h2 class="title fw-bold fs-1 d-none d-md-block">
+    Оставить запрос на подключение
+  </h2>
+  <div class="form-wrapper gap-lg-6 gap-0 d-grid mt-md-6 mt-4">
+    <img
+      alt="image"
+      class="form__block w-100 h-100 d-none d-lg-block image rounded-4 overflow-hidden"
+      fetchpriority="low"
+      loading="lazy"
+      decoding="async"
+      src="./img/blue-image.jpg"
+      width="858"
+      height="480"
+    />
+    <form action="#" class="form__block d-flex flex-column rounded-4">
+      <p
+        class="d-sm-block d-md-none block-address__mobile fw-bold mb-md-0 mb-4"
+      >
+        Оставить запрос на подключение
+      </p>
+      <p class="form-title fs-4 d-none d-sm-none d-md-block">
+        Оставьте заявку — мы подберём подходящий тариф и договоримся о
+        подключении
+      </p>
+      <input
+        type="text"
+        class="form__input rounded-4 mt-md-6 mt-0 default-input"
+        placeholder="Как вас зовут?"
+      />
+      <input
+        type="tel"
+        id="phone"
+        class="form__input rounded-4 tel mt-4 default-input"
+        placeholder="+7 - 999 - 999 - 99 - 99"
+      />
+      <label class="form__checkbox d-grid mt-4 gap-md-4 gap-2">
+        <div
+          class="d-inline position-relative form-input-wrapper d-flex align-items-center"
+        >
+          <input type="checkbox" />
+          <svg width="22" height="15" class="checkbox-icon">
+            <use xlink:href="./img/svg/sprite.svg#tick"></use>
+          </svg>
+        </div>
+        <p class="form__description">
+          Да, я соглашаюсь <br />
+          с <a href="#" class="link-strong"
+            >условиями обработки персональных данных</a
+          >
+        </p>
+      </label>
+      <button
+        class="form__btn btn btn-primary mt-md-6 mt-4 py-4 mb-0 shadow-none"
+        type="submit"
+      >
+        Оставить заявку
+      </button>
+    </form>
+  </div>
 </section>
+
       <section class="video default-margin">
     <h2 class="title fw-bold fs-1">Проверка скорости подключения TELEZON</h2>
     <div class="video-wrapper mt-md-7 mt-4">
@@ -1012,388 +1322,807 @@
     </div>
 </section>
       <section class="default-margin">
-    <h2 class="title fw-bold fs-1">Кейсы</h2>
+  <h2 class="title fw-bold fs-1">Кейсы</h2>
 
-    <div class="d-grid gap-6 news mt-md-7 pt-lg-7 pt-0 mt-4">
-        <article class="item-news pb-lg-6 p-4 p-lg-0 rounded-4 d-flex flex-column gap-4">
-            <a href="#" class="item-news__image position-relative overflow-hidden">
-                <div class="item-news__image position-relative overflow-hidden">
-                    <img alt="case" fetchpriority="low" loading="lazy" decoding="async" src="./img/gray-rect.png"
-                        width="100%" height="100%">
-                </div>
-            </a>
-            <p class="item-news__title fw-bold mt-lg-4 mt-0 mb-lg-4 mb-0 fs-3"><a href="#">Как использовать интернет для
-                    увеличения продуктивности сотрудников офиса?</a></p>
-            <p class="item-news__description fs-4 flex-fill mt-lg-4 mt-0 mb-lg-4 mb-0">Интернет стал незаменимым
-                инструментом в современном офисе, и его правильное использование может значительно повысить
-                производительность и эффективность работы сотрудников.</p>
-            <div class="item-news__marks d-flex gap-3 marks-news mt-lg-4 mt-0">
-                <p class="marks-news__item text-primary text-decoration-none rounded-3 py-md-2 px-md-4 py-1 px-2 mb-0">
-                    <a href="#">SIP</a>
-                </p>
-                <p class="marks-news__item text-primary text-decoration-none rounded-3 py-md-2 px-md-4 py-1 px-2 mb-0">
-                    <a href="#">IP-Телефония</a>
-                </p>
-            </div>
-        </article>
-        <article class="item-news pb-lg-6 p-4 p-lg-0 rounded-4 d-flex flex-column gap-4">
-            <a href="#" class="item-news__image position-relative overflow-hidden">
-                <div class="item-news__image position-relative overflow-hidden">
-                    <img alt="case" fetchpriority="low" loading="lazy" decoding="async" src="./img/gray-rect.png"
-                        width="100%" height="100%">
-                </div>
-            </a>
-            <p class="item-news__title fw-bold mt-lg-4 mt-0 mb-lg-4 mb-0 fs-3"><a href="#">Как использовать интернет для
-                    повышения эффективности маркетинга офиса?</a></p>
-            <p class="item-news__description fs-4 flex-fill mt-lg-4 mt-0 mb-lg-4 mb-0">Узнайте, как использовать
-                интернет для повышения эффективности маркетинга офиса юридического лица.</p>
-            <div class="item-news__marks d-flex gap-3 marks-news mt-lg-4 mt-0">
-                <p class="marks-news__item text-primary text-decoration-none rounded-3 py-md-2 px-md-4 py-1 px-2 mb-0">
-                    <a href="#">SIP</a>
-                </p>
-                <p class="marks-news__item text-primary text-decoration-none rounded-3 py-md-2 px-md-4 py-1 px-2 mb-0">
-                    <a href="#">IP-Телефония</a>
-                </p>
-            </div>
-        </article>
-    </div>
+  <div class="d-grid gap-6 news mt-md-7 pt-lg-7 pt-0 mt-4">
+    <article
+      class="item-news pb-lg-6 p-4 p-lg-0 rounded-4 d-flex flex-column gap-4"
+    >
+      <a href="#" class="item-news__image position-relative overflow-hidden">
+        <div class="item-news__image position-relative overflow-hidden">
+          <img
+            alt="case"
+            fetchpriority="low"
+            loading="lazy"
+            decoding="async"
+            src="./img/gray-rect.png"
+            class="w-100 h-100"
+            width="858"
+            height="296"
+          />
+        </div>
+      </a>
+      <p class="item-news__title fw-bold mt-lg-4 mt-0 mb-lg-4 mb-0 fs-3">
+        <a href="#"
+          >Как использовать интернет для увеличения продуктивности сотрудников
+          офиса?</a
+        >
+      </p>
+      <p
+        class="item-news__description fs-4 flex-fill mt-lg-4 mt-0 mb-lg-4 mb-0"
+      >
+        Интернет стал незаменимым инструментом в современном офисе, и его
+        правильное использование может значительно повысить производительность и
+        эффективность работы сотрудников.
+      </p>
+      <div class="item-news__marks d-flex gap-3 marks-news mt-lg-4 mt-0">
+        <p
+          class="marks-news__item text-primary text-decoration-none rounded-3 py-md-2 px-md-4 py-1 px-2 mb-0"
+        >
+          <a href="#">SIP</a>
+        </p>
+        <p
+          class="marks-news__item text-primary text-decoration-none rounded-3 py-md-2 px-md-4 py-1 px-2 mb-0"
+        >
+          <a href="#">IP-Телефония</a>
+        </p>
+      </div>
+    </article>
+    <article
+      class="item-news pb-lg-6 p-4 p-lg-0 rounded-4 d-flex flex-column gap-4"
+    >
+      <a href="#" class="item-news__image position-relative overflow-hidden">
+        <div class="item-news__image position-relative overflow-hidden">
+          <img
+            alt="case"
+            fetchpriority="low"
+            loading="lazy"
+            decoding="async"
+            src="./img/gray-rect.png"
+            class="w-100 h-100"
+            width="858"
+            height="296"
+          />
+        </div>
+      </a>
+      <p class="item-news__title fw-bold mt-lg-4 mt-0 mb-lg-4 mb-0 fs-3">
+        <a href="#"
+          >Как использовать интернет для повышения эффективности маркетинга
+          офиса?</a
+        >
+      </p>
+      <p
+        class="item-news__description fs-4 flex-fill mt-lg-4 mt-0 mb-lg-4 mb-0"
+      >
+        Узнайте, как использовать интернет для повышения эффективности
+        маркетинга офиса юридического лица.
+      </p>
+      <div class="item-news__marks d-flex gap-3 marks-news mt-lg-4 mt-0">
+        <p
+          class="marks-news__item text-primary text-decoration-none rounded-3 py-md-2 px-md-4 py-1 px-2 mb-0"
+        >
+          <a href="#">SIP</a>
+        </p>
+        <p
+          class="marks-news__item text-primary text-decoration-none rounded-3 py-md-2 px-md-4 py-1 px-2 mb-0"
+        >
+          <a href="#">IP-Телефония</a>
+        </p>
+      </div>
+    </article>
+  </div>
 
-    <p class="news__readmore text-primary text-right p-md-0 py-4 px-5 mt-md-6 pt-md-2 mt-4 mb-7">
-        <a href="#" class="d-flex align-items-center justify-content-end"><span class="d-md-block me-md-2">Читать другие
-                кейсы</span>
-            <svg class="svg-arrow svg-arrow d-md-flex align-center d-none">
-                <use href="./img/svg/sprite.svg#arrow"></use>
-            </svg>
-        </a>
-    </p>
+  <p
+    class="news__readmore text-primary text-right p-md-0 py-4 px-5 mt-md-6 pt-md-2 mt-4 mb-7"
+  >
+    <a href="#" class="d-flex align-items-center justify-content-end"
+      ><span class="d-md-block me-md-2">Читать другие кейсы</span>
+      <svg class="svg-arrow svg-arrow d-md-flex align-center d-none">
+        <use href="./img/svg/sprite.svg#arrow"></use>
+      </svg>
+    </a>
+  </p>
 </section>
+
       <section class="reviews default-margin">
-    <h2 class="title fw-bold fs-1">Отзывы клиентов о Telezon</h2>
+  <h2 class="title fw-bold fs-1">Отзывы клиентов о Telezon</h2>
 
-    <div class="reviews-wrapper d-flex align-items-start justify-content-between gap-4 pt-xl-7 mt-xl-7 mt-md-6 mt-4">
-        <div class="reviews__block block-reviews d-grid gap-md-5 gap-4">
-            <div class="block-reviews__review p-4 rounded-4 review-block gap-2 d-flex flex-column">
-                <p class="review-block__date">29.06.2024</p>
-                <div class="review-block__user d-flex align-items-center">
-                    <div class="review-block__icon">
-                        <img alt="review" fetchpriority="low" loading="lazy" decoding="async"
-                            src="./img/usluga/gray-user.jpg" width="100%" height="100%">
-                    </div>
-                    <p class="review-block__name ms-4">stand-art24</p>
-                </div>
-                <p class="review-block__paragraph">
-                    Проводили подключение на Маерчака, 65. Работу выполнили быстро и чисто, благодарность монтажникам!
-                </p>
-            </div>
-            <div class="block-reviews__review p-4 rounded-4 review-block d-flex flex-column gap-2">
-                <p class="review-block__date">29.06.2024</p>
-                <div class="review-block__user d-flex align-items-center">
-                    <div class="review-block__icon">
-                        <img alt="review" fetchpriority="low" loading="lazy" decoding="async"
-                            src="./img/usluga/gray-user.jpg" width="100%" height="100%">
-                    </div>
-
-                    <p class="review-block__name ms-4">stand-art24</p>
-                </div>
-                <p class="review-block__paragraph">
-                    Проводили подключение на Маерчака, 65. Работу выполнили быстро и чисто, благодарность монтажникам!
-                </p>
-            </div>
+  <div
+    class="reviews-wrapper d-flex align-items-start justify-content-between gap-4 pt-xl-7 mt-xl-7 mt-md-6 mt-4"
+  >
+    <div class="reviews__block block-reviews d-grid gap-md-5 gap-4">
+      <div
+        class="block-reviews__review p-4 rounded-4 review-block gap-2 d-flex flex-column"
+      >
+        <p class="review-block__date">29.06.2024</p>
+        <div class="review-block__user d-flex align-items-center">
+          <div class="review-block__icon">
+            <img
+              alt="review"
+              fetchpriority="low"
+              loading="lazy"
+              decoding="async"
+              src="./img/usluga/gray-user.jpg"
+              width="32"
+              height="32"
+              class="w-100 h-100"
+            />
+          </div>
+          <p class="review-block__name ms-4">stand-art24</p>
         </div>
-        <div class="reviews__block block-reviews d-grid gap-md-5 gap-4">
-            <div class="block-reviews__review p-4 rounded-4 review-block d-flex flex-column gap-2">
-                <p class="review-block__date">29.06.2024</p>
-                <div class="review-block__user d-flex align-items-center">
-                    <div class="review-block__icon">
-                        <img alt="review" fetchpriority="low" loading="lazy" decoding="async"
-                            src="./img/usluga/gray-user.jpg" width="100%" height="100%">
-                    </div>
+        <p class="review-block__paragraph">
+          Проводили подключение на Маерчака, 65. Работу выполнили быстро и
+          чисто, благодарность монтажникам!
+        </p>
+      </div>
+      <div
+        class="block-reviews__review p-4 rounded-4 review-block d-flex flex-column gap-2"
+      >
+        <p class="review-block__date">29.06.2024</p>
+        <div class="review-block__user d-flex align-items-center">
+          <div class="review-block__icon">
+            <img
+              alt="review"
+              fetchpriority="low"
+              loading="lazy"
+              decoding="async"
+              src="./img/usluga/gray-user.jpg"
+              width="32"
+              height="32"
+              class="w-100 h-100"
+            />
+          </div>
 
-                    <p class="review-block__name ms-4">stand-art24</p>
-                </div>
-                <p class="review-block__paragraph">
-                    Проводили подключение на Маерчака, 65. Работу выполнили быстро и чисто, благодарность монтажникам!
-                </p>
-            </div>
-            <div class="block-reviews__review p-4 rounded-4 review-block d-flex flex-column gap-2">
-                <p class="review-block__date">29.06.2024</p>
-                <div class="review-block__user d-flex align-items-center">
-                    <div class="review-block__icon">
-                        <img alt="review" fetchpriority="low" loading="lazy" decoding="async"
-                            src="./img/usluga/gray-user.jpg" width="100%" height="100%">
-                    </div>
-
-                    <p class="review-block__name ms-4">stand-art24</p>
-                </div>
-                <p class="review-block__paragraph">
-                    Добрый день! С компанией Телезон работаем с самого открытия офиса. Интернет всегда стабильный. Цены
-                    оптимальные. Если
-                    случается отключение, то ребята его быстро исправляют. Так же всегда проконсультируют по возникшим
-                    вопросам. С
-                    уважением, ООО РА «Инсайт».
-                </p>
-            </div>
+          <p class="review-block__name ms-4">stand-art24</p>
         </div>
-        <div class="reviews__block block-reviews gap-md-5 gap-4 d-grid">
-            <div class="block-reviews__review p-4 rounded-4 review-block d-flex flex-column gap-2">
-                <p class="review-block__date">29.06.2024</p>
-                <div class="review-block__user d-flex align-items-center">
-                    <div class="review-block__icon">
-                        <img alt="review" fetchpriority="low" loading="lazy" decoding="async"
-                            src="./img/usluga/gray-user.jpg" width="100%" height="100%">
-                    </div>
-
-                    <p class="review-block__name ms-4">stand-art24</p>
-                </div>
-                <p class="review-block__paragraph">
-                    Проводили подключение на Маерчака, 65. Работу выполнили быстро и чисто, благодарность монтажникам!
-                </p>
-            </div>
-            <div class="block-reviews__review p-4 rounded-4 review-block d-flex flex-column gap-2">
-                <p class="review-block__date">29.06.2024</p>
-                <div class="review-block__user d-flex align-items-center">
-                    <div class="review-block__icon">
-                        <img alt="review" fetchpriority="low" loading="lazy" decoding="async"
-                            src="./img/usluga/gray-user.jpg" width="100%" height="100%">
-                    </div>
-
-                    <p class="review-block__name ms-4">stand-art24</p>
-                </div>
-                <p class="review-block__paragraph">
-                    Проводили подключение на Маерчака, 65. Работу выполнили быстро и чисто, благодарность монтажникам!
-                </p>
-            </div>
-        </div>
-        <div class="reviews__block block-reviews d-grid gap-md-5 gap-4">
-            <div class="block-reviews__review p-4 rounded-4 review-block d-flex flex-column gap-2">
-                <p class="review-block__date">29.06.2024</p>
-                <div class="review-block__user d-flex align-items-center">
-                    <div class="review-block__icon">
-                        <img alt="review" fetchpriority="low" loading="lazy" decoding="async"
-                            src="./img/usluga/gray-user.jpg" width="100%" height="100%">
-                    </div>
-
-                    <p class="review-block__name ms-4">stand-art24</p>
-                </div>
-                <p class="review-block__paragraph">
-                    Наша управляющая компания подключила интернет в компании Телезон, понравилась девушка менеджер Елена
-                    Глазкова, которая
-                    оперативно подобрала оптимальный тариф, отправила заявку в тех. поддержку и на следующий день нам
-                    подключили интернет.
-                    Огромное спасибо специалисту Никите, который подключил нас за 15 минут. Желаем вашей компании
-                    процветания!
-                </p>
-            </div>
-            <div class="block-reviews__review p-4 rounded-4 review-block d-flex flex-column gap-2">
-                <p class="review-block__date">29.06.2024</p>
-                <div class="review-block__user d-flex align-items-center">
-                    <div class="review-block__icon">
-                        <img alt="review" fetchpriority="low" loading="lazy" decoding="async"
-                            src="./img/usluga/gray-user.jpg" width="100%" height="100%">
-                    </div>
-
-                    <p class="review-block__name ms-4">stand-art24</p>
-                </div>
-                <p class="review-block__paragraph">
-                    Проводили подключение на Маерчака, 65. Работу выполнили быстро и чисто, благодарность монтажникам!
-                </p>
-            </div>
-        </div>
+        <p class="review-block__paragraph">
+          Проводили подключение на Маерчака, 65. Работу выполнили быстро и
+          чисто, благодарность монтажникам!
+        </p>
+      </div>
     </div>
-    <p class="news__readmore text-primary text-right p-md-0 py-4 px-5 mt-md-6 pt-md-2 mt-4 mb-7">
-        <a href="#" class="d-flex align-items-center justify-content-end"><span class="d-md-block me-md-2">Читать другие
-                отзывы</span>
-            <svg class="svg-arrow svg-arrow d-md-flex align-center d-none">
-                <use href="./img/svg/sprite.svg#arrow"></use>
-            </svg>
-        </a>
-    </p>
+    <div class="reviews__block block-reviews d-grid gap-md-5 gap-4">
+      <div
+        class="block-reviews__review p-4 rounded-4 review-block d-flex flex-column gap-2"
+      >
+        <p class="review-block__date">29.06.2024</p>
+        <div class="review-block__user d-flex align-items-center">
+          <div class="review-block__icon">
+            <img
+              alt="review"
+              fetchpriority="low"
+              loading="lazy"
+              decoding="async"
+              src="./img/usluga/gray-user.jpg"
+              width="32"
+              height="32"
+              class="w-100 h-100"
+            />
+          </div>
+
+          <p class="review-block__name ms-4">stand-art24</p>
+        </div>
+        <p class="review-block__paragraph">
+          Проводили подключение на Маерчака, 65. Работу выполнили быстро и
+          чисто, благодарность монтажникам!
+        </p>
+      </div>
+      <div
+        class="block-reviews__review p-4 rounded-4 review-block d-flex flex-column gap-2"
+      >
+        <p class="review-block__date">29.06.2024</p>
+        <div class="review-block__user d-flex align-items-center">
+          <div class="review-block__icon">
+            <img
+              alt="review"
+              fetchpriority="low"
+              loading="lazy"
+              decoding="async"
+              src="./img/usluga/gray-user.jpg"
+              width="32"
+              height="32"
+              class="w-100 h-100"
+            />
+          </div>
+
+          <p class="review-block__name ms-4">stand-art24</p>
+        </div>
+        <p class="review-block__paragraph">
+          Добрый день! С компанией Телезон работаем с самого открытия офиса.
+          Интернет всегда стабильный. Цены оптимальные. Если случается
+          отключение, то ребята его быстро исправляют. Так же всегда
+          проконсультируют по возникшим вопросам. С уважением, ООО РА «Инсайт».
+        </p>
+      </div>
+    </div>
+    <div class="reviews__block block-reviews gap-md-5 gap-4 d-grid">
+      <div
+        class="block-reviews__review p-4 rounded-4 review-block d-flex flex-column gap-2"
+      >
+        <p class="review-block__date">29.06.2024</p>
+        <div class="review-block__user d-flex align-items-center">
+          <div class="review-block__icon">
+            <img
+              alt="review"
+              fetchpriority="low"
+              loading="lazy"
+              decoding="async"
+              src="./img/usluga/gray-user.jpg"
+              width="32"
+              height="32"
+              class="w-100 h-100"
+            />
+          </div>
+
+          <p class="review-block__name ms-4">stand-art24</p>
+        </div>
+        <p class="review-block__paragraph">
+          Проводили подключение на Маерчака, 65. Работу выполнили быстро и
+          чисто, благодарность монтажникам!
+        </p>
+      </div>
+      <div
+        class="block-reviews__review p-4 rounded-4 review-block d-flex flex-column gap-2"
+      >
+        <p class="review-block__date">29.06.2024</p>
+        <div class="review-block__user d-flex align-items-center">
+          <div class="review-block__icon">
+            <img
+              alt="review"
+              fetchpriority="low"
+              loading="lazy"
+              decoding="async"
+              src="./img/usluga/gray-user.jpg"
+              width="32"
+              height="32"
+              class="w-100 h-100"
+            />
+          </div>
+
+          <p class="review-block__name ms-4">stand-art24</p>
+        </div>
+        <p class="review-block__paragraph">
+          Проводили подключение на Маерчака, 65. Работу выполнили быстро и
+          чисто, благодарность монтажникам!
+        </p>
+      </div>
+    </div>
+    <div class="reviews__block block-reviews d-grid gap-md-5 gap-4">
+      <div
+        class="block-reviews__review p-4 rounded-4 review-block d-flex flex-column gap-2"
+      >
+        <p class="review-block__date">29.06.2024</p>
+        <div class="review-block__user d-flex align-items-center">
+          <div class="review-block__icon">
+            <img
+              alt="review"
+              fetchpriority="low"
+              loading="lazy"
+              decoding="async"
+              src="./img/usluga/gray-user.jpg"
+              width="32"
+              height="32"
+              class="w-100 h-100"
+            />
+          </div>
+
+          <p class="review-block__name ms-4">stand-art24</p>
+        </div>
+        <p class="review-block__paragraph">
+          Наша управляющая компания подключила интернет в компании Телезон,
+          понравилась девушка менеджер Елена Глазкова, которая оперативно
+          подобрала оптимальный тариф, отправила заявку в тех. поддержку и на
+          следующий день нам подключили интернет. Огромное спасибо специалисту
+          Никите, который подключил нас за 15 минут. Желаем вашей компании
+          процветания!
+        </p>
+      </div>
+      <div
+        class="block-reviews__review p-4 rounded-4 review-block d-flex flex-column gap-2"
+      >
+        <p class="review-block__date">29.06.2024</p>
+        <div class="review-block__user d-flex align-items-center">
+          <div class="review-block__icon">
+            <img
+              alt="review"
+              fetchpriority="low"
+              loading="lazy"
+              decoding="async"
+              src="./img/usluga/gray-user.jpg"
+              width="32"
+              height="32"
+              class="w-100 h-100"
+            />
+          </div>
+
+          <p class="review-block__name ms-4">stand-art24</p>
+        </div>
+        <p class="review-block__paragraph">
+          Проводили подключение на Маерчака, 65. Работу выполнили быстро и
+          чисто, благодарность монтажникам!
+        </p>
+      </div>
+    </div>
+  </div>
+  <p
+    class="news__readmore text-primary text-right p-md-0 py-4 px-5 mt-md-6 pt-md-2 mt-4 mb-7"
+  >
+    <a href="#" class="d-flex align-items-center justify-content-end"
+      ><span class="d-md-block me-md-2">Читать другие отзывы</span>
+      <svg class="svg-arrow svg-arrow d-md-flex align-center d-none">
+        <use href="./img/svg/sprite.svg#arrow"></use>
+      </svg>
+    </a>
+  </p>
 </section>
+
       <section class="clients-wrapper default-margin">
-        <h2 class="fw-bold fs-1 title">Наши клиенты</h2>
+  <h2 class="fw-bold fs-1 title">Наши клиенты</h2>
 
-        <div class="row clients mt-lg-7 mt-md-6 pt-md-0 pt-lg-2 mt-0 d-md-flex d-grid align-items-center">
-                <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <img width="100%" height="100%" fetchpriority="low" loading="lazy" decoding="async"
-                                src="./img/clients/01.jpg" alt="client01">
-                </div>
-                <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <img width="100%" height="100%" fetchpriority="low" loading="lazy" decoding="async"
-                                src="./img/clients/02.jpg" alt="client02">
-                </div>
-                <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <img width="100%" height="100%" fetchpriority="low" loading="lazy" decoding="async"
-                                src="./img/clients/03.jpg" alt="client03">
-                </div>
-                <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <img width="100%" height="100%" fetchpriority="low" loading="lazy" decoding="async"
-                                src="./img/clients/04.jpg" alt="client04">
-                </div>
-                <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <img width="100%" height="100%" fetchpriority="low" loading="lazy" decoding="async"
-                                src="./img/clients/05.jpg" alt="client05">
-                </div>
-                <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <img width="100%" height="100%" fetchpriority="low" loading="lazy" decoding="async"
-                                src="./img/clients/06.jpg" alt="client06">
-                </div>
-                <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <img width="100%" height="100%" fetchpriority="low" loading="lazy" decoding="async"
-                                src="./img/clients/07.jpg" alt="client07">
-                </div>
-                <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <img width="100%" height="100%" fetchpriority="low" loading="lazy" decoding="async"
-                                src="./img/clients/08.jpg" alt="client08">
-                </div>
-                <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <img width="100%" height="100%" fetchpriority="low" loading="lazy" decoding="async"
-                                src="./img/clients/09.jpg" alt="client09">
-                </div>
-                <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <img width="100%" height="100%" fetchpriority="low" loading="lazy" decoding="async"
-                                src="./img/clients/10.jpg" alt="client10">
-                </div>
-                <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <img width="100%" height="100%" fetchpriority="low" loading="lazy" decoding="async"
-                                src="./img/clients/11.jpg" alt="client11">
-                </div>
-                <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <img width="100%" height="100%" fetchpriority="low" loading="lazy" decoding="async"
-                                src="./img/clients/12.jpg" alt="client12">
-                </div>
-                <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <img width="100%" height="100%" fetchpriority="low" loading="lazy" decoding="async"
-                                src="./img/clients/13.jpg" alt="client13">
-                </div>
-                <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <img width="100%" height="100%" fetchpriority="low" loading="lazy" decoding="async"
-                                src="./img/clients/14.jpg" alt="client14">
-                </div>
-                <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <img width="100%" height="100%" fetchpriority="low" loading="lazy" decoding="async"
-                                src="./img/clients/15.jpg" alt="client15">
-                </div>
-                <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <img width="100%" height="100%" fetchpriority="low" loading="lazy" decoding="async"
-                                src="./img/clients/16.jpg" alt="client16">
-                </div>
-                <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <img width="100%" height="100%" fetchpriority="low" loading="lazy" decoding="async"
-                                src="./img/clients/17.jpg" alt="client17">
-                </div>
-                <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <img width="100%" height="100%" fetchpriority="low" loading="lazy" decoding="async"
-                                src="./img/clients/18.jpg" alt="client18">
-                </div>
-                <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <img width="100%" height="100%" fetchpriority="low" loading="lazy" decoding="async"
-                                src="./img/clients/19.jpg" alt="client19">
-                </div>
-                <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <img width="100%" height="100%" fetchpriority="low" loading="lazy" decoding="async"
-                                src="./img/clients/20.jpg" alt="client20">
-                </div>
-                <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <img width="100%" height="100%" fetchpriority="low" loading="lazy" decoding="async"
-                                src="./img/clients/21.jpg" alt="client21">
-                </div>
-                <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <img width="100%" height="100%" fetchpriority="low" loading="lazy" decoding="async"
-                                src="./img/clients/22.jpg" alt="client22">
-                </div>
-                <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <img width="100%" height="100%" fetchpriority="low" loading="lazy" decoding="async"
-                                src="./img/clients/23.jpg" alt="client23">
-                </div>
-                <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <img width="100%" height="100%" fetchpriority="low" loading="lazy" decoding="async"
-                                src="./img/clients/24.jpg" alt="client24">
-                </div>
-                <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <img width="100%" height="100%" fetchpriority="low" loading="lazy" decoding="async"
-                                src="./img/clients/25.jpg" alt="client25">
-                </div>
-                <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <img width="100%" height="100%" fetchpriority="low" loading="lazy" decoding="async"
-                                src="./img/clients/26.jpg" alt="client26">
-                </div>
-                <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <img width="100%" height="100%" fetchpriority="low" loading="lazy" decoding="async"
-                                src="./img/clients/27.jpg" alt="client27">
-                </div>
-                <div class="col-lg-2 col-md-4 clients__item p-2">
-                        <img width="100%" height="100%" fetchpriority="low" loading="lazy" decoding="async"
-                                src="./img/clients/28.jpg" alt="client28">
-                </div>
-        </div>
+  <div
+    class="row clients mt-lg-7 mt-md-6 pt-md-0 pt-lg-2 mt-0 d-md-flex d-grid align-items-center"
+  >
+    <div class="col-lg-2 col-md-4 clients__item p-2">
+      <img
+        width="240"
+        height="102"
+        fetchpriority="low"
+        loading="lazy"
+        class="w-100 h-100"
+        decoding="async"
+        src="./img/clients/01.jpg"
+        alt="client01"
+      />
+    </div>
+    <div class="col-lg-2 col-md-4 clients__item p-2">
+      <img
+        width="240"
+        height="131"
+        fetchpriority="low"
+        loading="lazy"
+        class="w-100 h-100"
+        decoding="async"
+        src="./img/clients/02.jpg"
+        alt="client02"
+      />
+    </div>
+    <div class="col-lg-2 col-md-4 clients__item p-2">
+      <img
+        width="240"
+        height="87"
+        fetchpriority="low"
+        loading="lazy"
+        class="w-100 h-100"
+        decoding="async"
+        src="./img/clients/03.jpg"
+        alt="client03"
+      />
+    </div>
+    <div class="col-lg-2 col-md-4 clients__item p-2">
+      <img
+        width="240"
+        height="102"
+        fetchpriority="low"
+        loading="lazy"
+        class="w-100 h-100"
+        decoding="async"
+        src="./img/clients/04.jpg"
+        alt="client04"
+      />
+    </div>
+    <div class="col-lg-2 col-md-4 clients__item p-2">
+      <img
+        width="240"
+        height="62"
+        fetchpriority="low"
+        loading="lazy"
+        class="w-100 h-100"
+        decoding="async"
+        src="./img/clients/05.jpg"
+        alt="client05"
+      />
+    </div>
+    <div class="col-lg-2 col-md-4 clients__item p-2">
+      <img
+        width="240"
+        height="128"
+        fetchpriority="low"
+        loading="lazy"
+        class="w-100 h-100"
+        decoding="async"
+        src="./img/clients/06.jpg"
+        alt="client06"
+      />
+    </div>
+    <div class="col-lg-2 col-md-4 clients__item p-2">
+      <img
+        width="240"
+        height="113"
+        fetchpriority="low"
+        loading="lazy"
+        class="w-100 h-100"
+        decoding="async"
+        src="./img/clients/07.jpg"
+        alt="client07"
+      />
+    </div>
+    <div class="col-lg-2 col-md-4 clients__item p-2">
+      <img
+        width="136"
+        height="87"
+        fetchpriority="low"
+        loading="lazy"
+        class="w-100 h-100"
+        decoding="async"
+        src="./img/clients/08.jpg"
+        alt="client08"
+      />
+    </div>
+    <div class="col-lg-2 col-md-4 clients__item p-2">
+      <img
+        width="241"
+        height="97"
+        fetchpriority="low"
+        loading="lazy"
+        class="w-100 h-100"
+        decoding="async"
+        src="./img/clients/09.jpg"
+        alt="client09"
+      />
+    </div>
+    <div class="col-lg-2 col-md-4 clients__item p-2">
+      <img
+        width="241"
+        height="123"
+        fetchpriority="low"
+        loading="lazy"
+        class="w-100 h-100"
+        decoding="async"
+        src="./img/clients/10.jpg"
+        alt="client10"
+      />
+    </div>
+    <div class="col-lg-2 col-md-4 clients__item p-2">
+      <img
+        width="241"
+        height="92"
+        fetchpriority="low"
+        loading="lazy"
+        class="w-100 h-100"
+        decoding="async"
+        src="./img/clients/11.jpg"
+        alt="client11"
+      />
+    </div>
+    <div class="col-lg-2 col-md-4 clients__item p-2">
+      <img
+        width="241"
+        height="132"
+        fetchpriority="low"
+        loading="lazy"
+        class="w-100 h-100"
+        decoding="async"
+        src="./img/clients/12.jpg"
+        alt="client12"
+      />
+    </div>
+    <div class="col-lg-2 col-md-4 clients__item p-2">
+      <img
+        width="241"
+        height="92"
+        fetchpriority="low"
+        loading="lazy"
+        class="w-100 h-100"
+        decoding="async"
+        src="./img/clients/13.jpg"
+        alt="client13"
+      />
+    </div>
+    <div class="col-lg-2 col-md-4 clients__item p-2">
+      <img
+        width="241"
+        height="132"
+        fetchpriority="low"
+        loading="lazy"
+        class="w-100 h-100"
+        decoding="async"
+        src="./img/clients/14.jpg"
+        alt="client14"
+      />
+    </div>
+    <div class="col-lg-2 col-md-4 clients__item p-2">
+      <img
+        width="200"
+        height="92"
+        fetchpriority="low"
+        loading="lazy"
+        class="w-100 h-100"
+        decoding="async"
+        src="./img/clients/15.jpg"
+        alt="client15"
+      />
+    </div>
+    <div class="col-lg-2 col-md-4 clients__item p-2">
+      <img
+        width="200"
+        height="109"
+        fetchpriority="low"
+        loading="lazy"
+        class="w-100 h-100"
+        decoding="async"
+        src="./img/clients/16.jpg"
+        alt="client16"
+      />
+    </div>
+    <div class="col-lg-2 col-md-4 clients__item p-2">
+      <img
+        width="240"
+        height="139"
+        fetchpriority="low"
+        loading="lazy"
+        class="w-100 h-100"
+        decoding="async"
+        src="./img/clients/17.jpg"
+        alt="client17"
+      />
+    </div>
+    <div class="col-lg-2 col-md-4 clients__item p-2">
+      <img
+        width="240"
+        height="101"
+        fetchpriority="low"
+        loading="lazy"
+        class="w-100 h-100"
+        decoding="async"
+        src="./img/clients/18.jpg"
+        alt="client18"
+      />
+    </div>
+    <div class="col-lg-2 col-md-4 clients__item p-2">
+      <img
+        width="240"
+        height="91"
+        fetchpriority="low"
+        loading="lazy"
+        class="w-100 h-100"
+        decoding="async"
+        src="./img/clients/19.jpg"
+        alt="client19"
+      />
+    </div>
+    <div class="col-lg-2 col-md-4 clients__item p-2">
+      <img
+        width="240"
+        height="83"
+        fetchpriority="low"
+        loading="lazy"
+        class="w-100 h-100"
+        decoding="async"
+        src="./img/clients/20.jpg"
+        alt="client20"
+      />
+    </div>
+    <div class="col-lg-2 col-md-4 clients__item p-2">
+      <img
+        width="200"
+        height="85"
+        fetchpriority="low"
+        loading="lazy"
+        class="w-100 h-100"
+        decoding="async"
+        src="./img/clients/21.jpg"
+        alt="client21"
+      />
+    </div>
+    <div class="col-lg-2 col-md-4 clients__item p-2">
+      <img
+        width="200"
+        height="118"
+        fetchpriority="low"
+        loading="lazy"
+        class="w-100 h-100"
+        decoding="async"
+        src="./img/clients/22.jpg"
+        alt="client22"
+      />
+    </div>
+    <div class="col-lg-2 col-md-4 clients__item p-2">
+      <img
+        width="240"
+        height="97"
+        fetchpriority="low"
+        loading="lazy"
+        class="w-100 h-100"
+        decoding="async"
+        src="./img/clients/23.jpg"
+        alt="client23"
+      />
+    </div>
+    <div class="col-lg-2 col-md-4 clients__item p-2">
+      <img
+        width="240"
+        height="104"
+        fetchpriority="low"
+        loading="lazy"
+        class="w-100 h-100"
+        decoding="async"
+        src="./img/clients/24.jpg"
+        alt="client24"
+      />
+    </div>
+    <div class="col-lg-2 col-md-4 clients__item p-2">
+      <img
+        width="240"
+        height="83"
+        fetchpriority="low"
+        loading="lazy"
+        class="w-100 h-100"
+        decoding="async"
+        src="./img/clients/25.jpg"
+        alt="client25"
+      />
+    </div>
+    <div class="col-lg-2 col-md-4 clients__item p-2">
+      <img
+        width="240"
+        height="126"
+        fetchpriority="low"
+        loading="lazy"
+        class="w-100 h-100"
+        decoding="async"
+        src="./img/clients/26.jpg"
+        alt="client26"
+      />
+    </div>
+    <div class="col-lg-2 col-md-4 clients__item p-2">
+      <img
+        width="240"
+        height="143"
+        fetchpriority="low"
+        loading="lazy"
+        class="w-100 h-100"
+        decoding="async"
+        src="./img/clients/27.jpg"
+        alt="client27"
+      />
+    </div>
+    <div class="col-lg-2 col-md-4 clients__item p-2">
+      <img
+        width="240"
+        height="160"
+        fetchpriority="low"
+        loading="lazy"
+        class="w-100 h-100"
+        decoding="async"
+        src="./img/clients/28.jpg"
+        alt="client28"
+      />
+    </div>
+  </div>
 </section>
+
       <section class="about default-margin">
-    <h2 class="fw-bold fs-1 title">О нас</h2>
+  <h2 class="fw-bold fs-1 title">О нас</h2>
 
-    <div class="d-grid gap-md-5 gap-4 about_us mt-lg-7 pt-lg-7 pt-0 mt-md-4 fs-3 mt-4">
-        <div class="about_us__item bold fw-bold rounded-4 p-md-6 p-3">TELEZON — первый облачный центр связи для
-            современного
-            бизнеса</div>
-        <div class="about_us__item rounded-4 p-md-6 p-3">
-            <p class="fs-4">Мы — провайдер полного цикла, решающий весь спектр задач под ключ.</p>
-            <p class="fs-4 mt-md-6 mt-4 pe-md-4">
-                Наша компания является признанным экспертом в области корпоративных телекоммуникаций. 20 лет мы
-                предоставляем полный спектр
-                телекоммуникационных услуг. Наши клиенты — это не только государственные компании, лидеры отраслей, но и
-                малые предприятия!
-            </p>
-            <p class="fs-4 mt-md-6 mt-4 pe-md-4">
-                Высокоскоростной доступ в интернет, корпоративные коммуникации, облачное хранение, мониторинг данных,
-                системы
-                видеонаблюдения, пожарные системы и интеграторские услуги для юридических лиц по всей России!
-            </p>
-            <p class="fs-4 mt-md-6 mt-4 pe-md-4">
-                Для нашей компании каждый клиент уникален, как следствие, у нас нет «традиционно-провайдерского»
-                отношения. Мы знаем нашего
-                клиента, радуемся его успехам и стремимся поддерживать его бизнес, обеспечивая его необходимыми
-                услугами! Да, это непросто,
-                но мы знаем — так правильно!
-            </p>
-        </div>
-        <div class="about_us__item overflow-hidden rounded-4">
-            <img alt="about us" width="100%" height="100%" fetchpriority="low" loading="lazy" decoding="async"
-                src="./img/about_us.jpg">
-        </div>
+  <div
+    class="d-grid gap-md-5 gap-4 about_us mt-lg-7 pt-lg-7 pt-0 mt-md-4 fs-3 mt-4"
+  >
+    <div class="about_us__item bold fw-bold rounded-4 p-md-6 p-3">
+      TELEZON — первый облачный центр связи для современного бизнеса
     </div>
+    <div class="about_us__item rounded-4 p-md-6 p-3">
+      <p class="fs-4">
+        Мы — провайдер полного цикла, решающий весь спектр задач под ключ.
+      </p>
+      <p class="fs-4 mt-md-6 mt-4 pe-md-4">
+        Наша компания является признанным экспертом в области корпоративных
+        телекоммуникаций. 20 лет мы предоставляем полный спектр
+        телекоммуникационных услуг. Наши клиенты — это не только государственные
+        компании, лидеры отраслей, но и малые предприятия!
+      </p>
+      <p class="fs-4 mt-md-6 mt-4 pe-md-4">
+        Высокоскоростной доступ в интернет, корпоративные коммуникации, облачное
+        хранение, мониторинг данных, системы видеонаблюдения, пожарные системы и
+        интеграторские услуги для юридических лиц по всей России!
+      </p>
+      <p class="fs-4 mt-md-6 mt-4 pe-md-4">
+        Для нашей компании каждый клиент уникален, как следствие, у нас нет
+        «традиционно-провайдерского» отношения. Мы знаем нашего клиента,
+        радуемся его успехам и стремимся поддерживать его бизнес, обеспечивая
+        его необходимыми услугами! Да, это непросто, но мы знаем — так
+        правильно!
+      </p>
+    </div>
+    <div class="about_us__item overflow-hidden rounded-4">
+      <img
+        alt="about us"
+        width="858"
+        height="1111"
+        fetchpriority="low"
+        loading="lazy"
+        decoding="async"
+        src="./img/about_us.jpg"
+        class="w-100 h-100"
+      />
+    </div>
+  </div>
 </section>
+
       <section class="default-margin form">
-    <h2 class="title d-none d-md-block fw-bold fs-1">Заинтересовало предложение? Оставьте заявку!</h2>
-    <div class="form-wrapper gap-lg-6 gap-0 d-grid mt-md-6 mt-4">
-        <form action="#" class="form__block d-flex flex-column no-border rounded-4">
-            <p class="d-sm-block d-md-none block-address__mobile fw-bold mb-md-0 mb-4">Заинтересовало предложение?</p>
-            <input type="text" class="form__input rounded-4 mt-0 default-input" placeholder="Как вас зовут?" />
-            <input type="mail" id="email" class="form__input tel default-input rounded-4 mt-4"
-                placeholder="Ваш email" />
-            <input type="tel" id="phone" class="form__input rounded-4 tel mt-4 default-input"
-                placeholder="+7 - 999 - 999 - 99 - 99" />
-            <textarea rows="7" name="form__textarea" class="form__textarea rounded-4 mt-4" id="form-textarea"
-                placeholder="Комментарий"></textarea>
-            <label class="form__checkbox d-grid mt-4 gap-md-4 gap-2">
-                <div class="d-inline position-relative form-input-wrapper d-flex align-items-center">
-                    <input type="checkbox" />
-                    <svg width="22" height="15" class="checkbox-icon">
-                        <use xlink:href="./img/svg/sprite.svg#tick"></use>
-                    </svg>
-                </div>
-                <p class="form__description">
-                    Да, я соглашаюсь <br />
-                    с <a href="#" class="link-strong">условиями обработки персональных данных</a>
-                </p>
-            </label>
-            <button class="form__btn btn btn-primary mt-md-6 mt-4 py-4 mb-0 shadow-none" type="submit">Оставить
-                заявку</button>
-        </form>
-        <div class="form__block h-100 d-none d-lg-block image rounded-4 overflow-hidden">
-            <img alt="blue-image" fetchpriority="low" loading="lazy" decoding="async" src="./img/blue-image.jpg"
-                width="100%" height="100%">
+  <h2 class="title d-none d-md-block fw-bold fs-1">
+    Заинтересовало предложение? Оставьте заявку!
+  </h2>
+  <div class="form-wrapper gap-lg-6 gap-0 d-grid mt-md-6 mt-4">
+    <form action="#" class="form__block d-flex flex-column no-border rounded-4">
+      <p
+        class="d-sm-block d-md-none block-address__mobile fw-bold mb-md-0 mb-4"
+      >
+        Заинтересовало предложение?
+      </p>
+      <input
+        type="text"
+        class="form__input rounded-4 mt-0 default-input"
+        placeholder="Как вас зовут?"
+      />
+      <input
+        type="mail"
+        id="email"
+        class="form__input tel default-input rounded-4 mt-4"
+        placeholder="Ваш email"
+      />
+      <input
+        type="tel"
+        id="phone"
+        class="form__input rounded-4 tel mt-4 default-input"
+        placeholder="+7 - 999 - 999 - 99 - 99"
+      />
+      <textarea
+        rows="7"
+        name="form__textarea"
+        class="form__textarea rounded-4 mt-4"
+        id="form-textarea"
+        placeholder="Комментарий"
+      ></textarea>
+      <label class="form__checkbox d-grid mt-4 gap-md-4 gap-2">
+        <div
+          class="d-inline position-relative form-input-wrapper d-flex align-items-center"
+        >
+          <input type="checkbox" />
+          <svg width="22" height="15" class="checkbox-icon">
+            <use xlink:href="./img/svg/sprite.svg#tick"></use>
+          </svg>
         </div>
+        <p class="form__description">
+          Да, я соглашаюсь <br />
+          с <a href="#" class="link-strong"
+            >условиями обработки персональных данных</a
+          >
+        </p>
+      </label>
+      <button
+        class="form__btn btn btn-primary mt-md-6 mt-4 py-4 mb-0 shadow-none"
+        type="submit"
+      >
+        Оставить заявку
+      </button>
+    </form>
+    <div
+      class="form__block h-100 d-none d-lg-block image rounded-4 overflow-hidden"
+    >
+      <img
+        alt="blue-image"
+        fetchpriority="low"
+        loading="lazy"
+        decoding="async"
+        src="./img/blue-image.jpg"
+        width="858"
+        height="480"
+        class="w-100 h-100"
+      />
     </div>
+  </div>
 </section>
+
       <a href="#" class="arrow-wrapper d-none d-lg-block position-fixed rounded-circle">
     <svg class="arrow__up">
         <use href="./img/svg/sprite.svg#arrow"></use>

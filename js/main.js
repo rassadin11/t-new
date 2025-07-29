@@ -4469,7 +4469,7 @@ if (yboxs.length) {
                 z-index: 1;">
                 <path d="M49.5 24.926C52.8333 26.8505 52.8333 31.6618 49.5 33.5863L7.50001 57.835C4.16668 59.7595 1.30768e-06 57.3539 1.47592e-06 53.5049L3.59581e-06 5.00747C3.76406e-06 1.15846 4.16667 -1.24717 7.5 0.677329L49.5 24.926Z" fill="#4D5EFF" fill-opacity="0.2"/>
             </svg>
-          <img loading=lazy decoding=async src='https://rutube.ru/api/video/${thumb}/thumbnail/?redirect=1' alt='Запустить видео'></a>`;
+          <img loading="lazy" decoding="async" src='https://rutube.ru/api/video/${thumb}/thumbnail/?redirect=1' alt='Запустить видео'></a>`;
   });
 }
 
@@ -4582,14 +4582,15 @@ function configScreen(item) {
         }
       });
       li.insertAdjacentHTML('beforeend', `
-                <li class="sub-list__item deep-list">
-                    <a class="dropdown-item py-3 px-4" href="#">${children[count].innerHTML}</a>
+                <ul>
+                    <li class="sub-list__item deep-list">
+                        <a class="dropdown-item py-3 px-4" href="#">${children[count].innerHTML}</a>
 
-                    <ul class="d-flex flex-column gap-2 mt-2">
-                        ${lis}
-                    </ul>
-                </li>
-
+                        <ul class="d-flex flex-column gap-2 mt-2">
+                            ${lis}
+                        </ul>
+                    </li>
+                </ul>
             `);
       count += 2;
     } else {
