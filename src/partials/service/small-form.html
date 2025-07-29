@@ -27,28 +27,30 @@
         type="text"
         class="form__input rounded-4 mt-md-6 mt-0 default-input"
         placeholder="Как вас зовут?"
+        name="name"
       />
       <input
         type="tel"
         id="phone"
         class="form__input rounded-4 tel mt-4 default-input"
         placeholder="+7 - 999 - 999 - 99 - 99"
+        autocomplete="tel"
       />
       <label class="form__checkbox d-grid mt-4 gap-md-4 gap-2">
-        <div
+        <span
           class="d-inline position-relative form-input-wrapper d-flex align-items-center"
         >
           <input type="checkbox" />
           <svg width="22" height="15" class="checkbox-icon">
             <use xlink:href="./img/svg/sprite.svg#tick"></use>
           </svg>
-        </div>
-        <p class="form__description">
+        </span>
+        <span class="form__description d-block">
           Да, я соглашаюсь <br />
           с&nbsp;<a href="#" class="link-strong"
             >условиями обработки персональных данных</a
           >
-        </p>
+        </span>
       </label>
       <button
         class="form__btn btn btn-primary mt-md-6 mt-4 py-4 mb-0 shadow-none"
