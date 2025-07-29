@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
-@include('partials/general/head.html')
+  @include('partials/general/head.html')
 
-<body>
+  <body>
     @include('partials/general/header.html')
     @include('partials/general/post-header.html')
     <div class="container">
-        <main>
-            @include('partials/news/search.html')
-            @include('partials/news/banner.html')
-            @include('partials/news/news.html')
-        </main>
-        <!-- @include('html/h1.html') пример include -->
+      <main>
+        @include('partials/news/search.html')
+        @include('partials/news/banner.html')
+        @include('partials/news/news.html')
+      </main>
+      <!-- @include('html/h1.html') пример include -->
     </div>
     <div class="default-margin position-relative mb-0">
-        <div class="map-disable position-absolute w-100 h-100"></div>
-        <script type="text/javascript" charset="utf-8" async
-            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6bb13b7648abb08828996ad9854fd25857c085c36753dfd53e60b7e4098f07b1&amp;width=100%25&amp;height=474&amp;lang=ru_RU&amp;scroll=true"></script>
+      <div class="map-disable position-absolute w-100 h-100"></div>
+      <script
+        type="text/javascript"
+        charset="utf-8"
+        async
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6bb13b7648abb08828996ad9854fd25857c085c36753dfd53e60b7e4098f07b1&amp;width=100%25&amp;height=474&amp;lang=ru_RU&amp;scroll=true"
+      ></script>
     </div>
     <div class="container">@include('partials/general/footer.html')</div>
-</body>
-
+  </body>
 </html>
